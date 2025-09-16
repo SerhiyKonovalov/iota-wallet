@@ -2183,13 +2183,13 @@ body {
 
 /* FAQ Content Section */
 .faq-content {
-	padding: 3rem 0 5rem 0;
+	padding: 3rem 0 4.5rem 0;
 	background: white;
 	@media (max-width: $mobile) {
-		padding: 2rem 0 4rem 0;
+		padding: 2rem 0 3.5rem 0;
 	}
 	@media (max-width: $mobileSmall) {
-		padding: 2rem 0 3.125rem 0;
+		padding: 2rem 0 2.5rem 0;
 	}
 }
 
@@ -2210,9 +2210,7 @@ body {
 	overflow: hidden;
 	transition: all 0.3s ease;
 	scroll-margin-top: 100px;
-	&:not(:last-child) {
-		margin-bottom: 1rem;
-	}
+	margin-bottom: 1rem;
 	&--active {
 		.faq-item__question {
 			background: rgba(1, 1, 255, 0.05);
