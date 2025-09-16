@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title": "Learn IOTA Wallet",
+"canonical": "https://iotawallet.org/learn",
+"robots": "follow, index, max-snippet:-1, max-image-preview:large",
+"description": "Site description",
+"keywords": "",
+"og_type": "website",
+"og_url": "https://iotawallet.org/learn",
+"og_title": "Learn IOTA Wallet",
+"og_description": "Site description",
+"twitter_title": "Learn IOTA Wallet",
+"twitter_description": "Site description"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<!-- Hero Section -->
+			<section class="hero hero--learn">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">Master IOTA Wallet</h1>
+						<p class="hero__description">Comprehensive guides, tutorials, and resources to help you become an IOTA expert. From beginner basics to advanced techniques.</p>
+						<div class="hero__actions">
+							<a href="download.html" class="btn btn--primary">Start Learning</a>
+							<a href="https://docs.iota.org/.html" class="btn btn--secondary btn--secondary-white">Documentation</a>
+						</div>
+					</div>
+					<div class="hero__visual">
+						<a href="learn.html#learning-paths" class="learning-icon glass-effect" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="200">
+							<div class="learning-icon__symbol">
+								<svg viewBox="0 0 64 64" width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="3.4560000000000004">
+									<polygon points="32 36 8 24 32 12 56 24 32 36"></polygon>
+									<polyline points="48 28 48 52 16 52 16 28"></polyline>
+									<line x1="56" y1="24" x2="56" y2="44"></line>
+								</svg>
+							</div>
+							<div class="learning-icon__text">Knowledge Base</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Learning Paths Section -->
+			<section class="learning-paths section-padding" id="learning-paths">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Choose Your Learning Path</h2>
+						<p class="section-description">Select the path that matches your experience level and goals</p>
+					</div>
+					<div class="learning-paths__tabs">
+						<button class="learning-paths__tab learning-paths__tab--active" data-tab="beginner">Beginner</button>
+						<button class="learning-paths__tab" data-tab="intermediate">Intermediate</button>
+						<button class="learning-paths__tab" data-tab="advanced">Advanced</button>
+						<button class="learning-paths__tab" data-tab="developer">Developer</button>
+					</div>
+					<div class="learning-paths__content">
+						<div class="learning-paths__panel learning-paths__panel--active" id="beginner">
+							<div class="learning-paths__grid">
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M5 12l5 5l10-10"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Getting Started</h3>
+									<p class="learning-card__description">Learn the basics of IOTA, cryptocurrency, and digital wallets.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">30 min</span>
+										<span class="learning-card__level">Beginner</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Wallet Security</h3>
+									<p class="learning-card__description">Essential security practices to keep your IOTA tokens safe.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">45 min</span>
+										<span class="learning-card__level">Beginner</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<line x1="12" y1="1" x2="12" y2="23"></line>
+											<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Making Transactions</h3>
+									<p class="learning-card__description">How to send and receive IOTA tokens with zero fees.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">25 min</span>
+										<span class="learning-card__level">Beginner</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+							</div>
+						</div>
+						<div class="learning-paths__panel" id="intermediate">
+							<div class="learning-paths__grid">
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<circle cx="12" cy="12" r="10"></circle>
+											<path d="M2 12h20"></path>
+											<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">IOTA Ecosystem</h3>
+									<p class="learning-card__description">Explore the broader IOTA ecosystem and its applications.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">60 min</span>
+										<span class="learning-card__level">Intermediate</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">IoT Integration</h3>
+									<p class="learning-card__description">Connect IOTA Wallet with Internet of Things devices.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">90 min</span>
+										<span class="learning-card__level">Intermediate</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<line x1="18" y1="20" x2="18" y2="10"></line>
+											<line x1="12" y1="20" x2="12" y2="4"></line>
+											<line x1="6" y1="20" x2="6" y2="14"></line>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Portfolio Management</h3>
+									<p class="learning-card__description">Advanced strategies for managing your IOTA portfolio.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">75 min</span>
+										<span class="learning-card__level">Intermediate</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+							</div>
+						</div>
+						<div class="learning-paths__panel" id="advanced">
+							<div class="learning-paths__grid">
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Quantum Cryptography</h3>
+									<p class="learning-card__description">Deep dive into IOTA's quantum-resistant security features.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">120 min</span>
+										<span class="learning-card__level">Advanced</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"></path>
+											<path d="M8 5v4"></path>
+											<path d="M12 5v4"></path>
+											<path d="M16 5v4"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Tangle Architecture</h3>
+									<p class="learning-card__description">Understanding the technical aspects of the Tangle.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">150 min</span>
+										<span class="learning-card__level">Advanced</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M9 12l2 2 4-4"></path>
+											<path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+											<path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+											<path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+											<path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Consensus Mechanisms</h3>
+									<p class="learning-card__description">How IOTA achieves consensus without mining.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">100 min</span>
+										<span class="learning-card__level">Advanced</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+							</div>
+						</div>
+						<div class="learning-paths__panel" id="developer">
+							<div class="learning-paths__grid">
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<circle cx="12" cy="12" r="3"></circle>
+											<path d="M12 1v6m0 6v6"></path>
+											<path d="M21 12h-6m-6 0H3"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">IOTA SDK</h3>
+									<p class="learning-card__description">Build applications using IOTA's software development kit.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">180 min</span>
+										<span class="learning-card__level">Developer</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+											<polyline points="14,2 14,8 20,8"></polyline>
+											<line x1="16" y1="13" x2="8" y2="13"></line>
+											<line x1="16" y1="17" x2="8" y2="17"></line>
+											<polyline points="10,9 9,9 8,9"></polyline>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">Smart Contracts</h3>
+									<p class="learning-card__description">Create and deploy smart contracts on IOTA.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">240 min</span>
+										<span class="learning-card__level">Developer</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+								<div class="learning-card glass-effect">
+									<div class="learning-card__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
+											<path d="M6 3v12"></path>
+											<circle cx="18" cy="6" r="3"></circle>
+											<circle cx="6" cy="21" r="3"></circle>
+											<path d="M15 9a9 9 0 0 0-9 9"></path>
+										</svg>
+									</div>
+									<h3 class="learning-card__title">API Integration</h3>
+									<p class="learning-card__description">Integrate IOTA functionality into your applications.</p>
+									<div class="learning-card__meta">
+										<span class="learning-card__duration">200 min</span>
+										<span class="learning-card__level">Developer</span>
+									</div>
+									<button class="learning-card__button">Start Course</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Documentation Section -->
+			<section class="documentation section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Documentation & References</h2>
+						<p class="section-description">Comprehensive documentation for all aspects of IOTA Wallet</p>
+					</div>
+					<div class="documentation__grid">
+						<div class="doc-card glass-effect">
+							<div class="doc-card__header">
+								<div class="doc-card__icon">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+										<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+										<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+									</svg>
+								</div>
+								<h3 class="doc-card__title">User Guide</h3>
+							</div>
+							<p class="doc-card__description">Complete user manual with step-by-step instructions for all wallet features.</p>
+							<div class="doc-card__topics">
+								<span class="doc-card__topic">Setup</span>
+								<span class="doc-card__topic">Transactions</span>
+								<span class="doc-card__topic">Security</span>
+							</div>
+							<button class="doc-card__button">Read Guide</button>
+						</div>
+						<div class="doc-card glass-effect">
+							<div class="doc-card__header">
+								<div class="doc-card__icon">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+										<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+									</svg>
+								</div>
+								<h3 class="doc-card__title">API Reference</h3>
+							</div>
+							<p class="doc-card__description">Technical documentation for developers building with IOTA Wallet APIs.</p>
+							<div class="doc-card__topics">
+								<span class="doc-card__topic">REST API</span>
+								<span class="doc-card__topic">SDKs</span>
+								<span class="doc-card__topic">Examples</span>
+							</div>
+							<button class="doc-card__button">View API</button>
+						</div>
+						<div class="doc-card glass-effect">
+							<div class="doc-card__header">
+								<div class="doc-card__icon">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+										<line x1="12" y1="17" x2="12.01" y2="17"></line>
+									</svg>
+								</div>
+								<h3 class="doc-card__title">Troubleshooting</h3>
+							</div>
+							<p class="doc-card__description">Solutions to common issues and problems you might encounter.</p>
+							<div class="doc-card__topics">
+								<span class="doc-card__topic">Common Issues</span>
+								<span class="doc-card__topic">Error Codes</span>
+								<span class="doc-card__topic">Support</span>
+							</div>
+							<button class="doc-card__button">Get Help</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Tutorials Section -->
+			<section class="tutorials section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Video Tutorials</h2>
+						<p class="section-description">Learn through interactive video content from IOTA experts</p>
+					</div>
+					<div class="tutorials__grid">
+						<a href="https://www.youtube.com/watch?v=FqbYOGzhcAA" target="_blank" class="tutorial-card glass-effect">
+							<div class="tutorial-card__video">
+								<div class="tutorial-card__thumbnail">
+									<button class="tutorial-card__play">
+										▶
+									</button>
+								</div>
+							</div>
+							<div class="tutorial-card__content">
+								<h3 class="tutorial-card__title">Setting Up Your First IOTA Wallet</h3>
+								<p class="tutorial-card__description">A complete walkthrough of downloading, installing, and configuring IOTA Wallet.</p>
+								<div class="tutorial-card__meta">
+									<span class="tutorial-card__duration">12:34</span>
+									<span class="tutorial-card__views">25.3K views</span>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.youtube.com/watch?v=H0ymwJSZEDc" target="_blank" class="tutorial-card glass-effect">
+							<div class="tutorial-card__video">
+								<div class="tutorial-card__thumbnail">
+									<button class="tutorial-card__play">
+										▶
+									</button>
+								</div>
+							</div>
+							<div class="tutorial-card__content">
+								<h3 class="tutorial-card__title">Understanding IOTA's Tangle Technology</h3>
+								<p class="tutorial-card__description">Deep dive into how the Tangle works and why it's revolutionary.</p>
+								<div class="tutorial-card__meta">
+									<span class="tutorial-card__duration">18:42</span>
+									<span class="tutorial-card__views">18.7K views</span>
+								</div>
+							</div>
+						</a>
+						<a href="https://www.youtube.com/watch?v=Tvjz-6WyVbo" target="_blank" class="tutorial-card glass-effect">
+							<div class="tutorial-card__video">
+								<div class="tutorial-card__thumbnail">
+									<button class="tutorial-card__play">
+										▶
+									</button>
+								</div>
+							</div>
+							<div class="tutorial-card__content">
+								<h3 class="tutorial-card__title">Advanced Security Features</h3>
+								<p class="tutorial-card__description">Learn about quantum resistance and advanced security measures.</p>
+								<div class="tutorial-card__meta">
+									<span class="tutorial-card__duration">22:15</span>
+									<span class="tutorial-card__views">14.2K views</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Resources Section -->
+			<section class="resources section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Additional Resources</h2>
+						<p class="section-description">Expand your knowledge with these curated resources</p>
+					</div>
+					<div class="resources__grid">
+						<div class="resource-category glass-effect">
+							<h3 class="resource-category__title">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+									<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+									<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+								</svg>
+								Reading Materials
+							</h3>
+							<ul class="resource-category__list">
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">IOTA Whitepaper</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Tangle Technical Overview</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Quantum Computing and Crypto</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">IoT and Blockchain Integration</a>
+								</li>
+							</ul>
+						</div>
+						<div class="resource-category glass-effect">
+							<h3 class="resource-category__title">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+									<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+								</svg>
+								Tools & Utilities
+							</h3>
+							<ul class="resource-category__list">
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">IOTA Explorer</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Wallet Validator</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Transaction Simulator</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Network Status</a>
+								</li>
+							</ul>
+						</div>
+						<div class="resource-category glass-effect">
+							<h3 class="resource-category__title">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+									<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+									<circle cx="9" cy="7" r="4"></circle>
+									<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+									<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+								</svg>
+								Community
+							</h3>
+							<ul class="resource-category__list">
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Official Discord</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Reddit Community</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Developer Forum</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Telegram Groups</a>
+								</li>
+							</ul>
+						</div>
+						<div class="resource-category glass-effect">
+							<h3 class="resource-category__title">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25">
+									<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+									<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+								</svg>
+								External Links
+							</h3>
+							<ul class="resource-category__list">
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">IOTA Foundation</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">GitHub Repository</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Academic Papers</a>
+								</li>
+								<li class="resource-category__item">
+									<a href="#" class="resource-category__link">Partner Ecosystem</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section class="contact">
+				<div class="container">
+					<div class="contact__content glass-effect">
+						<div class="contact__text">
+							<h2 class="contact__title">Need Help?</h2>
+							<p class="contact__description">Can't find what you're looking for? Our support team is here to help you succeed with IOTA Wallet.</p>
+						</div>
+						<div class="contact__actions">
+							<a href="#" class="btn btn--primary">Contact Support</a>
+							<a href="community.html" class="btn btn--secondary">Join Community</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

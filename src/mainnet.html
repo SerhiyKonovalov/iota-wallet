@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title": "Mainnet IOTA Wallet",
+"canonical": "https://iotawallet.org/mainnet",
+"robots": "follow, index, max-snippet:-1, max-image-preview:large",
+"description": "Site description",
+"keywords": "",
+"og_type": "website",
+"og_url": "https://iotawallet.org/mainnet",
+"og_title": "Mainnet IOTA Wallet",
+"og_description": "Site description",
+"twitter_title": "Mainnet IOTA Wallet",
+"twitter_description": "Site description"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<!-- Hero Section -->
+			<section class="hero hero--mainnet">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">IOTA Mainnet</h1>
+						<p class="hero__description">Experience the power of the IOTA Mainnet - a feeless, scalable, and quantum-resistant distributed ledger designed for the Internet of Things and beyond.</p>
+						<div class="hero__actions">
+							<a href="download.html" class="btn btn--primary">Explore Network</a>
+							<a href="community.html" class="btn btn--secondary btn--secondary-white">Join Community</a>
+						</div>
+					</div>
+					<div class="hero__visual">
+						<a href="mainnet.html#network-status" class="mainnet-icon glass-effect" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="200">
+							<svg class="mainnet-icon__symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="10"></circle>
+								<path d="M2 12h20"></path>
+								<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+							</svg>
+							<div class="mainnet-icon__text">Live Network</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Network Status Section -->
+			<section class="network-status section-padding" id="network-status">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Network Status</h2>
+						<p class="section-description">Real-time statistics and health of the IOTA Mainnet</p>
+					</div>
+					<div class="network-status__grid">
+						<div class="status-card glass-effect">
+							<div class="status-card__header">
+								<svg class="status-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+								</svg>
+								<h3 class="status-card__title">Network Health</h3>
+							</div>
+							<div class="status-card__value status-card__value--healthy">Healthy</div>
+							<div class="status-card__description">All systems operational</div>
+							<div class="status-card__indicator status-card__indicator--green"></div>
+						</div>
+						<div class="status-card glass-effect">
+							<div class="status-card__header">
+								<svg class="status-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+								</svg>
+								<h3 class="status-card__title">TPS</h3>
+							</div>
+							<div class="status-card__value" id="tps-counter">17</div>
+							<div class="status-card__description">Transactions per second</div>
+							<div class="status-card__indicator status-card__indicator--blue"></div>
+						</div>
+						<div class="status-card glass-effect">
+							<div class="status-card__header">
+								<svg class="status-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+								</svg>
+								<h3 class="status-card__title">Transaction Fees</h3>
+							</div>
+							<div class="status-card__value status-card__value--free">$0.00</div>
+							<div class="status-card__description">Always feeless</div>
+							<div class="status-card__indicator status-card__indicator--green"></div>
+						</div>
+						<div class="status-card glass-effect">
+							<div class="status-card__header">
+								<svg class="status-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<circle cx="12" cy="12" r="3"></circle>
+									<path d="M12 1v6m0 6v6"></path>
+									<path d="M21 12h-6m-6 0H3"></path>
+								</svg>
+								<h3 class="status-card__title">Active Nodes</h3>
+							</div>
+							<div class="status-card__value" id="nodes-counter">194</div>
+							<div class="status-card__description">Nodes worldwide</div>
+							<div class="status-card__indicator status-card__indicator--blue"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Mainnet Features Section -->
+			<section class="mainnet-features section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Mainnet Features</h2>
+						<p class="section-description">Discover what makes IOTA Mainnet unique and powerful</p>
+					</div>
+					<div class="mainnet-features__tabs">
+						<button class="mainnet-features__tab mainnet-features__tab--active" data-feature="tangle">The Tangle</button>
+						<button class="mainnet-features__tab" data-feature="feeless">Feeless</button>
+						<button class="mainnet-features__tab" data-feature="scalable">Scalable</button>
+						<button class="mainnet-features__tab" data-feature="quantum">Quantum-Resistant</button>
+					</div>
+					<div class="mainnet-features__content">
+						<div class="mainnet-features__panel mainnet-features__panel--active" id="tangle">
+							<div class="feature-panel glass-effect">
+								<div class="feature-panel__visual">
+									<img src="@img/mainnet/image-01.png" alt="Image">
+
+								</div>
+								<div class="feature-panel__content">
+									<h3 class="feature-panel__title">Directed Acyclic Graph (DAG)</h3>
+									<p class="feature-panel__description">The Tangle is IOTA's revolutionary data structure that replaces the traditional blockchain. Instead of blocks, transactions are directly linked to each other, creating a web-like structure that enables parallel processing and eliminates the need for miners.</p>
+									<ul class="feature-panel__benefits">
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											No blocks or mining required
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Parallel transaction processing
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Self-validating network
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mainnet-features__panel" id="feeless">
+							<div class="feature-panel glass-effect">
+								<div class="feature-panel__visual">
+									<img src="@img/mainnet/image-02.webp" alt="Image">
+
+								</div>
+								<div class="feature-panel__content">
+									<h3 class="feature-panel__title">Zero Transaction Fees</h3>
+									<p class="feature-panel__description">IOTA transactions are completely feeless, making it perfect for microtransactions and IoT applications. This is possible because each transaction validates two previous transactions, eliminating the need for miners and their associated fees.</p>
+									<ul class="feature-panel__benefits">
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Perfect for micropayments
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											No hidden costs
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Enables new business models
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mainnet-features__panel" id="scalable">
+							<div class="feature-panel glass-effect">
+								<div class="feature-panel__visual">
+									<img src="@img/mainnet/image-03.webp" alt="Image">
+								</div>
+								<div class="feature-panel__content">
+									<h3 class="feature-panel__title">Infinite Scalability</h3>
+									<p class="feature-panel__description">Unlike traditional blockchains that slow down as they grow, the Tangle actually becomes faster and more secure as more transactions are added. This makes IOTA perfectly suited for the billions of IoT devices coming online.</p>
+									<ul class="feature-panel__benefits">
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Network gets faster with usage
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											No throughput limitations
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Ready for IoT scale
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mainnet-features__panel" id="quantum">
+							<div class="feature-panel glass-effect">
+								<div class="feature-panel__visual">
+									<img src="@img/mainnet/image-04.webp" alt="Image">
+								</div>
+								<div class="feature-panel__content">
+									<h3 class="feature-panel__title">Quantum-Resistant Security</h3>
+									<p class="feature-panel__description">IOTA uses quantum-resistant cryptographic signatures that remain secure even against quantum computer attacks. This future-proofs the network against emerging quantum computing threats.</p>
+									<ul class="feature-panel__benefits">
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Future-proof security
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Quantum computer resistant
+										</li>
+										<li class="feature-panel__benefit">
+											<svg class="feature-panel__benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M20 6L9 17l-5-5"></path>
+											</svg>
+											Advanced cryptography
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Network Explorer Section -->
+			<section class="network-explorer section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Network Explorer</h2>
+						<p class="section-description">Explore real-time transactions and network activity</p>
+					</div>
+					<div class="network-explorer__content glass-effect">
+						<div class="explorer-search">
+							<div class="explorer-search__input-group">
+								<svg class="explorer-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<circle cx="11" cy="11" r="8"></circle>
+									<path d="M21 21l-4.35-4.35"></path>
+								</svg>
+								<input type="text" class="explorer-search__input" placeholder="Search by transaction hash, address, or bundle...">
+								<button class="explorer-search__button">Search</button>
+							</div>
+						</div>
+						<div class="explorer-tabs">
+							<button class="explorer-tabs__tab explorer-tabs__tab--active" data-explorer="transactions">Recent Transactions</button>
+							<button class="explorer-tabs__tab" data-explorer="addresses">Top Addresses</button>
+							<button class="explorer-tabs__tab" data-explorer="milestones">Milestones</button>
+						</div>
+						<div class="explorer-content">
+							<div class="explorer-panel explorer-panel--active" id="transactions">
+								<div class="transaction-list">
+									<div class="transaction-item">
+										<div class="transaction-item__hash">
+											<span class="transaction-item__label">Hash:</span>
+											<span class="transaction-item__value">ABCD...XYZ9</span>
+										</div>
+										<div class="transaction-item__amount">
+											<span class="transaction-item__label">Amount:</span>
+											<span class="transaction-item__value">1.5 Mi</span>
+										</div>
+										<div class="transaction-item__time">
+											<span class="transaction-item__label">Time:</span>
+											<span class="transaction-item__value">2 minutes ago</span>
+										</div>
+										<div class="transaction-item__status transaction-item__status--confirmed">Confirmed</div>
+									</div>
+									<div class="transaction-item">
+										<div class="transaction-item__hash">
+											<span class="transaction-item__label">Hash:</span>
+											<span class="transaction-item__value">EFGH...UVW9</span>
+										</div>
+										<div class="transaction-item__amount">
+											<span class="transaction-item__label">Amount:</span>
+											<span class="transaction-item__value">0.25 Mi</span>
+										</div>
+										<div class="transaction-item__time">
+											<span class="transaction-item__label">Time:</span>
+											<span class="transaction-item__value">5 minutes ago</span>
+										</div>
+										<div class="transaction-item__status transaction-item__status--confirmed">Confirmed</div>
+									</div>
+									<div class="transaction-item">
+										<div class="transaction-item__hash">
+											<span class="transaction-item__label">Hash:</span>
+											<span class="transaction-item__value">IJKL...RST9</span>
+										</div>
+										<div class="transaction-item__amount">
+											<span class="transaction-item__label">Amount:</span>
+											<span class="transaction-item__value">10.0 Mi</span>
+										</div>
+										<div class="transaction-item__time">
+											<span class="transaction-item__label">Time:</span>
+											<span class="transaction-item__value">8 minutes ago</span>
+										</div>
+										<div class="transaction-item__status transaction-item__status--pending">Pending</div>
+									</div>
+								</div>
+							</div>
+							<div class="explorer-panel" id="addresses">
+								<div class="address-list">
+									<div class="address-item">
+										<div class="address-item__address">IOTA1QP...XYZ9</div>
+										<div class="address-item__balance">Balance: 1,250.5 Mi</div>
+										<div class="address-item__transactions">Transactions: 1,847</div>
+									</div>
+									<div class="address-item">
+										<div class="address-item__address">IOTA1QR...ABC9</div>
+										<div class="address-item__balance">Balance: 892.3 Mi</div>
+										<div class="address-item__transactions">Transactions: 1,203</div>
+									</div>
+									<div class="address-item">
+										<div class="address-item__address">IOTA1QS...DEF9</div>
+										<div class="address-item__balance">Balance: 654.7 Mi</div>
+										<div class="address-item__transactions">Transactions: 956</div>
+									</div>
+								</div>
+							</div>
+							<div class="explorer-panel" id="milestones">
+								<div class="milestone-list">
+									<div class="milestone-item">
+										<div class="milestone-item__index">#1,247,892</div>
+										<div class="milestone-item__hash">MILE...STONE9</div>
+										<div class="milestone-item__time">12 seconds ago</div>
+										<div class="milestone-item__transactions">2,847 transactions</div>
+									</div>
+									<div class="milestone-item">
+										<div class="milestone-item__index">#1,247,891</div>
+										<div class="milestone-item__hash">MILE...STON8</div>
+										<div class="milestone-item__time">22 seconds ago</div>
+										<div class="milestone-item__transactions">3,156 transactions</div>
+									</div>
+									<div class="milestone-item">
+										<div class="milestone-item__index">#1,247,890</div>
+										<div class="milestone-item__hash">MILE...STON7</div>
+										<div class="milestone-item__time">35 seconds ago</div>
+										<div class="milestone-item__transactions">2,934 transactions</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Network Nodes Section -->
+			<section class="network-nodes section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Global Node Network</h2>
+						<p class="section-description">IOTA nodes distributed worldwide ensuring network decentralization</p>
+					</div>
+					<div class="network-nodes__content">
+						<div class="network-nodes__image">
+							<img src="@img/mainnet/network.png" alt="Image">
+						</div>
+						<div class="network-stats">
+							<div class="network-stats__grid">
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">847</div>
+									<div class="network-stat-item__label">North America</div>
+								</div>
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">1,203</div>
+									<div class="network-stat-item__label">Europe</div>
+								</div>
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">654</div>
+									<div class="network-stat-item__label">Asia</div>
+								</div>
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">89</div>
+									<div class="network-stat-item__label">Oceania</div>
+								</div>
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">34</div>
+									<div class="network-stat-item__label">South America</div>
+								</div>
+								<div class="network-stat-item glass-effect">
+									<div class="network-stat-item__number">20</div>
+									<div class="network-stat-item__label">Africa</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Get Started Section -->
+			<section class="get-started">
+				<div class="container">
+					<div class="get-started__content glass-effect">
+						<div class="get-started__text">
+							<h2 class="get-started__title">Ready to Join the Mainnet?</h2>
+							<p class="get-started__description">Start using IOTA Wallet today and experience the power of feeless, scalable, and quantum-resistant transactions.</p>
+						</div>
+						<div class="get-started__actions">
+							<button class="btn btn--primary">Download Wallet</button>
+							<button class="btn btn--secondary">View Documentation</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

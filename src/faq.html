@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title": "FAQ IOTA Wallet",
+"canonical": "https://iotawallet.org/faq",
+"robots": "follow, index, max-snippet:-1, max-image-preview:large",
+"description": "Site description",
+"keywords": "",
+"og_type": "website",
+"og_url": "https://iotawallet.org/faq",
+"og_title": "FAQ IOTA Wallet",
+"og_description": "Site description",
+"twitter_title": "FAQ IOTA Wallet",
+"twitter_description": "Site description"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<!-- Hero Section -->
+			<section class="hero hero--faq">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">Frequently Asked Questions</h1>
+						<p class="hero__description">Find answers to common questions about IOTA Wallet, from basic setup to advanced features. Can't find what you're looking for? Our community is here to help.</p>
+						<div class="hero__actions">
+							<a href="faq.html#faq-search" class="btn btn--primary">Search FAQ</a>
+							<a href="https://x.com/iota" class="btn btn--secondary btn--secondary-white">Contact Support</a>
+						</div>
+					</div>
+					<div class="hero__visual">
+						<a href="faq.html#faq-categories" class="faq-icon glass-effect" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="200">
+							<svg class="faq-icon__symbol" fill="#ffffff" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 .5A7.77 7.77 0 0 0 0 8a7.77 7.77 0 0 0 8 7.5A7.77 7.77 0 0 0 16 8 7.77 7.77 0 0 0 8 .5zm0 13.75A6.52 6.52 0 0 1 1.25 8 6.52 6.52 0 0 1 8 1.75 6.52 6.52 0 0 1 14.75 8 6.52 6.52 0 0 1 8 14.25z"></path>
+								<circle cx="7.98" cy="10.95" r=".76"></circle>
+								<path d="M9.73 4.75A2.72 2.72 0 0 0 8 4.19a2.28 2.28 0 0 0-2.41 2.17v.11h1.24v-.1A1.12 1.12 0 0 1 8 5.33a1 1 0 0 1 1.12 1c0 .35-.24.73-.78 1.11a2 2 0 0 0-1 1.46v.36h1.24V9a.76.76 0 0 1 .23-.51A3.92 3.92 0 0 1 9.33 8l.17-.14a2 2 0 0 0 .91-1.67 1.85 1.85 0 0 0-.68-1.44z"></path>
+							</svg>
+							<div class="faq-icon__text">Get Answers</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ Categories Section -->
+			<section class="faq-categories " id="faq-categories">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Browse by Category</h2>
+						<p class="section-description">Find answers organized by topic</p>
+					</div>
+					<div class="faq-categories__tabs">
+						<button class="faq-categories__tab faq-categories__tab--active" data-category="general">General</button>
+						<button class="faq-categories__tab" data-category="security">Security</button>
+						<button class="faq-categories__tab" data-category="transactions">Transactions</button>
+						<button class="faq-categories__tab" data-category="technical">Technical</button>
+						<button class="faq-categories__tab" data-category="troubleshooting">Troubleshooting</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ Content Section -->
+			<section class="faq-content ">
+				<div class="container">
+					<!-- No Results Message -->
+					<div class="faq-no-results" id="faq-no-results" style="display: none;">
+						<div class="faq-no-results__content glass-effect">
+							<svg class="faq-no-results__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+								<line x1="11" y1="8" x2="11" y2="12"></line>
+								<line x1="11" y1="16" x2="11.01" y2="16"></line>
+							</svg>
+							<h3 class="faq-no-results__title">No Questions Found</h3>
+							<p class="faq-no-results__description">We couldn't find any questions matching your search. Try different keywords or browse our categories.</p>
+							<button class="faq-no-results__button btn btn--primary" id="clear-search-btn">Clear Search</button>
+						</div>
+					</div>
+
+					<!-- General FAQ -->
+					<div class="faq-category faq-category--active" id="general">
+						<div class="faq-list">
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What is IOTA Wallet?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA Wallet is a secure, user-friendly digital wallet designed specifically for managing IOTA tokens. It provides a seamless interface for sending, receiving, and storing IOTA while leveraging the unique features of the Tangle network, including feeless transactions and quantum-resistant security.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How is IOTA different from other cryptocurrencies?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA uses a unique architecture called the Tangle instead of a traditional blockchain. This enables feeless transactions, infinite scalability, and quantum-resistant security. Unlike other cryptocurrencies that require miners, IOTA transactions are validated by the network participants themselves.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Is IOTA Wallet free to use?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes, IOTA Wallet is completely free to download and use. There are no transaction fees, no subscription costs, and no hidden charges. The wallet is open-source and maintained by the IOTA Foundation and community contributors.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Which platforms support IOTA Wallet?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA Wallet is available on multiple platforms including Windows, macOS, Linux, iOS, Android, and as a web application. This ensures you can access your IOTA tokens from any device, anywhere in the world.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Security FAQ -->
+					<div class="faq-category" id="security">
+						<div class="faq-list">
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How secure is IOTA Wallet?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA Wallet implements state-of-the-art security measures including quantum-resistant cryptography, secure key generation, and local storage of private keys. Your funds are protected by advanced encryption, and the wallet undergoes regular security audits.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What is a seed phrase and why is it important?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>A seed phrase is a series of 24 words that serves as a backup for your wallet. It's crucial because it allows you to recover your wallet and funds if you lose access to your device. Store your seed phrase securely offline and never share it with anyone.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Can IOTA be hacked by quantum computers?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA is designed to be quantum-resistant. The protocol uses quantum-resistant cryptographic signatures that remain secure even against quantum computer attacks, making it future-proof against emerging quantum computing threats.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How do I keep my wallet secure?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Keep your wallet secure by: backing up your seed phrase offline, using strong passwords, enabling two-factor authentication, keeping your wallet software updated, never sharing your private keys, and being cautious of phishing attempts.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Transactions FAQ -->
+					<div class="faq-category" id="transactions">
+						<div class="faq-list">
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Are IOTA transactions really free?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes, IOTA transactions are completely feeless. There are no network fees, mining fees, or gas costs. This is possible because of the Tangle architecture where each transaction validates two previous transactions, eliminating the need for miners.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How long do transactions take to confirm?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA transactions typically confirm within 10-30 seconds under normal network conditions. The confirmation time depends on network activity and the number of subsequent transactions that reference your transaction.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Can I cancel a transaction after sending it?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Once a transaction is confirmed on the Tangle, it cannot be cancelled or reversed. However, if a transaction is pending for an extended period, it may be possible to reattach or promote it to help with confirmation.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What happens if I send IOTA to the wrong address?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>If you send IOTA to an incorrect address, the transaction cannot be reversed. Always double-check the recipient address before confirming a transaction. Consider sending a small test amount first for large transactions.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Technical FAQ -->
+					<div class="faq-category" id="technical">
+						<div class="faq-list">
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What is the Tangle?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>The Tangle is IOTA's distributed ledger technology based on a Directed Acyclic Graph (DAG). Unlike blockchain, it doesn't use blocks or miners. Each transaction directly validates two previous transactions, creating a web-like structure that enables scalability and feeless transactions.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How does IOTA achieve consensus without miners?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA uses a consensus mechanism where each new transaction must validate two previous transactions. This creates a self-validating network where consensus emerges naturally through the cumulative weight of transactions, eliminating the need for energy-intensive mining.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What are IOTA's smart contracts capabilities?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA supports smart contracts through its Assembly network, enabling complex programmable applications while maintaining feeless transactions. Smart contracts can interact with IoT devices and handle micropayments efficiently.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How does IOTA integrate with IoT devices?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>IOTA is designed for IoT integration with lightweight protocols, feeless microtransactions, and data integrity features. IoT devices can send data and value directly to the Tangle, enabling machine-to-machine economies and automated payments.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Troubleshooting FAQ -->
+					<div class="faq-category" id="troubleshooting">
+						<div class="faq-list">
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>My transaction is stuck pending. What should I do?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>If your transaction is pending for more than an hour, try promoting or reattaching it through the wallet interface. This helps the transaction get picked up by the network. If the issue persists, contact support or check the network status.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>I can't see my balance after restoring my wallet</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>After restoring your wallet, it may take some time to sync and discover all your addresses. Ensure you're connected to the internet and wait for the sync to complete. If the balance still doesn't appear, try refreshing or restarting the wallet.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>The wallet won't connect to the network</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Check your internet connection and firewall settings. Try switching to a different node in the wallet settings or restart the application. If you're using a VPN, try disabling it temporarily to see if that resolves the connection issue.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>I forgot my wallet password</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>If you forgot your wallet password but have your seed phrase, you can restore your wallet using the seed phrase and set a new password. If you don't have your seed phrase, unfortunately, there's no way to recover access to your wallet.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Search FAQ Section -->
+			<section class="faq-search" id="faq-search">
+				<div class="container">
+					<div class="faq-search__content glass-effect">
+						<div class="faq-search__text">
+							<h2 class="faq-search__title">Still Have Questions?</h2>
+							<p class="faq-search__description">Search our knowledge base or get help from our community</p>
+						</div>
+						<div class="faq-search__form">
+							<div class="faq-search__input-group">
+								<svg class="faq-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<circle cx="11" cy="11" r="8"></circle>
+									<path d="M21 21l-4.35-4.35"></path>
+								</svg>
+								<input type="text" class="faq-search__input" placeholder="Search FAQ...">
+								<button class="faq-search__button">Search</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Popular Topics Section -->
+			<section class="popular-topics section-padding">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Popular Topics</h2>
+						<p class="section-description">Most searched questions and topics</p>
+					</div>
+					<div class="popular-topics__grid">
+						<div class="topic-card glass-effect">
+							<svg class="topic-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+							</svg>
+							<h3 class="topic-card__title">Getting Started</h3>
+							<p class="topic-card__description">Learn the basics of setting up and using IOTA Wallet</p>
+							<div class="topic-card__stats">
+								<span class="topic-card__views">2.5K views</span>
+								<span class="topic-card__articles">12 articles</span>
+							</div>
+						</div>
+						<div class="topic-card glass-effect">
+							<svg class="topic-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+							</svg>
+							<h3 class="topic-card__title">Security Best Practices</h3>
+							<p class="topic-card__description">Keep your IOTA tokens safe with these security tips</p>
+							<div class="topic-card__stats">
+								<span class="topic-card__views">1.8K views</span>
+								<span class="topic-card__articles">8 articles</span>
+							</div>
+						</div>
+						<div class="topic-card glass-effect">
+							<svg class="topic-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+							</svg>
+							<h3 class="topic-card__title">Transaction Issues</h3>
+							<p class="topic-card__description">Troubleshoot common transaction problems</p>
+							<div class="topic-card__stats">
+								<span class="topic-card__views">1.2K views</span>
+								<span class="topic-card__articles">6 articles</span>
+							</div>
+						</div>
+						<div class="topic-card glass-effect">
+							<svg class="topic-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M9 19c-5 0-8-3-8-6 0-3 3-6 8-6s8 3 8 6c0 3-3 6-8 6z"></path>
+								<path d="M17 19c-2-1-2-3-2-5s0-4 2-5"></path>
+								<path d="M15 9c-1-1-1-2-1-3s0-2 1-3"></path>
+							</svg>
+							<h3 class="topic-card__title">Technical Concepts</h3>
+							<p class="topic-card__description">Understand the Tangle and IOTA technology</p>
+							<div class="topic-card__stats">
+								<span class="topic-card__views">950 views</span>
+								<span class="topic-card__articles">10 articles</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Support Section -->
+			<section class="contact-support">
+				<div class="container">
+					<div class="contact-support__content glass-effect">
+						<div class="contact-support__text">
+							<h2 class="contact-support__title">Need More Help?</h2>
+							<p class="contact-support__description">Our support team and community are here to assist you with any questions or issues.</p>
+						</div>
+						<div class="contact-support__actions">
+							<button class="btn btn--primary">Contact Support</button>
+							<button class="btn btn--secondary">Join Community</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
