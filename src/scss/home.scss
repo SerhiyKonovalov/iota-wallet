@@ -54,6 +54,7 @@ body {
 		height: 32px;
 	}
 	&__text {
+		white-space: nowrap;
 		font-weight: 500;
 		transition: all 0.5s ease;
 
@@ -128,6 +129,9 @@ body {
 	padding: 0.25rem 0;
 	@media (max-width: $tablet) {
 		font-size: 0.875rem;
+	}
+	@media (max-width: $mobile) {
+		font-size: 19px;
 	}
 }
 
@@ -210,18 +214,17 @@ body {
 
 .nav.nav--scrolled .nav__logo,
 .nav.nav--scrolled .nav__logo-text,
-.nav.nav--menu-open .nav__logo,
-.nav.nav--menu-open .nav__logo-text {
-	color: #1f2937;
-}
-
 .nav.nav--scrolled .logo__text span,
-.nav.nav--menu-open .logo__text span {
-	color: #1f2937;
-}
-
 .nav.nav--scrolled .nav__link {
 	color: #1f2937;
+}
+
+.nav.nav--menu-open .nav__logo,
+.nav.nav--menu-open .nav__logo-text,
+.nav.nav--menu-open .nav__logo-text span {
+	@media (max-width: $mobile) {
+		color: #1f2937;
+	}
 }
 
 .nav.nav--scrolled .nav__link:hover,
@@ -285,7 +288,7 @@ body {
 	.nav__link {
 		display: block;
 		width: 100%;
-		font-size: 19px;
+
 		padding: 0.75rem 2rem;
 		color: #1f2937; /* темні посилання */
 		&--active {

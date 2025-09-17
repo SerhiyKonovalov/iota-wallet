@@ -66,17 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		setActiveNavLink();
-
 	}
 
-	// Change header background and styles after scrolling 100vh
+	// Change header background and styles after scrolling hero height
 	function updateNavOnScroll() {
+		const hero = document.querySelector('.hero');
 		const scrollY = window.scrollY;
-		const viewportHeight = window.innerHeight; // 100vh (hero height)
+		const heroHeight = hero ? hero.offsetHeight : window.innerHeight;
 
 		// працює тільки якщо меню не відкрите
 		if (!nav.classList.contains('nav--menu-open')) {
-			if (scrollY >= viewportHeight) {
+			if (scrollY >= heroHeight - 40) { // невеликий запас у 40px
 				nav.classList.add('nav--scrolled');
 			} else {
 				nav.classList.remove('nav--scrolled');
@@ -86,10 +86,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Attach scroll event listener
 	window.addEventListener('scroll', updateNavOnScroll);
+	window.addEventListener('resize', updateNavOnScroll); // на випадок зміни розмірів
 
 	// Run on page load (in case user reloads in scrolled state)
 	updateNavOnScroll();
 });
+
 
 
 // !Custom slider 
