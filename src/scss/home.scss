@@ -352,8 +352,9 @@ body {
 	display: flex;
 	align-items: center;
 	position: relative;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	background-image: url("https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+	background: linear-gradient(135deg, #667eea 0%, #602d92 100%);
+	background-image: url("@img/hero/home.png");
+	// background-image: url("https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2075,7 +2076,8 @@ body {
 
 .contributor-card__avatar {
 	width: 80px;
-	height: 80px;
+	aspect-ratio: 1;
+	object-fit: cover;
 	border-radius: 50%;
 	background: linear-gradient(135deg, #0101ff 0%, #4f92ff 100%);
 	display: flex;
@@ -2084,7 +2086,6 @@ body {
 	margin: 0 auto 1rem;
 	@media (max-width: $mobile) {
 		width: 65px;
-		height: 65px;
 	}
 }
 
@@ -3292,14 +3293,15 @@ body {
 
 .testimonial-card__avatar {
 	width: 50px;
-	height: 50px;
+	aspect-ratio: 1;
+	object-fit: cover;
 	border-radius: 50%;
-	background: linear-gradient(135deg, #0101ff 0%, #4f92ff 100%);
+	// background: linear-gradient(135deg, #0101ff 0%, #4f92ff 100%);
+	// color: white;
+	// font-weight: 600;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
-	font-weight: 600;
 }
 
 .testimonial-card__name {
@@ -3315,7 +3317,7 @@ body {
 .testimonials__controls {
 	display: flex;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1.5rem;
 	margin-top: 1rem;
 	@media (max-width: $mobileSmall) {
 		margin-top: 0.5rem;
