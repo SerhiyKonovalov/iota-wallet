@@ -367,11 +367,11 @@ body {
 }
 
 .hero--intro {
-	background-image: url("https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+	background-image: url("@img/hero/intro.webp");
 }
 
 .hero--learn {
-	background-image: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+	background-image: url("@img/hero/learn.webp");
 }
 
 /* Community Page Styles */
@@ -380,15 +380,15 @@ body {
 }
 
 .hero--faq {
-	background-image: url("https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+	background-image: url("@img/hero/faq.webp");
 }
 
 .hero--mainnet {
-	background-image: url("@img/hero/mainnet.png");
+	background-image: url("@img/hero/mainnet.jpg");
 }
 
 .hero--download {
-	background-image: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop");
+	background-image: url("@img/hero/download.png");
 }
 
 .mainnet-icon {
@@ -1155,6 +1155,7 @@ body {
 
 .download-options__grid {
 	display: grid;
+	align-items: start;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	gap: 2rem;
 }
@@ -2279,7 +2280,7 @@ body {
 	width: 1.5rem;
 	height: 1.5rem;
 	color: #0101ff;
-	transition: transform 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .faq-item--active .faq-item__icon {
@@ -4246,8 +4247,7 @@ body {
 .hero--privacy {
 	background:
 		linear-gradient(135deg, rgba(1, 1, 255, 0.1) 0%, rgba(1, 1, 255, 0.05) 100%),
-		url("https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")
-			center/cover;
+		url("@img/hero/privacy.webp") center/cover;
 }
 
 .privacy-icon {
@@ -4562,8 +4562,7 @@ body {
 .hero--terms {
 	background:
 		linear-gradient(135deg, rgba(1, 1, 255, 0.1) 0%, rgba(1, 1, 255, 0.05) 100%),
-		url("https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")
-			center/cover;
+		url("@img/hero/terms.webp") center/cover;
 }
 
 .terms-icon {
@@ -4787,7 +4786,7 @@ body {
 	background: rgba(255, 255, 255, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	text-align: center;
-	transition: transform 0.3s ease;
+	transition: all 0.3s ease;
 	@media (max-width: $mobileSmall) {
 		padding: 2rem 1.5rem;
 	}
@@ -4895,8 +4894,7 @@ body {
 .hero--impressum {
 	background:
 		linear-gradient(135deg, rgba(1, 1, 255, 0.1) 0%, rgba(1, 1, 255, 0.05) 100%),
-		url("https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")
-			center/cover;
+		url("@img/hero/impressum.webp") center/cover;
 }
 
 .impressum-icon {
@@ -4949,7 +4947,7 @@ body {
 	backdrop-filter: blur(10px);
 	background: rgba(255, 255, 255, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	transition: transform 0.3s ease;
+	transition: all 0.3s ease;
 	@media (max-width: $mobileSmall) {
 		padding: 2rem 1.5rem;
 	}
