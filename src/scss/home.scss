@@ -180,6 +180,7 @@ body {
 	cursor: pointer;
 	padding: 0.5rem;
 	gap: 0.25rem;
+	background: transparent;
 }
 
 .nav__toggle-bar {
@@ -2864,8 +2865,8 @@ body {
 }
 
 .feature-card__icon {
-	font-size: 3rem;
-	margin-bottom: 1.5rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .feature-card__title {
@@ -2874,6 +2875,9 @@ body {
 	font-weight: 600;
 	color: #1a202c;
 	margin-bottom: 1rem;
+	@media (max-width: $mobileSmall) {
+		font-size: 1.25rem;
+	}
 }
 
 .feature-card__description {
