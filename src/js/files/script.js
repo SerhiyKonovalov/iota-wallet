@@ -443,9 +443,13 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 	const statsCards = document.querySelectorAll('.stats-card__number');
 
-	const animateCounter = (element, target) => {
+	const animateCounter = (element, target, suffix) => {
 		let current = 0;
-		const increment = target / 100;
+		const duration = 2000; // 2s
+		const frameRate = 20;
+		const totalFrames = duration / frameRate;
+		const increment = target / totalFrames;
+
 		const timer = setInterval(() => {
 			current += increment;
 			if (current >= target) {
@@ -453,50 +457,54 @@ document.addEventListener('DOMContentLoaded', function () {
 				clearInterval(timer);
 			}
 
-			// Format the number based on the target
-			let formattedNumber;
-			if (target >= 1000000) {
-				formattedNumber = (current / 1000000).toFixed(1) + 'M+';
-			} else if (target >= 1000) {
-				formattedNumber = (current / 1000).toFixed(1) + 'K+';
-			} else if (target < 1) {
-				formattedNumber = (current * 100).toFixed(1) + '%';
-			} else {
-				formattedNumber = Math.floor(current).toString();
-			}
+			let value;
+			if (suffix === 'M+') value = current / 1_000_000;
+			else if (suffix === 'K+') value = current / 1_000;
+			else if (suffix === '%') value = current * 100;
+			else value = current;
 
-			element.textContent = formattedNumber;
-		}, 20);
+			// Якщо число ціле — не додаємо .0
+			const formattedValue = Number.isInteger(value)
+				? value.toString()
+				: value.toFixed(2).replace(/\.?0+$/, '');
+
+			element.textContent = formattedValue + suffix;
+		}, frameRate);
 	};
 
-	// Use Intersection Observer to trigger animations when visible
 	const statsObserver = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				const element = entry.target;
-				const originalText = element.textContent;
+				const originalText = element.textContent.trim();
 
-				// Extract target number from text
-				let target;
+				let target = 0;
+				let suffix = '';
+
 				if (originalText.includes('M+')) {
-					target = parseFloat(originalText) * 1000000;
+					target = parseFloat(originalText) * 1_000_000;
+					suffix = 'M+';
 				} else if (originalText.includes('K+')) {
-					target = parseFloat(originalText) * 1000;
+					target = parseFloat(originalText) * 1_000;
+					suffix = 'K+';
 				} else if (originalText.includes('%')) {
 					target = parseFloat(originalText) / 100;
+					suffix = '%';
+				} else if (originalText.includes('+')) {
+					target = parseFloat(originalText);
+					suffix = '+';
 				} else {
-					target = parseInt(originalText);
+					target = parseFloat(originalText);
+					suffix = '';
 				}
 
-				animateCounter(element, target);
+				animateCounter(element, target, suffix);
 				statsObserver.unobserve(element);
 			}
 		});
 	}, { threshold: 0.5 });
 
-	statsCards.forEach(card => {
-		statsObserver.observe(card);
-	});
+	statsCards.forEach(card => statsObserver.observe(card));
 });
 
 // Events Slider
@@ -982,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Network Status Real-time Updates
 document.addEventListener('DOMContentLoaded', function () {
 	const tpsCounter = document.getElementById('tps-counter');
-	const nodesCounter = document.getElementById('nodes-counter');
+	const activityCounter = document.getElementById('nodes-counter'); // перейменовано в Network Activity
 
 	// Функція анімованої зміни числа
 	function animateValue(el, start, end, duration) {
@@ -1001,29 +1009,28 @@ document.addEventListener('DOMContentLoaded', function () {
 		requestAnimationFrame(step);
 	}
 
+	// --- TPS ---
 	if (tpsCounter) {
-		let currentTps = parseInt(tpsCounter.textContent.replace(',', ''), 10) || 10;
+		let currentTps = parseInt(tpsCounter.textContent.replace(',', ''), 10) || 20;
 
 		setInterval(() => {
-			const newTps = Math.floor(Math.random() * (40 - 7 + 1)) + 7;
+			const newTps = Math.floor(Math.random() * (28 - 18 + 1)) + 18;
 			animateValue(tpsCounter, currentTps, newTps, 1000);
 			currentTps = newTps;
 		}, 3000);
 	}
 
-	if (nodesCounter) {
-		let currentNodes = parseInt(nodesCounter.textContent.replace(',', ''), 10) || 100;
+	// --- Network Activity ---
+	if (activityCounter) {
+		let currentActivity = parseInt(activityCounter.textContent.replace(',', ''), 10) || 398;
 
 		setInterval(() => {
-			const newNodes = Math.floor(Math.random() * (450 - 80 + 1)) + 80;
-			animateValue(nodesCounter, currentNodes, newNodes, 1500);
-			currentNodes = newNodes;
-		}, 6000);
+			const newActivity = Math.floor(Math.random() * (400 - 397 + 1)) + 397;
+			animateValue(activityCounter, currentActivity, newActivity, 1500);
+			currentActivity = newActivity;
+		}, 10000);
 	}
 });
-
-
-
 
 
 // Network Map Node Tooltips
