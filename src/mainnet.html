@@ -247,110 +247,112 @@
 						<p class="section-description">Explore real-time transactions and network activity</p>
 					</div>
 					<div class="network-explorer__content glass-effect">
-						<div class="explorer-search">
-							<div class="explorer-search__input-group">
-								<svg class="explorer-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<circle cx="11" cy="11" r="8"></circle>
-									<path d="M21 21l-4.35-4.35"></path>
-								</svg>
-								<input type="text" class="explorer-search__input" placeholder="Search by transaction hash, address, or bundle...">
-								<button class="explorer-search__button">Search</button>
-							</div>
-						</div>
 						<div class="explorer-tabs">
-							<button class="explorer-tabs__tab explorer-tabs__tab--active" data-explorer="transactions">Recent Transactions</button>
-							<button class="explorer-tabs__tab" data-explorer="addresses">Top Addresses</button>
-							<button class="explorer-tabs__tab" data-explorer="milestones">Milestones</button>
+							<button class="explorer-tabs__tab explorer-tabs__tab--active" data-explorer="explorers">Explorers</button>
+							<button class="explorer-tabs__tab" data-explorer="node-tools">Node Tools</button>
+							<button class="explorer-tabs__tab" data-explorer="dev-utilities">Developer Utilities</button>
 						</div>
 						<div class="explorer-content">
-							<div class="explorer-panel explorer-panel--active" id="transactions">
-								<div class="transaction-list">
-									<div class="transaction-item">
-										<div class="transaction-item__hash">
-											<span class="transaction-item__label">Hash:</span>
-											<span class="transaction-item__value">ABCD...XYZ9</span>
+							<div class="explorer-panel explorer-panel--active" id="explorers">
+								<div class="explorer-list">
+									<a href="https://explorer.iota.org" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA Explorer
 										</div>
-										<div class="transaction-item__amount">
-											<span class="transaction-item__label">Amount:</span>
-											<span class="transaction-item__value">1.5 Mi</span>
+										<div class="explorer-item__text">
+											Mainnet dashboard, explorers, addresses, milestones.
 										</div>
-										<div class="transaction-item__time">
-											<span class="transaction-item__label">Time:</span>
-											<span class="transaction-item__value">2 minutes ago</span>
+										<span class="explorer-item__tag explorer-item__tag--orange">DevTools</span>
+									</a>
+									<a href="https://explorer.evm.iota.org" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA EVM Explorer
 										</div>
-										<div class="transaction-item__status transaction-item__status--confirmed">Confirmed</div>
-									</div>
-									<div class="transaction-item">
-										<div class="transaction-item__hash">
-											<span class="transaction-item__label">Hash:</span>
-											<span class="transaction-item__value">EFGH...UVW9</span>
+										<div class="explorer-item__text">
+											Blockscout for the IOTA EVM chain (contracts, txs, stats).
 										</div>
-										<div class="transaction-item__amount">
-											<span class="transaction-item__label">Amount:</span>
-											<span class="transaction-item__value">0.25 Mi</span>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Staging</span>
+									</a>
+									<a href="https://explorer.shimmer.network" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											Shimmer Explorer
 										</div>
-										<div class="transaction-item__time">
-											<span class="transaction-item__label">Time:</span>
-											<span class="transaction-item__value">5 minutes ago</span>
+										<div class="explorer-item__text">
+											Explorer for Shimmer (staging network).
 										</div>
-										<div class="transaction-item__status transaction-item__status--confirmed">Confirmed</div>
-									</div>
-									<div class="transaction-item">
-										<div class="transaction-item__hash">
-											<span class="transaction-item__label">Hash:</span>
-											<span class="transaction-item__value">IJKL...RST9</span>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Mainnet</span>
+									</a>
+									<a href="https://iotascan.com" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											Iotascan
 										</div>
-										<div class="transaction-item__amount">
-											<span class="transaction-item__label">Amount:</span>
-											<span class="transaction-item__value">10.0 Mi</span>
+										<div class="explorer-item__text">
+											Community explorer with address & event views.
 										</div>
-										<div class="transaction-item__time">
-											<span class="transaction-item__label">Time:</span>
-											<span class="transaction-item__value">8 minutes ago</span>
+										<span class="explorer-item__tag explorer-item__tag--green">Mainnet</span>
+									</a>
+									<a href="https://archive.explorer.iota.org" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA Explorer
 										</div>
-										<div class="transaction-item__status transaction-item__status--pending">Pending</div>
-									</div>
+										<div class="explorer-item__text">
+											Legacy/stardust history viewer.
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--green">Mainnet</span>
+									</a>
 								</div>
 							</div>
-							<div class="explorer-panel" id="addresses">
-								<div class="address-list">
-									<div class="address-item">
-										<div class="address-item__address">IOTA1QP...XYZ9</div>
-										<div class="address-item__balance">Balance: 1,250.5 Mi</div>
-										<div class="address-item__transactions">Transactions: 1,847</div>
-									</div>
-									<div class="address-item">
-										<div class="address-item__address">IOTA1QR...ABC9</div>
-										<div class="address-item__balance">Balance: 892.3 Mi</div>
-										<div class="address-item__transactions">Transactions: 1,203</div>
-									</div>
-									<div class="address-item">
-										<div class="address-item__address">IOTA1QS...DEF9</div>
-										<div class="address-item__balance">Balance: 654.7 Mi</div>
-										<div class="address-item__transactions">Transactions: 956</div>
-									</div>
+							<div class="explorer-panel" id="node-tools">
+								<div class="explorer-list">
+									<a href="https://status.iota.org" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											Status Page
+										</div>
+										<div class="explorer-item__text">
+											Official uptime/incidents for IOTA services (incl. EVM).
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--green">DevTools</span>
+									</a>
+									<a href="https://github.com/iotaledger/inx-chronicle" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											Chronicle
+										</div>
+										<div class="explorer-item__text">
+											Store/query IOTA history via INX (GitHub).
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Staging</span>
+									</a>
 								</div>
 							</div>
-							<div class="explorer-panel" id="milestones">
-								<div class="milestone-list">
-									<div class="milestone-item">
-										<div class="milestone-item__index">#1,247,892</div>
-										<div class="milestone-item__hash">MILE...STONE9</div>
-										<div class="milestone-item__time">12 seconds ago</div>
-										<div class="milestone-item__transactions">2,847 transactions</div>
-									</div>
-									<div class="milestone-item">
-										<div class="milestone-item__index">#1,247,891</div>
-										<div class="milestone-item__hash">MILE...STON8</div>
-										<div class="milestone-item__time">22 seconds ago</div>
-										<div class="milestone-item__transactions">3,156 transactions</div>
-									</div>
-									<div class="milestone-item">
-										<div class="milestone-item__index">#1,247,890</div>
-										<div class="milestone-item__hash">MILE...STON7</div>
-										<div class="milestone-item__time">35 seconds ago</div>
-										<div class="milestone-item__transactions">2,934 transactions</div>
-									</div>
+							<div class="explorer-panel" id="dev-utilities">
+								<div class="explorer-list">
+									<a href="https://github.com/iotaledger/iota-sdk" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA SDK
+										</div>
+										<div class="explorer-item__text">
+											Official SDK supporting Rust, Python, and JavaScript bindings.
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--orange">DevTools</span>
+									</a>
+									<a href="https://www.iota.org/products/evm" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA EVM
+										</div>
+										<div class="explorer-item__text">
+											Product page for Solidity on IOTA.
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--green">Staging</span>
+									</a>
+									<a href="https://github.com/iotaledger/wasp" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											IOTA Wasp
+										</div>
+										<div class="explorer-item__text">
+											Framework for running IOTA Smart Contracts (ISC) on Layer-2
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--green">Staging</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -375,23 +377,23 @@
 									<div class="network-stat-item__label">North America</div>
 								</div>
 								<div class="network-stat-item glass-effect">
-									<div class="network-stat-item__number">1,203</div>
+									<div class="network-stat-item__number">310</div>
 									<div class="network-stat-item__label">Europe</div>
 								</div>
 								<div class="network-stat-item glass-effect">
-									<div class="network-stat-item__number">654</div>
+									<div class="network-stat-item__number">65</div>
 									<div class="network-stat-item__label">Asia</div>
 								</div>
 								<div class="network-stat-item glass-effect">
-									<div class="network-stat-item__number">89</div>
+									<div class="network-stat-item__number">18</div>
 									<div class="network-stat-item__label">Oceania</div>
 								</div>
 								<div class="network-stat-item glass-effect">
-									<div class="network-stat-item__number">34</div>
+									<div class="network-stat-item__number">12</div>
 									<div class="network-stat-item__label">South America</div>
 								</div>
 								<div class="network-stat-item glass-effect">
-									<div class="network-stat-item__number">20</div>
+									<div class="network-stat-item__number">5</div>
 									<div class="network-stat-item__label">Africa</div>
 								</div>
 							</div>
@@ -405,11 +407,11 @@
 					<div class="get-started__content glass-effect">
 						<div class="get-started__text">
 							<h2 class="get-started__title">Ready to Join the Mainnet?</h2>
-							<p class="get-started__description">Start using IOTA Wallet today and experience the power of feeless, scalable, and quantum-resistant transactions.</p>
+							<p class="get-started__description">Power your transactions with a network built for speed, efficiency, and quantum-resistant security.</p>
 						</div>
 						<div class="get-started__actions">
-							<button class="btn btn--primary">Download Wallet</button>
-							<button class="btn btn--secondary">View Documentation</button>
+							<a href="download.html" class="btn btn--primary">Download Wallet</a>
+							<a href="docs.html" class="btn btn--secondary">View Documentation</a>
 						</div>
 					</div>
 				</div>

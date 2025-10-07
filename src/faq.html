@@ -53,6 +53,17 @@
 						<button class="faq-categories__tab" data-category="technical">Technical</button>
 						<button class="faq-categories__tab" data-category="troubleshooting">Troubleshooting</button>
 					</div>
+
+					<div class="faq-search" id="faq-search">
+						<div class="faq-search__input-group">
+							<svg class="faq-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="11" cy="11" r="8"></circle>
+								<path d="M21 21l-4.35-4.35"></path>
+							</svg>
+							<input type="text" class="faq-search__input" placeholder="Search FAQ...">
+							<button class="faq-search__button">Search</button>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -82,40 +93,84 @@
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA Wallet is a secure, user-friendly digital wallet designed specifically for managing IOTA tokens. It provides a seamless interface for sending, receiving, and storing IOTA while leveraging the unique features of the Tangle network, including feeless transactions and quantum-resistant security.</p>
+									<p>IOTA Wallet is a desktop application that lets you manage IOTA tokens, send and receive transactions, and interact with the IOTA network.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How is IOTA different from other cryptocurrencies?</h3>
+									<h3>Which platforms are supported?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA uses a unique architecture called the Tangle instead of a traditional blockchain. This enables feeless transactions, infinite scalability, and quantum-resistant security. Unlike other cryptocurrencies that require miners, IOTA transactions are validated by the network participants themselves.</p>
+									<p>The wallet runs on Windows, macOS, and Linux. It’s designed specifically for desktop environments — no mobile or web versions are available now.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>Is IOTA Wallet free to use?</h3>
+									<h3>Do I need to create an account to use the wallet?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>Yes, IOTA Wallet is completely free to download and use. There are no transaction fees, no subscription costs, and no hidden charges. The wallet is open-source and maintained by the IOTA Foundation and community contributors.</p>
+									<p>No. IOTA Wallet is non-custodial. You control your own private keys and seed phrase; no registration or user account is required.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>Which platforms support IOTA Wallet?</h3>
+									<h3>How do I get started?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA Wallet is available on multiple platforms including Windows, macOS, Linux, iOS, Android, and as a web application. This ensures you can access your IOTA tokens from any device, anywhere in the world.</p>
+									<p>Download the latest release from the official source, install it, and create or import a wallet. The setup process includes seed generation and backup instructions.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Is there a fee to send IOTA?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>No — IOTA transactions are feeless. The only limitation is network throughput, not cost.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Does the wallet connect directly to the IOTA network?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes. It connects through trusted nodes or your own node configuration, ensuring direct interaction with the Tangle.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Can I manage multiple wallets or accounts?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes. The application supports multiple addresses and wallet files, allowing you to separate funds or test networks.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How do I update the wallet?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>New versions are released periodically. Simply download the updated package from the official site and replace the existing installation — your wallet data remains intact.</p>
 								</div>
 							</div>
 						</div>
@@ -125,46 +180,68 @@
 						<div class="faq-list">
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How secure is IOTA Wallet?</h3>
+									<h3>How are my funds protected?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA Wallet implements state-of-the-art security measures including quantum-resistant cryptography, secure key generation, and local storage of private keys. Your funds are protected by advanced encryption, and the wallet undergoes regular security audits.</p>
+									<p>Your IOTA tokens are secured by your private keys, which never leave your device. The wallet uses local encryption to keep all sensitive data protected.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>What is a seed phrase and why is it important?</h3>
+									<h3>What happens if I lose my computer?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>A seed phrase is a series of 24 words that serves as a backup for your wallet. It's crucial because it allows you to recover your wallet and funds if you lose access to your device. Store your seed phrase securely offline and never share it with anyone.</p>
+									<p>As long as you have your recovery phrase, you can restore your wallet on any device. Without it, your funds cannot be recovered.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>Can IOTA be hacked by quantum computers?</h3>
+									<h3>Is my wallet connected to any central server?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA is designed to be quantum-resistant. The protocol uses quantum-resistant cryptographic signatures that remain secure even against quantum computer attacks, making it future-proof against emerging quantum computing threats.</p>
+									<p>No. The wallet communicates directly with the IOTA network through nodes, with no third-party intermediaries.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How do I keep my wallet secure?</h3>
+									<h3>Does IOTA Wallet track personal data?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>Keep your wallet secure by: backing up your seed phrase offline, using strong passwords, enabling two-factor authentication, keeping your wallet software updated, never sharing your private keys, and being cautious of phishing attempts.</p>
+									<p>No personal data is collected or transmitted. All activity stays local and private on your device</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Can I use hardware wallets?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p> Yes. Integration with supported hardware devices provides an additional layer of security for storing large amounts of IOTA.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What’s the best way to keep my wallet secure?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Keep your recovery phrase offline, install updates only from official sources, and never share your keys with anyone.</p>
 								</div>
 							</div>
 						</div>
@@ -174,46 +251,79 @@
 						<div class="faq-list">
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>Are IOTA transactions really free?</h3>
+									<h3>How do I send IOTA tokens?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>Yes, IOTA transactions are completely feeless. There are no network fees, mining fees, or gas costs. This is possible because of the Tangle architecture where each transaction validates two previous transactions, eliminating the need for miners.</p>
+									<p>Enter the recipient’s address, choose the amount, and confirm the transaction. The wallet broadcasts it directly to the IOTA network.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How long do transactions take to confirm?</h3>
+									<h3>How long do transactions take?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA transactions typically confirm within 10-30 seconds under normal network conditions. The confirmation time depends on network activity and the number of subsequent transactions that reference your transaction.</p>
+									<p>Transactions usually confirm within seconds, depending on network activity and node synchronization speed.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>Can I cancel a transaction after sending it?</h3>
+									<h3>Are there transaction fees?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>Once a transaction is confirmed on the Tangle, it cannot be cancelled or reversed. However, if a transaction is pending for an extended period, it may be possible to reattach or promote it to help with confirmation.</p>
+									<p>No — IOTA is fully feeless. Transfers require no gas, miners, or commissions.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>What happens if I send IOTA to the wrong address?</h3>
+									<h3>Can I cancel or reverse a transaction?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>If you send IOTA to an incorrect address, the transaction cannot be reversed. Always double-check the recipient address before confirming a transaction. Consider sending a small test amount first for large transactions.</p>
+									<p>No — once a transaction is confirmed on the Tangle, it’s permanently recorded and cannot be modified or reversed.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How do I check transaction status?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>You can view it in the wallet’s history or open it in an IOTA Explorer to track confirmation progress.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What happens if I send to the wrong address?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Transactions on the Tangle are irreversible. Always double-check the destination address before confirming.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Do I need to stay online during transactions?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes — the wallet must remain connected until the transaction is submitted and confirmed by the network.</p>
 								</div>
 							</div>
 						</div>
@@ -223,46 +333,79 @@
 						<div class="faq-list">
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>What is the Tangle?</h3>
+									<h3>What architecture does IOTA use?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>The Tangle is IOTA's distributed ledger technology based on a Directed Acyclic Graph (DAG). Unlike blockchain, it doesn't use blocks or miners. Each transaction directly validates two previous transactions, creating a web-like structure that enables scalability and feeless transactions.</p>
+									<p>IOTA runs on the Tangle, a Directed Acyclic Graph (DAG) structure that replaces traditional blockchain blocks. Each transaction confirms two previous ones, enabling parallel scalability.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How does IOTA achieve consensus without miners?</h3>
+									<h3>What node does the wallet connect to?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA uses a consensus mechanism where each new transaction must validate two previous transactions. This creates a self-validating network where consensus emerges naturally through the cumulative weight of transactions, eliminating the need for energy-intensive mining.</p>
+									<p>By default, it uses official community nodes, but you can manually add your own or switch between trusted endpoints.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>What are IOTA's smart contracts capabilities?</h3>
+									<h3>Does IOTA Wallet support test networks?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA supports smart contracts through its Assembly network, enabling complex programmable applications while maintaining feeless transactions. Smart contracts can interact with IoT devices and handle micropayments efficiently.</p>
+									<p>Yes. You can connect to Shimmer or custom devnets by changing the node settings in the configuration panel.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>How does IOTA integrate with IoT devices?</h3>
+									<h3>How does synchronization work?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>IOTA is designed for IoT integration with lightweight protocols, feeless microtransactions, and data integrity features. IoT devices can send data and value directly to the Tangle, enabling machine-to-machine economies and automated payments.</p>
+									<p>The wallet syncs block data, balances, and recent transactions directly from connected nodes, without third-party caching.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>What is the UTXO model in IOTA?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Since the Stardust upgrade, IOTA uses a UTXO-based accounting model, improving speed, multi-asset support, and parallel processing.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Does the wallet support smart contracts?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes, through the IOTA EVM layer. It allows interaction with Solidity-based dApps and external blockchain bridges.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>Can I run a local node for the wallet?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Yes. Running your own node increases privacy, reduces latency, and ensures full control over data verification.</p>
 								</div>
 							</div>
 						</div>
@@ -272,46 +415,90 @@
 						<div class="faq-list">
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>My transaction is stuck pending. What should I do?</h3>
+									<h3>The wallet won’t start — what should I do?</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>If your transaction is pending for more than an hour, try promoting or reattaching it through the wallet interface. This helps the transaction get picked up by the network. If the issue persists, contact support or check the network status.</p>
+									<p>Ensure you downloaded the correct version for your OS and verified the checksum. If the issue persists, reinstall the latest release.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>I can't see my balance after restoring my wallet</h3>
+									<h3>My balance isn’t showing correctly.</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>After restoring your wallet, it may take some time to sync and discover all your addresses. Ensure you're connected to the internet and wait for the sync to complete. If the balance still doesn't appear, try refreshing or restarting the wallet.</p>
+									<p>Check your connection and re-sync the wallet. Sometimes the balance takes a few moments to update after network reconnection.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>The wallet won't connect to the network</h3>
+									<h3>A transaction shows as pending.</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>Check your internet connection and firewall settings. Try switching to a different node in the wallet settings or restart the application. If you're using a VPN, try disabling it temporarily to see if that resolves the connection issue.</p>
+									<p>This usually happens when the connected node is slow or out of sync. Try switching to another node or restarting the wallet.</p>
 								</div>
 							</div>
 							<div class="faq-item glass-effect">
 								<div class="faq-item__question">
-									<h3>I forgot my wallet password</h3>
+									<h3>I can’t connect to the network.</h3>
 									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 										<polyline points="6,9 12,15 18,9"></polyline>
 									</svg>
 								</div>
 								<div class="faq-item__answer">
-									<p>If you forgot your wallet password but have your seed phrase, you can restore your wallet using the seed phrase and set a new password. If you don't have your seed phrase, unfortunately, there's no way to recover access to your wallet.</p>
+									<p>Verify your internet connection and node endpoint. If you use a custom node, ensure it’s running and accessible.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>The wallet crashes during startup.</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Delete temporary cache files and relaunch. If the issue remains, re-download the app from the official source.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>The app says “node unreachable.”</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>That means your selected node is offline or blocked by a firewall. Choose a different public node or run your own.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>My transaction disappeared from history.</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>Re-sync your wallet or clear the local cache. All confirmed transactions remain permanently recorded on the Tangle.</p>
+								</div>
+							</div>
+							<div class="faq-item glass-effect">
+								<div class="faq-item__question">
+									<h3>How can I report a bug or issue?</h3>
+									<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<polyline points="6,9 12,15 18,9"></polyline>
+									</svg>
+								</div>
+								<div class="faq-item__answer">
+									<p>You can open a ticket or report it on the official GitHub repository with details about your OS and wallet version.</p>
 								</div>
 							</div>
 						</div>
@@ -319,7 +506,7 @@
 				</div>
 			</section>
 
-			<section class="faq-search" id="faq-search">
+			<!-- <section class="faq-search" id="faq-search">
 				<div class="container">
 					<div class="faq-search__content glass-effect">
 						<div class="faq-search__text">
@@ -338,7 +525,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="popular-topics section-padding">
 				<div class="container">
