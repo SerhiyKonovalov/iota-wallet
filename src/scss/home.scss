@@ -392,42 +392,6 @@ body {
 	background-image: url("@img/hero/download.png");
 }
 
-.mainnet-icon {
-	padding: 3rem;
-	text-align: center;
-	color: white;
-	background: rgba(255, 255, 255, 0.15);
-}
-
-.mainnet-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	margin-bottom: 1rem;
-}
-
-.mainnet-icon__text {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-.download-icon {
-	padding: 3rem;
-	text-align: center;
-	color: white;
-	background: rgba(255, 255, 255, 0.15);
-}
-
-.download-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	margin-bottom: 1rem;
-}
-
-.download-icon__text {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
 /* Network Status Section */
 .network-status {
 	background: white;
@@ -1697,42 +1661,6 @@ body {
 	flex: 0 0 auto;
 }
 
-.community-icon {
-	padding: 3rem;
-	text-align: center;
-	color: white;
-	background: rgba(255, 255, 255, 0.15);
-}
-
-.community-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	margin-bottom: 1rem;
-}
-
-.community-icon__text {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-.faq-icon {
-	padding: 3rem;
-	text-align: center;
-	color: white;
-	background: rgba(255, 255, 255, 0.15);
-}
-
-.faq-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	margin-bottom: 1rem;
-}
-
-.faq-icon__text {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
 /* Community Stats Section */
 .community-stats {
 	background: white;
@@ -2563,6 +2491,8 @@ body {
 	padding: 2rem;
 	text-align: center;
 	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
 }
 
 .topic-card:hover {
@@ -2588,6 +2518,7 @@ body {
 	color: #718096;
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
+	flex-grow: 1;
 }
 
 .topic-card__stats {
@@ -2804,23 +2735,6 @@ body {
 	100% {
 		opacity: 0;
 	}
-}
-
-/* Learning Icon */
-.learning-icon {
-	padding: 3rem;
-	text-align: center;
-	color: white;
-	background: rgba(255, 255, 255, 0.15);
-}
-
-.learning-icon__symbol {
-	margin-bottom: 1rem;
-}
-
-.learning-icon__text {
-	font-size: 1.5rem;
-	font-weight: 600;
 }
 
 /* Section Headers */
@@ -4290,32 +4204,6 @@ body {
 		url("@img/hero/privacy.webp") center/cover;
 }
 
-.privacy-icon {
-	padding: 3rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	backdrop-filter: blur(10px);
-	background: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	animation: float 6s ease-in-out infinite;
-}
-
-.privacy-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	color: #fff;
-	margin-bottom: 1rem;
-}
-
-.privacy-icon__text {
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #fff;
-}
-
 .last-updated {
 	scroll-margin-top: 50px;
 	padding: 4rem 0;
@@ -4603,32 +4491,6 @@ body {
 	background:
 		linear-gradient(135deg, rgba(1, 1, 255, 0.1) 0%, rgba(1, 1, 255, 0.05) 100%),
 		url("@img/hero/terms.webp") center/cover;
-}
-
-.terms-icon {
-	padding: 3rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	backdrop-filter: blur(10px);
-	background: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	animation: float 6s ease-in-out infinite;
-}
-
-.terms-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	color: #fff;
-	margin-bottom: 1rem;
-}
-
-.terms-icon__text {
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #fff;
 }
 
 .agreement-info {
@@ -4935,32 +4797,6 @@ body {
 	background:
 		linear-gradient(135deg, rgba(1, 1, 255, 0.1) 0%, rgba(1, 1, 255, 0.05) 100%),
 		url("@img/hero/impressum.webp") center/cover;
-}
-
-.impressum-icon {
-	padding: 3rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	backdrop-filter: blur(10px);
-	background: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	animation: float 6s ease-in-out infinite;
-}
-
-.impressum-icon__symbol {
-	width: 4rem;
-	height: 4rem;
-	color: #fff;
-	margin-bottom: 1rem;
-}
-
-.impressum-icon__text {
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #fff;
 }
 
 .company-info {
