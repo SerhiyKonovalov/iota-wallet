@@ -3,7 +3,7 @@
 		  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://domain.com</loc>
-		<lastmod>2025-06-01</lastmod>
+		<lastmod>2025-10-09</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 		<image:image>
@@ -19,7 +19,7 @@
 	</url>
 	<url>
 		<loc>https://domain.com/download</loc>
-		<lastmod>2025-06-01</lastmod>
+		<lastmod>2025-10-09</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>

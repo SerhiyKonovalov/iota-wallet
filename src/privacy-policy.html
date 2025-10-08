@@ -45,10 +45,6 @@
 							<h2 class="last-updated__title">Last Updated: March 1, 2024</h2>
 							<p class="last-updated__description">This Privacy Policy explains how IOTA Foundation ("we," "us," or "our") collects, uses, and protects your information when you use IOTA Wallet.</p>
 						</div>
-						<div class="last-updated__actions">
-							<button class="btn btn--secondary">View Changes</button>
-							<button class="btn btn--secondary">Subscribe to Updates</button>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -57,213 +53,472 @@
 				<div class="container">
 					<div class="privacy-sections__tabs">
 						<button class="privacy-sections__tab privacy-sections__tab--active" data-section="overview">Overview</button>
-						<button class="privacy-sections__tab" data-section="collection">Data Collection</button>
+						<button class="privacy-sections__tab" data-section="handling">Data Handling </button>
 						<button class="privacy-sections__tab" data-section="usage">Data Usage</button>
-						<button class="privacy-sections__tab" data-section="sharing">Data Sharing</button>
-						<button class="privacy-sections__tab" data-section="rights">Your Rights</button>
+						<button class="privacy-sections__tab" data-section="network-interaction">Network Interaction</button>
+						<button class="privacy-sections__tab" data-section="security">Security Measures</button>
+						<button class="privacy-sections__tab" data-section="rights">User Rights</button>
+						<button class="privacy-sections__tab" data-section="updates">Policy Updates</button>
 					</div>
 					<div class="privacy-sections__content">
 						<div class="privacy-sections__panel privacy-sections__panel--active" id="overview">
 							<div class="privacy-content glass-effect">
-								<h2 class="privacy-content__title">Privacy Overview</h2>
+								<h2 class="privacy-content__title">Overview & Principles</h2>
 								<div class="privacy-content__text">
-									<p>At IOTA Foundation, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of information when you use our IOTA Wallet application and related services.</p>
+									<p>
+										IOTA Wallet is designed with a simple goal — to let users manage digital assets and interact with the IOTA network without sacrificing privacy. From its foundation, the wallet was built to function locally, independently, and transparently. It operates without central accounts, login systems, or remote servers that process user data. Every critical operation, from generating your seed to signing a transaction, happens directly on your device, ensuring that ownership and control always remain in your hands.
+									</p>
+									<p>
+										This Privacy Policy defines the general principles that guide how the wallet handles information. It explains what data may appear during normal use, how it is processed, and — more importantly — what data is never collected or stored. The goal is to provide users with a clear understanding of how the wallet protects their privacy and what measures ensure that security is embedded in its core.
+									</p>
+									<p>
+										Unlike web-based wallets or custodial services, the IOTA Wallet never relies on centralized databases or external APIs to manage user identities or balances. It does not ask for personal information such as name, email, address, or any form of identification. It also avoids telemetry, fingerprinting, or analytic tracking. The wallet functions entirely offline except when connecting to the IOTA network — and even then, communication occurs only between your local client and the nodes you select.
+									</p>
 
-									<h3>Key Privacy Principles</h3>
+
+									<h3>Core Privacy Principles</h3>
+									<p>The wallet follows several guiding principles that define its approach to data handling and user protection:</p>
 									<ul class="privacy-list">
 										<li class="privacy-list__item">
-											<strong>Minimal Data Collection:</strong> We only collect information that is necessary for the operation and improvement of our services.
+											<strong>Minimal Data Footprint:</strong>
+											The software operates using only the information required for it to work properly. This may include limited technical data such as system type, application version, or configuration parameters stored locally. No behavioral analytics, personal identifiers, or network activity logs are transmitted to any external service.
 										</li>
 										<li class="privacy-list__item">
-											<strong>User Control:</strong> You have control over your personal information and can manage your privacy settings at any time.
+											<strong>User Control by Default:</strong>
+											Every user controls their own private keys, recovery phrases, and settings. No third party — including the developers — can access, reset, or recover this data. You choose where to connect, which node to trust, and how to manage your assets. The wallet’s architecture ensures that all critical security decisions are made locally, not remotely.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Transparency:</strong> We are transparent about what information we collect and how we use it.
+											<strong>Transparency and Verifiability:</strong>
+											The codebase and release files are verifiable, meaning users can inspect or reproduce the build to confirm there is no hidden data collection. Configuration files, error logs, and transaction history are all stored openly on the user’s machine, giving complete visibility into what the wallet does and how it interacts with the network.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Security:</strong> We implement robust security measures to protect your information from unauthorized access.
+											<strong>Security Through Local Encryption:</strong>
+											Sensitive information, including private keys and seeds, is encrypted using strong cryptographic standards and never leaves your device. The encryption keys are derived from your own password, ensuring that even if the local environment is compromised, external entities cannot decrypt your wallet data.
+										</li>
+										<li class="privacy-list__item">
+											<strong>No Hidden Processing, No Commercialization:</strong>
+											The wallet does not monetize data, show advertisements, or include third-party trackers. Aggregated statistics like download counts may exist for transparency, but they are entirely anonymous and unrelated to user behavior inside the application.
 										</li>
 									</ul>
 
 									<h3>Scope of This Policy</h3>
-									<p>This Privacy Policy applies to:</p>
-									<ul class="privacy-list">
-										<li class="privacy-list__item">IOTA Wallet desktop and mobile applications</li>
-										<li class="privacy-list__item">Our official website and web services</li>
-										<li class="privacy-list__item">Customer support interactions</li>
-										<li class="privacy-list__item">Community platforms we operate</li>
-									</ul>
+									<p>IOTA Wallet embraces the decentralized nature of the IOTA ecosystem. Transactions and addresses that appear on the Tangle are publicly visible, as this is part of how the distributed ledger operates. However, this transparency does not reveal personal identity — only cryptographic references to network activity. The wallet itself never links these addresses to you or stores any metadata that could identify ownership.</p>
+									<p>By combining local-first storage, strong encryption, and open architecture, the wallet aims to remove unnecessary intermediaries from the equation. Your computer becomes your vault, your transaction gateway, and your security boundary — not a data source for external servers.</p>
+
+									<h3>Commitment to Continuous Privacy</h3>
+									<p>Privacy is not a one-time promise but an ongoing process. As the IOTA ecosystem evolves, the wallet’s privacy model will continue to adapt — always prioritizing user control, local processing, and verifiable transparency. Any future updates that touch privacy-sensitive areas will be explicitly documented, and users will have full visibility into what changes and why.</p>
 								</div>
 							</div>
 						</div>
-						<div class="privacy-sections__panel" id="collection">
+						<div class="privacy-sections__panel" id="handling">
 							<div class="privacy-content glass-effect">
-								<h2 class="privacy-content__title">Information We Collect</h2>
+								<h2 class="privacy-content__title">Data Handling & Storage</h2>
 								<div class="privacy-content__text">
-									<h3>Information You Provide</h3>
-									<p>We collect information that you voluntarily provide to us, including:</p>
+									<p>
+										IOTA Wallet operates on the principle of local-first data management, meaning that all essential operations — including key generation, transaction signing, and configuration — take place entirely on the user’s device. No external servers, APIs, or third-party databases are involved in processing or storing user-related data. This approach ensures that users retain complete control over every piece of information the wallet touches.
+									</p>
+									<p>
+										When the wallet is installed, it creates a local data directory specific to the operating system (e.g., <i>~/AppData/</i> on Windows, <i>~/Library/Application Support/</i> on macOS, or <i>~/.config/</i> on Linux). All wallet-related files, including encryption metadata, preferences, and cache data, are written only to this directory. No background synchronization or remote backups occur unless explicitly configured by the user through an independent service of their choice.
+									</p>
+
+									<h3>Locally Stored Data</h3>
+									<p>The following types of information may exist locally on your device as part of normal operation:</p>
 									<ul class="privacy-list">
 										<li class="privacy-list__item">
-											<strong>Account Information:</strong> When you create an account or profile, we may collect your email address, username, and other contact details.
+											<strong>Wallet Files</strong> —
+											contain encrypted representations of your private keys or recovery seeds. Encryption is applied using AES-256 or an equivalent algorithm derived from your chosen password.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Support Communications:</strong> When you contact our support team, we collect the information you provide in your communications.
+											<strong>Configuration Files</strong> —
+											store your selected network (mainnet, testnet), node endpoints, preferred language, and interface preferences.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Feedback and Surveys:</strong> Information you provide when participating in surveys or providing feedback about our services.
+											<strong>Cache Data</strong> —
+											temporary blockchain data or transaction states required for display and synchronization purposes. This cache can be cleared safely at any time without affecting your assets.
+										</li>
+										<li class="privacy-list__item">
+											<strong>Error Logs (Optional)</strong> —
+											generated only if the app encounters an internal issue. Logs contain no personal identifiers and remain entirely local unless you manually share them with developers.
 										</li>
 									</ul>
 
-									<h3>Information We Collect Automatically</h3>
-									<p>When you use IOTA Wallet, we may automatically collect certain information:</p>
-									<ul class="privacy-list">
-										<li class="privacy-list__item">
-											<strong>Usage Data:</strong> Information about how you use the wallet, including features accessed and time spent.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Device Information:</strong> Information about your device, including operating system, version, and unique device identifiers.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Network Information:</strong> IP address, network connection type, and general location information.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Error Reports:</strong> Crash reports and error logs to help us improve the application.
-										</li>
-									</ul>
+									<p>Each of these file categories exists exclusively within the user’s local environment. They can be inspected, copied, or deleted at any time, and their removal does not communicate any signal or metadata to external systems.</p>
 
-									<h3>Blockchain Data</h3>
-									<p>IOTA Wallet interacts with the IOTA Tangle, a public distributed ledger. Please note:</p>
+									<h3>What Is Never Stored or Transmitted</h3>
+									<p>To protect user privacy, the wallet explicitly avoids retaining or transmitting certain data types:</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">Transaction data on the Tangle is public and immutable</li>
-										<li class="privacy-list__item">We do not control or have the ability to delete blockchain data</li>
-										<li class="privacy-list__item">Your wallet addresses and transaction history are visible on the public ledger</li>
+										<li class="privacy-list__item">No cloud backups or automatic synchronization with remote storage.</li>
+										<li class="privacy-list__item">No collection of IP addresses, location data, or network identifiers.</li>
+										<li class="privacy-list__item">No aggregation of usage analytics, behavior logs, or activity timestamps.</li>
+										<li class="privacy-list__item">No association between wallet addresses and personal identity.</li>
+										<li class="privacy-list__item">No recording of balances or transaction metadata on developer servers.</li>
 									</ul>
+									<p>The wallet’s node connection feature is purely client-side — it uses your provided endpoints to interact with IOTA network and does not route traffic through centralized relays. All node communications follow the open IOTA protocol directly over HTTPS or local connections, preserving transparency and verifiability.</p>
+
+									<h3>Temporary Data and Caching</h3>
+									<p>Certain functions may require temporary data to improve performance, such as transaction lists or confirmed block references. This information is held in local cache files and automatically purged when no longer needed. Cached data serves usability only; it does not represent persistent storage and never includes private keys or sensitive information.</p>
+									<p>Users can manually delete cache data at any time through system-level tools or by resetting the wallet configuration. Doing so will not affect your ability to recover funds or continue using your wallet.</p>
+
+									<h3>Encryption and Key Management</h3>
+									<p>The wallet applies <strong>end-to-end local encryption</strong> for every private key and seed phrase. Your password never leaves the device and is not transmitted during encryption or decryption processes.</p>
+									<p>Encryption relies on a derived key using a salted hash algorithm (PBKDF2, Argon2, or equivalent), making brute-force recovery computationally impractical. Even if an attacker gains access to the local wallet files, they would be unable to decrypt them without your password.</p>
+									<p>No copy of your recovery phrase is uploaded or cached remotely — only you have it. Losing the phrase means permanent loss of access to your assets, as there are no central recovery mechanisms or fallback systems by design.</p>
+
+									<h3>Data Persistence and Removal</h3>
+									<p>All data handled by the wallet is tied to the local installation. If you uninstall the wallet or manually delete its data folder, all locally stored information — including encrypted keys, preferences, and logs — will be permanently erased. The blockchain records of your transactions remain publicly visible on the IOTA Tangle but cannot be linked back to you by the wallet or its maintainers.</p>
+									<p>To reset or move your wallet safely:</p>
+									<ol class="privacy-list">
+										<li class="privacy-list__item">Export your recovery phrase to a secure offline location.</li>
+										<li class="privacy-list__item">Delete the application data folder or uninstall the app.</li>
+										<li class="privacy-list__item">Reinstall and re-import your recovery phrase on the new system.</li>
+									</ol>
+									<p>No residual traces of your wallet remain after deletion, other than the immutable transaction data already written to the public ledger.</p>
+
+									<h3>Third-Party Dependencies</h3>
+									<p>All third-party libraries integrated into the wallet are open-source and locally embedded. None of them include telemetry or network analytics. External network requests occur only when communicating with IOTA nodes that you explicitly connect to. Updates and package signatures are verified before installation to prevent tampering or unauthorized code execution.</p>
+
+									<h3>Philosophy of Storage</h3>
+									<p>The handling of data in the IOTA Wallet mirrors the philosophy of decentralized infrastructure:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Everything critical stays <strong>local</strong>.</li>
+										<li class="privacy-list__item">Everything sensitive is <strong>encrypted</strong>.</li>
+										<li class="privacy-list__item">Nothing private is ever <strong>transmitted</strong>.</li>
+									</ul>
+									<p>This principle makes the wallet functionally independent — your data belongs entirely to you, not to any company, foundation, or service provider.</p>
 								</div>
 							</div>
 						</div>
 						<div class="privacy-sections__panel" id="usage">
 							<div class="privacy-content glass-effect">
-								<h2 class="privacy-content__title">How We Use Your Information</h2>
+								<h2 class="privacy-content__title">Data Usage & Purpose</h2>
 								<div class="privacy-content__text">
-									<h3>Primary Uses</h3>
-									<p>We use the information we collect for the following purposes:</p>
+									<p>IOTA Wallet processes data solely to provide core functionality and maintain a secure, reliable user experience. All operations are executed locally, with no background data sharing or commercial analytics. The goal is not to observe the user but to ensure the wallet performs correctly — and only for the duration and purpose required.</p>
+									<p>Every piece of information that the wallet interacts with has a clear and necessary function. There are no hidden data flows, no marketing integrations, and no profiling logic built into the software. The wallet’s use of data can be divided into three essential categories: <strong>functional operations</strong>, <strong>stability and maintenance</strong>, and <strong>user-driven diagnostics</strong>.</p>
+									<h3>Functional Operations</h3>
+									<p>These are the processes required for the wallet to run as intended and connect to the IOTA network:</p>
 									<ul class="privacy-list">
 										<li class="privacy-list__item">
-											<strong>Service Provision:</strong> To provide, maintain, and improve IOTA Wallet functionality and features.
+											<strong>Node communication:</strong>
+											The wallet must exchange messages with IOTA nodes to broadcast transactions, retrieve balances, and verify ledger states. These requests are protocol-level and contain only the information necessary for blockchain synchronization.
 										</li>
 										<li class="privacy-list__item">
-											<strong>User Support:</strong> To respond to your inquiries, provide customer support, and resolve technical issues.
+											<strong>Local session data:</strong>
+											Temporary files or memory variables used to keep your interface responsive, cache balances, and record pending transactions until confirmed. Once processed, this data is cleared automatically.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Security:</strong> To detect, prevent, and address fraud, security breaches, and other harmful activities.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Communication:</strong> To send you important updates, security alerts, and service announcements.
+											<strong>Configuration references:</strong>
+											The app reads your chosen settings — such as language, theme, or node URL — strictly to render your interface and connect to your preferred network.
 										</li>
 									</ul>
+									<p>These processes never involve user identity, third-party servers, or remote APIs beyond the node endpoints you configure yourself.</p>
 
-									<h3>Analytics and Improvement</h3>
-									<p>We may use aggregated and anonymized data to:</p>
+									<h3>Stability and Maintenance</h3>
+									<p>IOTA Wallet may generate small fragments of technical metadata to maintain stability or improve performance, but even these are stored locally unless you choose to share them manually. Examples include:</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">Analyze usage patterns and trends</li>
-										<li class="privacy-list__item">Improve user experience and interface design</li>
-										<li class="privacy-list__item">Develop new features and services</li>
-										<li class="privacy-list__item">Monitor and improve application performance</li>
+										<li class="privacy-list__item">
+											<strong>Crash logs:</strong> Created only when a runtime error occurs. Contain stack traces or code references but no wallet addresses, keys, or personal data.
+										</li>
+										<li class="privacy-list__item">
+											<strong>Performance metrics:</strong> Local counters that measure sync speed, network latency, or cache refresh time — used internally to optimize rendering or connection behavior.
+										</li>
+										<li class="privacy-list__item">
+											<strong>Version information:</strong> The wallet may check your app version against a published update list to notify you of a new release. No identifying data is exchanged during this process.
+										</li>
 									</ul>
+									<p>These functions ensure that the wallet remains efficient and up to date, without transmitting private information to any external party.</p>
 
-									<h3>Legal Compliance</h3>
-									<p>We may process your information when required by law or to:</p>
+									<h3>User-Driven Diagnostics</h3>
+									<p>Occasionally, users may choose to report issues or errors to improve the wallet. This process is entirely voluntary and transparent. If you decide to submit diagnostic information:</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">Comply with legal obligations and regulatory requirements</li>
-										<li class="privacy-list__item">Respond to lawful requests from authorities</li>
-										<li class="privacy-list__item">Protect our rights, property, and safety</li>
-										<li class="privacy-list__item">Enforce our terms of service</li>
+										<li class="privacy-list__item">The wallet packages <strong>only technical content</strong>, such as log snippets or configuration context.</li>
+										<li class="privacy-list__item">Before sending, you can review, edit, or remove any information within the report.</li>
+										<li class="privacy-list__item">No system data, private keys, or transaction information is ever included automatically.</li>
 									</ul>
+									<p>Diagnostics are used exclusively for troubleshooting, reviewed manually by maintainers, and deleted once analysis is complete. There is no automated aggregation or long-term storage of user reports.</p>
+
+									<h3>Analytical and Improvement Use</h3>
+									<p>Aggregated and anonymized data may occasionally be used to understand broad trends — for instance, the number of times a specific version was downloaded or how many nodes were selected globally. This data cannot be traced back to individuals and serves only to inform development priorities, such as which operating systems need performance optimization or which features are most frequently enabled.</p>
+									<p>There is no behavioral tracking or user profiling. The wallet’s architecture fundamentally prevents identifying usage patterns beyond anonymous counts or protocol-level interactions.</p>
+
+									<h3>No Commercial or Marketing Use</h3>
+									<p>The wallet does not participate in data monetization, affiliate networks, advertising partnerships, or third-party API integrations that exchange user information. Your data — even anonymous technical metadata — is never sold, rented, or shared with any marketing service.</p>
+
+									<h3>Legal and Compliance Purposes</h3>
+									<p>In rare cases, the project may be required to preserve minimal technical data for compliance or security verification (for instance, log evidence of a software exploit). Such retention, if necessary, follows open-source security disclosure practices and contains no personal identifiers or user-linked information.</p>
+
+									<h3>Retention Principles</h3>
+									<p>Any local data persists only for as long as necessary:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Functional caches are purged automatically or upon app restart.</li>
+										<li class="privacy-list__item">Logs remain until you clear them manually or reinstall the wallet.</li>
+										<li class="privacy-list__item">No hidden background storage exists — what you see locally is what exists.</li>
+									</ul>
+									<p>This approach guarantees transparency: users can always audit, modify, or remove local information. There are no invisible data stores or external retention systems.</p>
 								</div>
 							</div>
 						</div>
-						<div class="privacy-sections__panel" id="sharing">
+						<div class="privacy-sections__panel" id="network-interaction">
 							<div class="privacy-content glass-effect">
-								<h2 class="privacy-content__title">Information Sharing and Disclosure</h2>
+								<h2 class="privacy-content__title">Network Interaction & Public Ledger Data</h2>
 								<div class="privacy-content__text">
-									<h3>We Do Not Sell Your Data</h3>
-									<p>We do not sell, rent, or trade your personal information to third parties for commercial purposes.</p>
+									<p>
+										IOTA Wallet interacts directly with IOTA Tangle, the distributed ledger that records and verifies all network transactions. Unlike traditional blockchains that rely on miners or validators, the Tangle is based on a Directed Acyclic Graph (DAG) architecture. Each transaction confirms two previous ones, allowing the network to scale organically without fees or block intervals.
+									</p>
+									<p>
+										When the wallet connects to the network, it communicates with IOTA nodes — servers that maintain and broadcast ledger data. The wallet does not connect to centralized APIs or proxy relays operated by the developers; instead, it uses standard node endpoints that the user selects manually or from a trusted public list.
+									</p>
+									<p>
+										This design ensures a transparent, peer-to-peer relationship between the wallet and the network. No intermediary can intercept, analyze, or alter your transactions beyond what the open protocol inherently requires.
+									</p>
 
-									<h3>Limited Sharing Scenarios</h3>
-									<p>We may share your information only in the following limited circumstances:</p>
+									<h3>What Happens During Network Interaction</h3>
+									<p>Whenever you perform an operation — such as checking your balance, sending tokens, or viewing transaction history — the wallet executes several low-level steps:</p>
+									<ol class="privacy-list">
+										<li class="privacy-list__item">It connects to your chosen node via HTTPS or local network connection.</li>
+										<li class="privacy-list__item">It requests ledger data (like address balance or transaction confirmation state).</li>
+										<li class="privacy-list__item">It locally signs any outgoing transaction using your encrypted private key.</li>
+										<li class="privacy-list__item">It submits the signed transaction to the node, which relays it to the rest of the Tangle.</li>
+									</ol>
+									<p>At no point are your keys or personal data transmitted. The node receives only protocol-compliant payloads containing the signed message, cryptographic proof, and transaction metadata needed for validation.</p>
+
+									<h3>Public Nature of the Tangle</h3>
+									<p>IOTA network is public and immutable. This means that once your transaction is confirmed, it becomes part of a global ledger that anyone can read. The following data types are visible publicly:</p>
 									<ul class="privacy-list">
 										<li class="privacy-list__item">
-											<strong>Service Providers:</strong> With trusted third-party service providers who assist us in operating our services, subject to strict confidentiality agreements.
+											<strong>Transaction Hash:</strong>
+											The unique identifier of each transaction.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Legal Requirements:</strong> When required by law, regulation, or legal process, or to protect the rights and safety of our users and the public.
+											<strong>Addresses:</strong>
+											The cryptographic addresses used to send or receive tokens.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, with appropriate notice to users.
+											<strong>Timestamps and Confirmations:</strong>
+											The approximate time the transaction was approved and the number of validations it has received.
 										</li>
 										<li class="privacy-list__item">
-											<strong>Consent:</strong> With your explicit consent for specific purposes not covered by this policy.
+											<strong>Amounts and Assets:</strong>
+											The value and type of digital asset transferred.
 										</li>
-									</ul>
-
-									<h3>Third-Party Services</h3>
-									<p>IOTA Wallet may integrate with third-party services such as:</p>
-									<ul class="privacy-list">
-										<li class="privacy-list__item">Hardware wallet providers</li>
-										<li class="privacy-list__item">Analytics services (with anonymized data)</li>
-										<li class="privacy-list__item">Cloud storage providers for backup services</li>
-										<li class="privacy-list__item">Customer support platforms</li>
+										<li class="privacy-list__item">
+											<strong>Embedded Metadata:</strong>
+											If you attach data payloads (for IoT, identity proofs, or supply chain logs), those become permanently visible on the Tangle.
+										</li>
 									</ul>
 									<p>These integrations are governed by the respective third parties' privacy policies.</p>
+									<p>However, while transactions are public, <strong>ownership is not</strong>. Addresses are pseudonymous and reveal no identity unless voluntarily disclosed elsewhere. The wallet itself does not label or track your addresses, nor does it attempt to analyze network behavior or correlate usage.</p>
 
-									<h3>International Transfers</h3>
-									<p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your information during such transfers.</p>
+									<h3>Privacy in a Public Ledger Context</h3>
+									<p>To maintain privacy in a transparent ledger, the wallet follows several practices:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">
+											It generates new addresses automatically when needed, avoiding reuse and limiting traceability.
+										</li>
+										<li class="privacy-list__item">
+											It never embeds personal identifiers or metadata into transactions.
+										</li>
+										<li class="privacy-list__item">
+											It allows users to connect to their own nodes, bypassing any reliance on shared public infrastructure.
+										</li>
+										<li class="privacy-list__item">
+											It stores no off-chain mapping between your wallet data and public ledger entries.
+										</li>
+									</ul>
+									<p>Users who prioritize maximum anonymity can operate through self-hosted nodes or local network configurations, ensuring no external service even sees their connection requests.</p>
+
+
+									<h3>On-Ledger Data and Immutability</h3>
+									<p>All transactions stored on the Tangle are permanent and cannot be altered or deleted. This immutability is critical to maintaining network integrity. The wallet has no power to remove or obscure these records — they belong to the global ledger, not to any single entity.</p>
+									<p>If you send tokens, the proof of that transaction will exist indefinitely on the network. However, without external disclosure, no one can associate that record with your real identity or device.</p>
+
+									<h3>On-Ledger Data and Immutability</h3>
+									<p>Some users may use the wallet to anchor additional data onto the Tangle — for example, IoT device logs, supply chain events, or verification hashes. When doing so, the wallet encodes and transmits the data payload in the same cryptographically signed way as standard transactions. These payloads remain public forever but contain no identifiable personal content unless the user includes it intentionally.</p>
+									<p>It is strongly recommended to avoid embedding private or confidential data directly into transactions, as the public ledger does not provide deletion mechanisms.</p>
+
+									<h3>No External Tracking or Metrics</h3>
+									<p>The wallet performs no analytics on network traffic. It does not log node addresses, transaction frequencies, or balance history outside your local machine. Developers and maintainers cannot see which nodes users connect to or how often they interact with the network.</p>
+									<p>Any performance metrics (such as sync speed or latency) are evaluated locally and discarded after use. The wallet has no “heartbeat” or continuous ping to any monitoring service.</p>
+								</div>
+							</div>
+						</div>
+						<div class="privacy-sections__panel" id="security">
+							<div class="privacy-content glass-effect">
+								<h2 class="privacy-content__title">Security & Protection Measures</h2>
+								<div class="privacy-content__text">
+									<p>Security within IOTA Wallet is not an additional feature — it is the framework on which the entire application operates. From the way data is stored and encrypted, to how transactions are verified and broadcast, every mechanism is designed to minimize risk, prevent unauthorized access, and maintain the integrity of your digital assets.</p>
+									<p>The wallet follows a layered approach to protection, combining cryptographic strength, local isolation, code transparency, and user control. There are no “hidden safeties” that depend on a remote server or centralized service — all safeguards function directly on your device, giving you full ownership of both data and security.</p>
+
+
+									<h3>Encryption and Local Protection</h3>
+									<p>Every private key and recovery seed generated by the wallet is encrypted before storage. Encryption is applied using industry-standard algorithms such as AES-256-GCM, derived from a password-based key generation function (PBKDF2 or Argon2). This ensures that even if someone gains physical access to your files, they cannot read or reconstruct the keys without knowing your password.</p>
+									<p>No plaintext version of your seed phrase is ever written to disk or transmitted across the network. The wallet performs all signing and encryption locally in memory, meaning that private keys never leave the device nor appear in unencrypted form outside the application’s protected runtime.</p>
+
+									<h3>Integrity Verification and Source Authenticity</h3>
+									<p>All wallet releases are digitally signed. Before installation, users can verify both the checksum and the developer’s cryptographic signature to confirm that the software has not been tampered with. This step prevents malicious actors from distributing altered binaries that might compromise private keys or introduce unauthorized telemetry.</p>
+									<p>Additionally, the open-source nature of the IOTA Wallet allows independent verification. Developers and community auditors can review the source code and build process, ensuring transparency and reproducibility. Users can verify that the published binaries match the public source exactly, eliminating trust in intermediaries.</p>
+
+									<h3>Runtime Security</h3>
+									<p>IOTA Wallet operates within an isolated runtime environment. Sensitive processes such as transaction signing, password entry, and encryption are handled in memory with limited exposure to the file system. Once operations are complete, the corresponding memory blocks are cleared immediately.</p>
+									<p>For extra protection, the wallet can integrate with OS-level sandboxing features on modern platforms:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item"><strong>macOS</strong>
+											App sandbox with hardened runtime and keychain access isolation.
+										</li>
+										<li class="privacy-list__item"><strong>Windows</strong>
+											User-space isolation preventing unauthorized interprocess memory reads.
+										</li>
+										<li class="privacy-list__item"><strong>Linux</strong>
+											Optional execution through AppArmor or Flatpak environments for confined access.
+										</li>
+									</ul>
+									<p>These mechanisms help contain the application within a secure boundary, reducing the risk of external interference.</p>
+
+									<h3>Password and Access Policies</h3>
+									<p>Users create their own encryption password during wallet setup. This password:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Is never stored or transmitted.</li>
+										<li class="privacy-list__item">Derives the encryption key used to protect the local wallet file.</li>
+										<li class="privacy-list__item">Can be changed by re-encrypting the existing wallet.</li>
+									</ul>
+									<p>For convenience, operating systems may prompt to store the password in local keychains, but this is optional and entirely under user control. The wallet itself never saves or exports passwords to disk.</p>
+
+									<h3>Password and Access Policies</h3>
+									<p>All network connections between the wallet and IOTA nodes occur via HTTPS/TLS encryption, protecting against eavesdropping and man-in-the-middle attacks. The wallet verifies the authenticity of each node response, rejecting data that fails protocol validation or cryptographic proof verification.</p>
+									<p>Even though ledger data is public, the communication channels are always encrypted to ensure integrity during transmission.</p>
+
+									<h3>Defense Against Malicious Interference</h3>
+									<p>The wallet employs multiple checks to detect and block tampered or invalid data:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Verification of node health and synchronization state before broadcasting transactions.</li>
+										<li class="privacy-list__item">Validation of transaction bundles and message formats before local signing.</li>
+										<li class="privacy-list__item">Built-in checksums for wallet and configuration files to detect corruption or unauthorized modification.</li>
+									</ul>
+									<p>Because the wallet runs entirely locally, it is immune to remote access attempts unless the system itself is compromised. No background listeners, remote APIs, or update daemons are active when the wallet is closed.</p>
+
+
+
+									<h3>Code Security and Maintenance</h3>
+									<p>All dependencies used in the IOTA Wallet are open-source and vetted. Updates are reviewed manually before inclusion in new releases. The build process avoids dependency obfuscation and maintains clear versioning to prevent supply-chain attacks.</p>
+									<p>Security patches are prioritized and rolled out as standalone updates. Users are encouraged to keep the wallet version current, as each release may include cryptographic library improvements or mitigations against newly discovered vulnerabilities.</p>
+
+									<h3>User-Controlled Safety Practices</h3>
+									<p>The wallet empowers users to manage their own protection measures effectively. Recommended practices include:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Store your recovery phrase offline, written or engraved on a secure medium.</li>
+										<li class="privacy-list__item">Verify downloads and release signatures before installation.</li>
+										<li class="privacy-list__item">Avoid sharing node endpoints with untrusted services.</li>
+										<li class="privacy-list__item">Keep your operating system and antivirus software updated.</li>
+										<li class="privacy-list__item">Disconnect from public Wi-Fi when managing large balances.</li>
+										<p>The wallet provides secure defaults but never limits user autonomy — you remain the final authority over all security decisions.</p>
+									</ul>
+
+									<h3>User-Controlled Safety Practices</h3>
+									<p>In the unlikely event of a crash, the wallet’s design prevents sensitive data from being exposed. Unsent transactions remain local until the app restarts and reconnects to the network. Crash logs contain only technical traces and are never uploaded automatically. No background error reporting exists unless the user manually opts to send diagnostic data.</p>
+									<p>If the local files are lost or the device is damaged, funds remain recoverable using the backup seed phrase. The wallet itself is replaceable; the seed is not.</p>
 								</div>
 							</div>
 						</div>
 						<div class="privacy-sections__panel" id="rights">
 							<div class="privacy-content glass-effect">
-								<h2 class="privacy-content__title">Your Privacy Rights</h2>
+								<h2 class="privacy-content__title">User Rights & Local Controls</h2>
 								<div class="privacy-content__text">
-									<h3>Access and Control</h3>
-									<p>You have the following rights regarding your personal information:</p>
+									<p>IOTA Wallet is built on the principle of user sovereignty — meaning that every person using the wallet has complete control over their data, keys, and privacy. Unlike online platforms that process and retain user information on central servers, the IOTA Wallet functions entirely on the client side. All meaningful control stays in the user’s hands, and every data-related decision can be executed locally without third-party involvement.</p>
+									<p>Your rights are not permissions we grant — they are technical guarantees embedded into the design of the wallet itself. Each mechanism of the application reinforces the idea that the user is the only authority capable of managing stored information, seed phrases, and local configurations.</p>
+
+									<h3>Full Control Over Data</h3>
+									<p>All wallet-related data — including keys, transaction caches, node configurations, and logs — is stored exclusively on your local device. You can:</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">
-											<strong>Access:</strong> Request access to the personal information we hold about you.
+										<li class="privacy-list__item"><strong>View:</strong>
+											Inspect all files and configuration data created by the wallet at any time.
 										</li>
-										<li class="privacy-list__item">
-											<strong>Correction:</strong> Request correction of inaccurate or incomplete information.
+										<li class="privacy-list__item"><strong>Modify:</strong>
+											Change node endpoints, language, or settings without restrictions.
 										</li>
-										<li class="privacy-list__item">
-											<strong>Deletion:</strong> Request deletion of your personal information, subject to legal and operational requirements.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Portability:</strong> Request a copy of your data in a structured, machine-readable format.
-										</li>
-										<li class="privacy-list__item">
-											<strong>Objection:</strong> Object to certain processing of your personal information.
+										<li class="privacy-list__item"><strong>Delete:</strong>
+											Remove any wallet data or cache folder directly through your file system.
 										</li>
 									</ul>
+									<p>IOTA Wallet never restricts access to its local storage directories and does not hide information in protected system areas. Transparency ensures that users always know what exists, where it is located, and how to erase it.</p>
 
-									<h3>How to Exercise Your Rights</h3>
-									<p>To exercise any of these rights, please:</p>
+									<h3>Right to Deletion and Erasure</h3>
+									<p>If you decide to remove the wallet or start fresh, deleting the local wallet folder completely wipes all stored information — encrypted or otherwise. The developers cannot recover or restore this data, which guarantees that when you delete it, it’s gone permanently.</p>
+
+									<p>After deletion, your assets remain visible only on the IOTA Tangle as immutable ledger entries. However, these records contain no identity data and cannot be traced back to you through the wallet itself.</p>
+
+									<h3>Right to Data Portability</h3>
+									<p>Because the IOTA Wallet is non-custodial, you can move your wallet freely between systems without limitation or approval. Exporting your recovery phrase allows full restoration of your funds and settings on any compatible installation.</p>
+									<p>This makes your data portable and independent — it belongs to you, not to the software. You are free to migrate, clone, or back up your wallet in whatever format or location you choose, including air-gapped systems or encrypted drives.</p>
+
+									<h3>Right to Transparency</h3>
+									<p>Everything that happens inside the wallet can be verified.</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">Contact our privacy team at privacy@iota.org</li>
-										<li class="privacy-list__item">Use the privacy settings within the IOTA Wallet application</li>
-										<li class="privacy-list__item">Submit a request through our support portal</li>
+										<li class="privacy-list__item">The wallet’s source code is public and auditable.</li>
+										<li class="privacy-list__item">Network requests can be monitored using standard tools to confirm there are no hidden transmissions.</li>
+										<li class="privacy-list__item">Files stored on your device can be opened, inspected, and validated.</li>
 									</ul>
+									<p>There are no “dark zones” or protected internal APIs — every action the wallet performs is transparent and traceable to its codebase.</p>
 
-									<h3>Data Retention</h3>
-									<p>We retain your personal information only for as long as necessary to:</p>
+									<h3>No Consent Fatigue</h3>
+									<p>Since the wallet doesn’t collect or share personal data, you won’t encounter endless consent forms, cookie banners, or policy pop-ups. Your interaction is simple: you install it, use it, and own the process from start to finish. The only time you’ll be asked to confirm something is when it directly affects your data — such as deleting a wallet file or sending diagnostics voluntarily.</p>
+
+									<h3>Your Responsibility as the Custodian</h3>
+									<p>With full control comes full responsibility. The IOTA Wallet does not have recovery options, centralized backups, or account resets. Losing your recovery phrase or password means losing access permanently.</p>
+									<p>Users are encouraged to treat the recovery phrase as a physical key — store it offline, never share it, and never upload it to the cloud. The wallet will not send reminders or request it remotely; its safekeeping is entirely up to you.</p>
+								</div>
+							</div>
+						</div>
+						<div class="privacy-sections__panel" id="updates">
+							<div class="privacy-content glass-effect">
+								<h2 class="privacy-content__title">Policy Updates & Governance</h2>
+								<div class="privacy-content__text">
+									<p>IOTA Wallet is a continuously evolving open-source application. As the software improves and new technologies are integrated into the IOTA ecosystem, updates to this Privacy Policy may be introduced to reflect those changes. The goal of every revision is to preserve transparency and user control — never to expand data collection or weaken privacy safeguards.</p>
+									<p>Policy updates are managed with the same level of openness as the software itself. Each release of the wallet includes a <strong>versioned copy</strong> of this policy, stored alongside the application files and published on the project’s official website or repository. This ensures that users can always view the exact privacy terms that apply to their installed version, even if the document later changes.</p>
+
+									<h3>How Policy Updates Occur</h3>
+									<p>Whenever significant updates are made — such as new supported features, protocol improvements, or compatibility changes — the privacy document is reviewed and reissued under a new version number. Updates may include:</p>
 									<ul class="privacy-list">
-										<li class="privacy-list__item">Provide our services to you</li>
-										<li class="privacy-list__item">Comply with legal obligations</li>
-										<li class="privacy-list__item">Resolve disputes and enforce agreements</li>
-										<li class="privacy-list__item">Maintain security and prevent fraud</li>
+										<li class="privacy-list__item">Adjustments to reflect new cryptographic methods or storage models.</li>
+										<li class="privacy-list__item">Clarifications on how diagnostic or error data is handled locally.</li>
+										<li class="privacy-list__item">Explanations for any optional network extensions or external API integrations.</li>
+										<li class="privacy-list__item">Security notices related to new release builds.</li>
 									</ul>
+									<p>No policy revision ever introduces personal data collection, remote tracking, or background analytics. If any feature in the future requires optional connectivity beyond the IOTA network, it will be <strong>opt-in by design</strong> and accompanied by clear in-app explanations before activation.</p>
 
-									<h3>Children's Privacy</h3>
-									<p>IOTA Wallet is not intended for use by children under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected such information, we will take steps to delete it promptly.</p>
+
+
+
+
+									<h3>User Awareness and Transparency</h3>
+									<p>Policy changes are never hidden. When a new version of the wallet introduces an updated Privacy Policy, the modification date and summary of changes are displayed in the release notes. Users can review these notes before downloading or updating the application.</p>
+									<p>The old versions remain publicly accessible for audit and comparison, maintaining a transparent history of all prior revisions. This ensures traceability — users can always verify how the privacy framework has evolved and confirm that no retroactive changes were made to previously installed software.</p>
+
+									<h3>Governance and Oversight</h3>
+									<p>The wallet’s privacy governance follows a community-driven model, rather than a centralized authority. The policy is maintained within the same public repository as the wallet’s codebase, allowing open review, discussion, and contribution from developers and independent auditors.</p>
+									<p>Changes undergo the same review pipeline as code updates — proposed modifications are visible, discussed publicly, and approved through version control commits. This guarantees that the privacy rules are subject to the same scrutiny and peer verification as the application’s technical components.</p>
+									<p>The wallet itself operates autonomously. It does not rely on company-managed databases or cloud environments. Consequently, no administrative body can alter or enforce changes remotely once a version is installed on your device. The local application continues to operate under the privacy terms active at the time of installation until you decide to update it.</p>
+
+									<h3>Future Compatibility and User Choice</h3>
+									<p>As the IOTA network expands — introducing new smart contract layers, interoperability bridges, or modular extensions — the wallet will continue to adopt these technologies in a privacy-preserving way. Any new function that involves external communication will include:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">Full disclosure of what information is processed.</li>
+										<li class="privacy-list__item">Local confirmation before activation.</li>
+										<li class="privacy-list__item">The ability to disable or remove the feature entirely.</li>
+									</ul>
+									<p>Users retain complete freedom to continue using older versions of the wallet under prior terms if they prefer. The policy’s structure guarantees backward compatibility: newer releases may enhance protection or transparency, but they will not retroactively alter the behavior of previous versions.</p>
+
+									<h3>No Consent Fatigue</h3>
+									<p>Since the wallet doesn’t collect or share personal data, you won’t encounter endless consent forms, cookie banners, or policy pop-ups. Your interaction is simple: you install it, use it, and own the process from start to finish. The only time you’ll be asked to confirm something is when it directly affects your data — such as deleting a wallet file or sending diagnostics voluntarily.</p>
+
+									<h3>Commitment to Long-Term Privacy Integrity</h3>
+									<p>Privacy governance is a <strong>permanent commitment</strong>, not a temporary compliance step. The wallet will remain open for verification, its data model will stay transparent, and its encryption and access logic will continue to be fully local.</p>
+									<p>Even as legal, regulatory, or technical standards evolve, the wallet’s principles stay unchanged:</p>
+									<ul class="privacy-list">
+										<li class="privacy-list__item">No personal data collection.</li>
+										<li class="privacy-list__item">No remote processing.</li>
+										<li class="privacy-list__item">No monetization of user information.</li>
+										<li class="privacy-list__item">Complete local control and reversibility.</li>
+									</ul>
+									<p>Each update to this document will reaffirm those principles rather than replace them.</p>
 								</div>
 							</div>
 						</div>
@@ -274,8 +529,8 @@
 			<section class="security-measures">
 				<div class="container">
 					<div class="section-header">
-						<h2 class="section-title">Security Measures</h2>
-						<p class="section-description">How we protect your information and maintain security</p>
+						<h2 class="section-title">How We Keep It Safe</h2>
+						<p class="section-description">Our commitment to technical reliability and transparency.</p>
 					</div>
 					<div class="security-measures__grid">
 						<div class="security-card glass-effect">
@@ -286,8 +541,8 @@
 								<path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
 								<path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
 							</svg>
-							<h3 class="security-card__title">Encryption</h3>
-							<p class="security-card__description">All data is encrypted in transit and at rest using industry-standard encryption protocols including AES-256 and TLS 1.3.</p>
+							<h3 class="security-card__title">Verified Builds</h3>
+							<p class="security-card__description">Every version of IOTA Wallet is signed and verifiable — you can always confirm it comes from an official source.</p>
 						</div>
 						<div class="security-card glass-effect">
 							<svg class="security-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -295,41 +550,30 @@
 								<circle cx="12" cy="16" r="1"></circle>
 								<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
 							</svg>
-							<h3 class="security-card__title">Access Controls</h3>
-							<p class="security-card__description">Strict access controls and authentication mechanisms ensure only authorized personnel can access your information.</p>
+							<h3 class="security-card__title">Secure Communication</h3>
+							<p class="security-card__description">All wallet operations use encrypted channels, ensuring no external access or data interception.</p>
 						</div>
 						<div class="security-card glass-effect">
 							<svg class="security-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
 							</svg>
-							<h3 class="security-card__title">Regular Audits</h3>
-							<p class="security-card__description">We conduct regular security audits and assessments to identify and address potential vulnerabilities.</p>
+							<h3 class="security-card__title">Transparent Updates</h3>
+							<p class="security-card__description">When updates are released, users receive clear version notes and can verify authenticity before installation.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="privacy-contact">
+			<section class="cta-legal">
 				<div class="container">
-					<div class="privacy-contact__content glass-effect">
-						<div class="privacy-contact__text">
-							<h2 class="privacy-contact__title">Questions About Privacy?</h2>
-							<p class="privacy-contact__description">If you have any questions about this Privacy Policy or our privacy practices, please don't hesitate to contact us.</p>
-							<div class="privacy-contact__details">
-								<div class="privacy-contact__detail">
-									<strong>Email:</strong> privacy@iota.org
-								</div>
-								<div class="privacy-contact__detail">
-									<strong>Address:</strong> IOTA Foundation, Pappelallee 78/79, 10437 Berlin, Germany
-								</div>
-								<div class="privacy-contact__detail">
-									<strong>Data Protection Officer:</strong> dpo@iota.org
-								</div>
-							</div>
+					<div class="cta-legal__content glass-effect">
+						<div class="cta-legal__text">
+							<h2 class="cta-legal__title">Have Questions About Privacy?</h2>
+							<p class="cta-legal__description">Learn more about how IOTA Wallet protects your data and operates transparently across all services.</p>
 						</div>
-						<div class="privacy-contact__actions">
-							<button class="btn btn--primary">Contact Privacy Team</button>
-							<button class="btn btn--secondary">Report Privacy Issue</button>
+						<div class="cta-legal__actions">
+							<a href="terms-of-use.html" class="btn btn--primary">Read the Terms of Service</a>
+							<a href="community.html" class="btn btn--secondary">Join Community</a>
 						</div>
 					</div>
 				</div>
