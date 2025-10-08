@@ -1290,18 +1290,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //========================================================================================================================================================
 
-//! year in footer
+// year in footer
 document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("year").textContent = new Date().getFullYear();
 });
 
 //========================================================================================================================================================
 
+// Docs
 document.addEventListener('DOMContentLoaded', function () {
+	// Select sidebar links and content sections
 	const sidebarLinks = document.querySelectorAll('.docs-sidebar__link');
 	const sections = document.querySelectorAll('.docs-section');
 
-	function switchSection(targetSectionId, scroll = true) {
+	// Function to switch active section
+	function switchSection(targetSectionId, scroll = true, updateHash = true) {
+		// Remove active states
 		sections.forEach(section => {
 			section.classList.remove('docs-section--active');
 		});
@@ -1310,38 +1314,43 @@ document.addEventListener('DOMContentLoaded', function () {
 			link.classList.remove('docs-sidebar__link--active');
 		});
 
+		// Activate the target section
 		const targetSection = document.getElementById(targetSectionId);
 		if (targetSection) {
 			targetSection.classList.add('docs-section--active');
 
-			// Додаємо хеш у URL без перезавантаження
-			history.pushState(null, '', `#${targetSectionId}`);
+			// Update hash in the URL only when needed
+			if (updateHash) {
+				history.pushState(null, '', `#${targetSectionId}`);
+			}
 
-			// Прокручуємо до початку активного розділу
+			// Smooth scroll with offset
 			if (scroll) {
 				const offsetTop = targetSection.offsetTop;
 				window.scrollTo({
-					top: offsetTop - 100, // невеликий відступ зверху
+					top: offsetTop - 100,
 					behavior: 'smooth'
 				});
 			}
 		}
 
+		// Highlight the active sidebar link
 		const activeLink = document.querySelector(`[data-section="${targetSectionId}"]`);
 		if (activeLink) {
 			activeLink.classList.add('docs-sidebar__link--active');
 		}
 	}
 
+	// Sidebar link click handling
 	sidebarLinks.forEach(link => {
 		link.addEventListener('click', function (e) {
 			e.preventDefault();
 			const targetSection = this.getAttribute('data-section');
-			switchSection(targetSection);
+			switchSection(targetSection, true, true);
 		});
 	});
 
-	// Копіювання коду
+	// Copy-to-clipboard functionality
 	const copyButtons = document.querySelectorAll('.docs-code__copy');
 	copyButtons.forEach(button => {
 		button.addEventListener('click', function () {
@@ -1352,6 +1361,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
+	// Function to copy text to clipboard and show feedback
 	function copyToClipboard(text, button) {
 		if (navigator.clipboard) {
 			navigator.clipboard.writeText(text).then(() => {
@@ -1360,25 +1370,39 @@ document.addEventListener('DOMContentLoaded', function () {
 				setTimeout(() => {
 					button.textContent = originalText;
 				}, 2000);
+			}).catch(err => {
+				console.error('Clipboard copy failed:', err);
 			});
+		} else {
+			// Fallback for older browsers
+			const tempInput = document.createElement('input');
+			tempInput.value = text;
+			document.body.appendChild(tempInput);
+			tempInput.select();
+			document.execCommand('copy');
+			document.body.removeChild(tempInput);
+			const originalText = button.textContent;
+			button.textContent = 'Copied!';
+			setTimeout(() => {
+				button.textContent = originalText;
+			}, 2000);
 		}
 	}
 
-	// Якщо при відкритті вже є хеш — активуємо відповідний розділ
+	// Activate section on load (without adding hash)
 	const hash = window.location.hash.substring(1);
 	if (hash) {
-		switchSection(hash, false);
+		switchSection(hash, false, false);
 	} else if (sections[0]) {
 		const firstSection = sections[0].id;
-		switchSection(firstSection, false);
+		switchSection(firstSection, false, false);
 	}
 
-	// Реагуємо на зміну хешу (наприклад, при натисканні "Назад")
+	// Handle browser Back/Forward navigation
 	window.addEventListener('hashchange', function () {
 		const hash = window.location.hash.substring(1);
 		if (hash) {
-			switchSection(hash);
+			switchSection(hash, true, false);
 		}
 	});
 });
-
