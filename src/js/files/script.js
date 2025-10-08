@@ -1294,3 +1294,91 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("year").textContent = new Date().getFullYear();
 });
+
+//========================================================================================================================================================
+
+document.addEventListener('DOMContentLoaded', function () {
+	const sidebarLinks = document.querySelectorAll('.docs-sidebar__link');
+	const sections = document.querySelectorAll('.docs-section');
+
+	function switchSection(targetSectionId, scroll = true) {
+		sections.forEach(section => {
+			section.classList.remove('docs-section--active');
+		});
+
+		sidebarLinks.forEach(link => {
+			link.classList.remove('docs-sidebar__link--active');
+		});
+
+		const targetSection = document.getElementById(targetSectionId);
+		if (targetSection) {
+			targetSection.classList.add('docs-section--active');
+
+			// Додаємо хеш у URL без перезавантаження
+			history.pushState(null, '', `#${targetSectionId}`);
+
+			// Прокручуємо до початку активного розділу
+			if (scroll) {
+				const offsetTop = targetSection.offsetTop;
+				window.scrollTo({
+					top: offsetTop - 100, // невеликий відступ зверху
+					behavior: 'smooth'
+				});
+			}
+		}
+
+		const activeLink = document.querySelector(`[data-section="${targetSectionId}"]`);
+		if (activeLink) {
+			activeLink.classList.add('docs-sidebar__link--active');
+		}
+	}
+
+	sidebarLinks.forEach(link => {
+		link.addEventListener('click', function (e) {
+			e.preventDefault();
+			const targetSection = this.getAttribute('data-section');
+			switchSection(targetSection);
+		});
+	});
+
+	// Копіювання коду
+	const copyButtons = document.querySelectorAll('.docs-code__copy');
+	copyButtons.forEach(button => {
+		button.addEventListener('click', function () {
+			const code = this.getAttribute('data-code');
+			if (code) {
+				copyToClipboard(code, this);
+			}
+		});
+	});
+
+	function copyToClipboard(text, button) {
+		if (navigator.clipboard) {
+			navigator.clipboard.writeText(text).then(() => {
+				const originalText = button.textContent;
+				button.textContent = 'Copied!';
+				setTimeout(() => {
+					button.textContent = originalText;
+				}, 2000);
+			});
+		}
+	}
+
+	// Якщо при відкритті вже є хеш — активуємо відповідний розділ
+	const hash = window.location.hash.substring(1);
+	if (hash) {
+		switchSection(hash, false);
+	} else if (sections[0]) {
+		const firstSection = sections[0].id;
+		switchSection(firstSection, false);
+	}
+
+	// Реагуємо на зміну хешу (наприклад, при натисканні "Назад")
+	window.addEventListener('hashchange', function () {
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			switchSection(hash);
+		}
+	});
+});
+

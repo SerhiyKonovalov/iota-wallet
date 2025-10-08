@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title": "IOTA Wallet Docs | Setup, Integration, User Guides",
+"canonical": "https://iotawallet.org/docs",
+"robots": "follow, index, max-snippet:-1, max-image-preview:large",
+"description": "Explore IOTA Wallet technical documentation. Get detailed setup guides, integration examples, and developer documentation in one place",
+"og_type": "website",
+"og_url": "https://iotawallet.org/docs",
+"og_title": "IOTA Wallet Docs | Setup, Integration, User Guides",
+"og_description": "Explore IOTA Wallet technical documentation. Get detailed setup guides, integration examples, and developer documentation in one place",
+"twitter_title": "IOTA Wallet Docs | Setup, Integration, User Guides",
+"twitter_description": "Explore IOTA Wallet technical documentation. Get detailed setup guides, integration examples, and developer documentation in one place"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero hero--docs">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">Documentation</h1>
+						<p class="hero__description">Everything you need to know about IOTA Wallet. From getting started to advanced features and troubleshooting.</p>
+						<div class="hero__actions">
+							<a href="download.html" class="btn btn--primary">Download Wallet</a>
+							<a href="mailto:info@iota.org" target="_blank" class="btn btn--secondary btn--secondary-white">Contact Us</a>
+						</div>
+					</div>
+					<div class="hero__visual">
+						<a href="#docs" class="hero__card glass-effect" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="200">
+							<svg xmlns="http://www.w3.org/2000/svg" class="hero__card-coin" viewBox="0 0 2499.5 2419.9">
+								<path fill="currentColor"
+									d="M1817.8,280.7c76.3,0,138.3-63,138.3-140.4S1894.1,0,1817.8,0c-76.3.4-138.3,63.3-138.3,140.7S1741.5,280.7,1817.8,280.7Zm40.8,364.8a118,118,0,0,0,117.1-118.89h0c0-65.4-52.4-118.9-117.1-118.9s-117.1,53.1-117.1,118.9,52.3,118.89,117.1,118.89ZM2180.1,692c64.4,0,116.8-53.1,116.8-118.6s-52.4-118.6-116.8-118.6-116.8,53.1-116.8,118.6S2115.8,692,2180.1,692Zm-38.6,312.1c55.2,0,99.9-45.4,99.9-101.3s-44.7-101.3-99.9-101.3-99.9,45.4-99.9,101.3S2086.3,1004.1,2141.5,1004.1Zm257.4,101.2c55.6,0,100.6-45.7,100.6-102s-45-102-100.6-102a101.3,101.3,0,0,0-100.6,102h0c0,56.3,45.1,102,100.6,102ZM1818,961.9a103,103,0,0,0,102.4-103.6h0v-.2c0-57.3-45.7-103.8-102.4-103.8s-102.4,46.4-102.4,103.8C1715.6,915.1,1761.4,961.9,1818,961.9Zm-92.8,248.3c47.5,0,85.8-39,85.8-86.9a86.2,86.2,0,0,0-85.49-86.9h-.31c-47.5,0-85.8,39-85.8,86.9s38.3,86.9,85.8,86.9Zm322,43.9a85.69,85.69,0,0,0,85.1-86.28h0v-.21c0-47.8-38-86.5-85.1-86.5s-85.1,38.7-85.1,86.5a85.39,85.39,0,0,0,84.28,86.49h.82Zm256.7,100.8c47.5,0,85.8-39,85.8-87.2s-38.3-87.2-85.8-87.2-85.8,39-85.8,87.2a86.3,86.3,0,0,0,85.39,87.2Zm-126.8,188.4c40.1,0,72.5-33.1,72.5-73.5s-32.4-73.5-72.5-73.5-72.5,33.1-72.5,73.5,32.4,73.5,72.5,73.5Zm-257.9-99.2c40.8,0,74.2-33.8,74.2-75.3s-33.1-75.3-74.2-75.3-74.2,33.8-74.2,75.3,33.4,75.3,74.2,75.3Zm-321.6-46a74.61,74.61,0,0,0,.1-149.2h-.1a74.61,74.61,0,0,0-.1,149.2Zm178.8,177c35.5,0,64-29.2,64-64.7a64.1,64.1,0,0,0-63.49-64.7h-.51c-35.5,0-64,29.2-64,64.7a64,64,0,0,0,63.29,64.7h.71ZM2034.2,1676c35.5,0,64.7-29.2,64.7-65.4s-28.8-65.4-64.7-65.4a65.4,65.4,0,0,0,0,130.8ZM1889,1751.7c28.1,0,51-23.2,51-51.7a51.4,51.4,0,0,0-51-51.7c-28.1,0-51,23.2-51,51.7A51.6,51.6,0,0,0,1889,1751.7Zm-137.6,40.6a46.39,46.39,0,0,0,46.1-46.68v-.12c0-26-20.8-46.8-46.1-46.8a46.39,46.39,0,0,0-46.1,46.68v.12a46,46,0,0,0,45.19,46.79Zm-120.5-134.6c30.3,0,54.9-25,54.9-55.6s-24.6-55.6-54.9-55.6-54.9,25-54.9,55.6A55.49,55.49,0,0,0,1630.9,1657.7Zm-176.8-127.5c35.2,0,64-28.8,64-64.7s-28.5-64.7-64-64.7c-35.2,0-64,28.8-64,64.7A64.6,64.6,0,0,0,1454.1,1530.2Zm524.3,810.6c76,0,137.6-62.6,137.6-139.7s-61.6-139.7-137.6-139.7-137.6,62.6-137.6,139.7,61.6,139.7,137.6,139.7ZM1628.9,2164c63.3,0,114.7-52.1,114.7-116.4s-51.4-116.4-114.7-116.4-114.7,52.1-114.7,116.4S1565.5,2164,1628.9,2164Zm-199.7,255.9c64,0,115.7-52.4,115.7-117.5,0-64.7-51.7-117.5-115.7-117.5s-115.7,52.4-115.7,117.5a116.6,116.6,0,0,0,115.69,117.5Zm-60.1-471.5a101,101,0,0,0,100.3-101.7h0A101,101,0,0,0,1369.1,1745h0a101,101,0,0,0-100.3,101.7h0c.1,56,45.1,101.7,100.3,101.7Zm-199.2,259.4c55.2,0,99.9-45.4,99.9-101.3s-44.7-101.3-99.9-101.3-99.9,45.4-99.9,101.3a100.31,100.31,0,0,0,99.29,101.3Zm-214.7,176c55.2,0,99.6-45.4,99.6-101,0-55.9-44.7-101-99.6-101-55.2,0-99.6,45.4-99.6,101s44.7,101,99.6,101ZM776.5,2154.7a85.89,85.89,0,0,0,85.1-86.2c0-47.5-38-86.2-85.1-86.2a86.21,86.21,0,0,0,0,172.4Zm215.1-176.8a85.7,85.7,0,0,0,85.1-86.2c0-47.8-38-86.2-85.1-86.2a86.21,86.21,0,0,0-.3,172.4Zm200.7-259.3a85.69,85.69,0,0,0,85.1-86.28h0v-.21c0-47.8-38-86.5-85.1-86.5a85.69,85.69,0,0,0-85.1,86.28h0v.21c0,47.8,38,86.5,85.1,86.5Zm-307,35.7c40.8,0,73.9-33.4,73.9-74.9s-33.1-74.9-73.9-74.9-73.9,33.4-73.9,74.9,33.1,74.9,73.9,74.9Zm-214,176.1a73.6,73.6,0,0,0,73.2-74h0v-.2a73.5,73.5,0,0,0-72.79-74.2h-.41a73.6,73.6,0,0,0-73.2,74h0v.2a73.7,73.7,0,0,0,73.2,74.2ZM622.1,1724a63.8,63.8,0,0,0,63.3-64c0-35.5-28.5-64-63.3-64s-63.3,28.8-63.3,64C558.8,1695.5,587.3,1724,622.1,1724Zm-1.8-181.1a54.7,54.7,0,0,0,54.2-55.2h0c0-30.3-24.3-55.2-54.2-55.2s-54.2,24.6-54.2,55.2S590.4,1542.9,620.3,1542.9Zm29.8-150.6c25.7,0,46.1-21.1,46.1-46.8s-20.8-46.8-46.1-46.8c-25.7,0-46.1,21.1-46.1,46.8S624.4,1392.3,650.1,1392.3Zm184.5-25.2c30.3,0,54.9-25,54.9-55.6s-24.6-55.6-54.9-55.6-54.9,25-54.9,55.6a55.4,55.4,0,0,0,54.9,55.6Zm202.5-78.9c35.2,0,64-29.2,64-64.7a64.1,64.1,0,0,0-63.49-64.7h-.51c-35.2,0-64,29.2-64,64.7a64.2,64.2,0,0,0,63.7,64.7h.3Zm48.2,205.4a72.66,72.66,0,1,0-.3,0Zm-248.1,54.7c35.2,0,63.3-28.8,63.3-64.4s-28.5-64.4-63.3-64.4a63.69,63.69,0,0,0-63.3,64.09v.31a63.49,63.49,0,0,0,62.58,64.39h.72Zm-700-95.5c75.6,0,137.2-62.3,137.2-139s-61.6-139-137.2-139S0,1237.2,0,1313.9s61.6,138.9,137.2,138.9Zm311.4-248.2c65.1,0,117.5-53.5,117.5-119.3S513.3,966,448.6,966a118.3,118.3,0,0,0-117.5,119.09v.21c0,66.2,52.8,119.3,117.5,119.3Zm-121.5-306c64.7,0,116.8-53.1,116.8-118.6S391.5,661.4,327.1,661.4A117.59,117.59,0,0,0,210.3,779.79V780A117.41,117.41,0,0,0,326.49,898.6Zm300.2-145c55.2,0,100.3-45.4,100.3-101.7s-45-101.7-100.3-101.7S527,595.6,527,651.9s45.1,101.7,100.3,101.7ZM750,1058.9c55.6,0,100.6-45.7,100.6-102s-45-102-100.6-102-100.6,45.7-100.6,102S694.4,1058.9,750,1058.9Zm273.2-63.4a86.21,86.21,0,0,0,85.5-86.89h0a85.51,85.51,0,1,0-171-2.62c0,.88,0,1.75,0,2.62h0a85.91,85.91,0,0,0,84.89,86.9Zm236,.8c40.8,0,73.9-33.4,73.9-74.6s-33.1-74.6-73.9-74.6a74.6,74.6,0,0,0,0,149.2Zm195,44.9c34.1,0,62.3-28.1,62.3-63s-27.8-63-62.3-63a62.79,62.79,0,0,0-62.3,63C1392.3,1012.7,1420,1041.2,1454.2,1041.2Zm25.4-229.8a54.59,54.59,0,0,0,54.2-54.9c0-30.3-24.3-54.9-54.2-54.9s-54.2,24.6-54.2,54.9a54.59,54.59,0,0,0,54.2,54.9Zm-150-75.2a62.46,62.46,0,1,0-.31,0Zm-192.7-45.6a73.8,73.8,0,0,0,73.2-74.2c0-41.2-32.7-74.2-73.2-74.2s-73.2,33.4-73.2,74.2a73.6,73.6,0,0,0,73,74.2h.2Zm-235.6.3c47.5,0,85.8-39,85.8-86.9s-38.3-86.9-85.8-86.9-85.8,39-85.8,86.9a86.6,86.6,0,0,0,85.8,86.9ZM584,473.6c53.8,0,97.1-44,97.1-98.5s-43.6-98.5-97.1-98.5c-53.8,0-97.1,44-97.1,98.5S530.5,473.6,584,473.6Zm273.1-59.7c47.5,0,85.8-39,85.8-86.9s-38.3-86.9-85.8-86.9-85.8,39-85.8,86.9S809.6,413.9,857.1,413.9ZM1093,415c40.8,0,73.9-33.4,73.9-74.9s-33.1-74.9-73.9-74.9a74.3,74.3,0,0,0-73.9,74.7h0v.2A74.59,74.59,0,0,0,1093,415Zm193.6,44.6c34.5,0,62.3-28.1,62.3-63s-27.8-63-62.3-63a63,63,0,0,0,0,126Zm148.7,77.2a56,56,0,0,0,55.6-56.3c0-31.3-25-56.3-55.6-56.3s-55.6,25.3-55.6,56.3,25,56.3,55.6,56.3Zm109.1,88.6a46,46,0,0,0,45.7-46.3h0V579a46,46,0,0,0-45.6-46.4h-.1a46,46,0,0,0-45.7,46.3h0v.1a45.69,45.69,0,0,0,45,46.39h.72Z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="docs" id="docs">
+				<div class="docs__container">
+					<aside class="docs-sidebar" id="docs-sidebar">
+						<div class="docs-sidebar__header">
+							<h2 class="docs-sidebar__title">Documentation</h2>
+						</div>
+						<nav class="docs-sidebar__nav">
+							<div class="docs-sidebar__section">
+								<h3 class="docs-sidebar__section-title">Getting Started</h3>
+								<ul class="docs-sidebar__list">
+									<li class="docs-sidebar__item">
+										<a href="#introduction" class="docs-sidebar__link docs-sidebar__link--active" data-section="introduction">Introduction</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#installation" class="docs-sidebar__link" data-section="installation">Installation</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#quick-start" class="docs-sidebar__link" data-section="quick-start">Quick Start</a>
+									</li>
+								</ul>
+							</div>
+							<div class="docs-sidebar__section">
+								<h3 class="docs-sidebar__section-title">Core Features</h3>
+								<ul class="docs-sidebar__list">
+									<li class="docs-sidebar__item">
+										<a href="#creating-wallet" class="docs-sidebar__link" data-section="creating-wallet">Creating a Wallet</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#sending-tokens" class="docs-sidebar__link" data-section="sending-tokens">Sending Tokens</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#receiving-tokens" class="docs-sidebar__link" data-section="receiving-tokens">Receiving Tokens</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#staking" class="docs-sidebar__link" data-section="staking">Staking</a>
+									</li>
+								</ul>
+							</div>
+							<div class="docs-sidebar__section">
+								<h3 class="docs-sidebar__section-title">Security</h3>
+								<ul class="docs-sidebar__list">
+									<li class="docs-sidebar__item">
+										<a href="#seed-management" class="docs-sidebar__link" data-section="seed-management">Seed Management</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#backup-recovery" class="docs-sidebar__link" data-section="backup-recovery">Backup & Recovery</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#security-best-practices" class="docs-sidebar__link" data-section="security-best-practices">Best Practices</a>
+									</li>
+								</ul>
+							</div>
+							<div class="docs-sidebar__section">
+								<h3 class="docs-sidebar__section-title">Advanced</h3>
+								<ul class="docs-sidebar__list">
+									<li class="docs-sidebar__item">
+										<a href="#custom-nodes" class="docs-sidebar__link" data-section="custom-nodes">Custom Nodes</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#hardware-wallet" class="docs-sidebar__link" data-section="hardware-wallet">Hardware Wallet</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#api-integration" class="docs-sidebar__link" data-section="api-integration">API Integration</a>
+									</li>
+								</ul>
+							</div>
+							<div class="docs-sidebar__section">
+								<h3 class="docs-sidebar__section-title">Troubleshooting</h3>
+								<ul class="docs-sidebar__list">
+									<li class="docs-sidebar__item">
+										<a href="#common-issues" class="docs-sidebar__link" data-section="common-issues">Common Issues</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#error-codes" class="docs-sidebar__link" data-section="error-codes">Error Codes</a>
+									</li>
+									<li class="docs-sidebar__item">
+										<a href="#support" class="docs-sidebar__link" data-section="support">Support</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</aside>
+
+					<div class="docs-content">
+						<section class="docs-section docs-section--active" id="introduction">
+							<h2 class="docs-section__title">Introduction to IOTA Wallet</h2>
+							<p class="docs-section__intro">Welcome to the official IOTA Wallet documentation. This guide will help you get started with managing your IOTA tokens securely and efficiently.</p>
+
+							<div class="docs-section__content">
+								<h3>What is IOTA Wallet?</h3>
+								<p>IOTA Wallet is a secure, user-friendly application designed to help you manage your IOTA tokens. Built with quantum-resistant security and zero-fee transactions, it provides the most advanced features for the IOTA ecosystem.</p>
+
+								<h4>Key Features</h4>
+								<ul class="docs-list">
+									<li>Quantum-resistant cryptographic security</li>
+									<li>Zero-fee transactions on the IOTA network</li>
+									<li>Built-in staking functionality</li>
+									<li>Multi-platform support (Desktop, Mobile, Web)</li>
+									<li>Hardware wallet integration</li>
+									<li>Real-time network monitoring</li>
+								</ul>
+
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Note:</strong> IOTA Wallet supports both IOTA and Shimmer networks, allowing you to manage multiple assets from a single interface.
+									</div>
+								</div>
+
+								<h4>System Requirements</h4>
+								<div class="docs-table-wrapper">
+									<table class="docs-table">
+										<thead>
+											<tr>
+												<th>Platform</th>
+												<th>Minimum Requirements</th>
+												<th>Recommended</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Windows</td>
+												<td>Windows 10 64-bit</td>
+												<td>Windows 11 64-bit</td>
+											</tr>
+											<tr>
+												<td>macOS</td>
+												<td>macOS 10.15 Catalina</td>
+												<td>macOS 13 Ventura or later</td>
+											</tr>
+											<tr>
+												<td>Linux</td>
+												<td>Ubuntu 18.04 / Debian 10</td>
+												<td>Ubuntu 22.04 / Debian 11</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="installation">
+							<h2 class="docs-section__title">Installation</h2>
+							<p class="docs-section__intro">Follow these steps to install IOTA Wallet on your device.</p>
+
+							<div class="docs-section__content">
+								<h3>Desktop Installation</h3>
+
+								<h4>Windows</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Download the Windows installer from the official website</li>
+									<li>Run the downloaded <code>.exe</code> file</li>
+									<li>Follow the installation wizard</li>
+									<li>Launch IOTA Wallet from the Start menu</li>
+								</ol>
+
+								<h4>macOS</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Download the macOS installer from the official website</li>
+									<li>Open the downloaded <code>.dmg</code> file</li>
+									<li>Drag IOTA Wallet to your Applications folder</li>
+									<li>Launch IOTA Wallet from Applications</li>
+								</ol>
+
+								<div class="docs-note docs-note--warning">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>macOS Users:</strong> You may need to approve the app in System Preferences > Security & Privacy if you see a security warning.
+									</div>
+								</div>
+
+								<h4>Linux</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Download the Linux package for your distribution</li>
+									<li>For Ubuntu/Debian, install the <code>.deb</code> package:</li>
+								</ol>
+
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">bash</span>
+										<button class="docs-code__copy" data-code="sudo dpkg -i iota-wallet_2.1.4_amd64.deb">Copy</button>
+									</div>
+									<pre class="docs-code__content"><code>sudo dpkg -i iota-wallet_2.1.4_amd64.deb</code></pre>
+								</div>
+
+								<h3>Mobile Installation</h3>
+
+								<h4>iOS</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open the App Store on your iPhone or iPad</li>
+									<li>Search for "IOTA Wallet"</li>
+									<li>Tap "Get" to download and install</li>
+									<li>Open the app to begin setup</li>
+								</ol>
+
+								<h4>Android</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open Google Play Store on your Android device</li>
+									<li>Search for "IOTA Wallet"</li>
+									<li>Tap "Install" to download the app</li>
+									<li>Open the app to begin setup</li>
+								</ol>
+							</div>
+						</section>
+
+						<section class="docs-section" id="quick-start">
+							<h2 class="docs-section__title">Quick Start Guide</h2>
+							<p class="docs-section__intro">Get up and running with IOTA Wallet in just a few minutes.</p>
+
+							<div class="docs-section__content">
+								<h3>First Launch</h3>
+								<p>When you first open IOTA Wallet, you'll be presented with two options:</p>
+
+								<div class="docs-cards">
+									<div class="docs-card">
+										<div class="docs-card__icon">
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.75 16H11.25V13.75H9V12.25H11.25V10H12.75V12.25H15V13.75H12.75V16Z" fill="#0101ff"></path>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M19.3636 6.63636C20.2674 6.63636 21 7.36899 21 8.27273V18.0909C21 18.9946 20.2674 19.7273 19.3636 19.7273H4.63636C3.73262 19.7273 3 18.9946 3 18.0909V6.63636C3 5.73262 3.73262 5 4.63636 5H9.54545C10.4618 5 11.0451 5.38901 11.631 6.12815C11.6472 6.14858 11.6866 6.19938 11.7303 6.25567C11.792 6.3352 11.8624 6.42596 11.8875 6.45703C11.9129 6.48848 11.9342 6.51449 11.9519 6.53598C12.0239 6.6235 12.0343 6.63619 12.0015 6.63636H19.3636ZM19.3636 18.0909V8.27273L11.9956 8.27272C11.408 8.26957 11.0253 7.99447 10.6139 7.48444C10.5766 7.43825 10.4861 7.32155 10.4203 7.23679C10.3859 7.19243 10.3582 7.15674 10.3486 7.14458C10.0421 6.75792 9.85984 6.63636 9.54545 6.63636H4.63636V18.0909H19.3636Z" fill="#0101ff"></path>
+											</svg>
+										</div>
+										<h4 class="docs-card__title">Create New Wallet</h4>
+										<p class="docs-card__description">Start fresh with a brand new wallet and seed phrase.</p>
+									</div>
+									<div class="docs-card">
+										<div class="docs-card__icon">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M21 2v6h-6"></path>
+												<path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+												<path d="M3 22v-6h6"></path>
+												<path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+											</svg>
+										</div>
+										<h4 class="docs-card__title">Restore Existing Wallet</h4>
+										<p class="docs-card__description">Import your wallet using your recovery phrase or backup file.</p>
+									</div>
+								</div>
+
+								<h3>Creating Your First Wallet</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>Click "Create New Wallet"</li>
+									<li>Choose a strong password to encrypt your wallet</li>
+									<li>Write down your 24-word recovery phrase and store it safely</li>
+									<li>Verify your recovery phrase by entering the requested words</li>
+									<li>Your wallet is now ready to use</li>
+								</ol>
+
+								<div class="docs-note docs-note--danger">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<circle cx="12" cy="12" r="10"></circle>
+											<line x1="15" y1="9" x2="9" y2="15"></line>
+											<line x1="9" y1="9" x2="15" y2="15"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Critical:</strong> Never share your recovery phrase with anyone. Write it down on paper and store it in a secure location. This phrase is the only way to recover your wallet if you lose access.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="creating-wallet">
+							<h2 class="docs-section__title">Creating a Wallet</h2>
+							<p class="docs-section__intro">Learn how to create and configure your IOTA wallet.</p>
+
+							<div class="docs-section__content">
+								<h3>Wallet Setup Process</h3>
+								<p>Creating a new wallet involves several important steps to ensure the security of your funds.</p>
+
+								<h4>Step 1: Password Creation</h4>
+								<p>Your password encrypts your wallet data locally on your device. Choose a strong password that:</p>
+								<ul class="docs-list">
+									<li>Is at least 12 characters long</li>
+									<li>Contains uppercase and lowercase letters</li>
+									<li>Includes numbers and special characters</li>
+									<li>Is unique and not used elsewhere</li>
+								</ul>
+
+								<h4>Step 2: Recovery Phrase Generation</h4>
+								<p>Your recovery phrase consists of 24 randomly generated words. This phrase is the master key to your wallet and can restore access to your funds on any device.</p>
+
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">Example Recovery Phrase</span>
+									</div>
+									<pre class="docs-code__content"><code>abandon ability able about above absent absorb
+abstract absurd abuse access accident account
+accuse achieve acid acoustic acquire across
+act action actor actress actual adapt add</code></pre>
+								</div>
+
+								<h4>Step 3: Wallet Name and Profile</h4>
+								<p>Give your wallet a memorable name to help identify it if you manage multiple wallets. You can also customize:</p>
+								<ul class="docs-list">
+									<li>Wallet color theme</li>
+									<li>Currency display preferences</li>
+									<li>Network settings (Mainnet/Testnet)</li>
+								</ul>
+
+								<h3>Multi-Account Support</h3>
+								<p>IOTA Wallet supports multiple accounts within a single wallet. Each account:</p>
+								<ul class="docs-list">
+									<li>Has its own unique address</li>
+									<li>Can be named for easy identification</li>
+									<li>Shares the same recovery phrase</li>
+									<li>Can have different balances</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="docs-section" id="sending-tokens">
+							<h2 class="docs-section__title">Sending Tokens</h2>
+							<p class="docs-section__intro">Learn how to send IOTA tokens to other addresses.</p>
+
+							<div class="docs-section__content">
+								<h3>How to Send Tokens</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open your wallet and ensure you're connected to the network</li>
+									<li>Click the "Send" button in your account dashboard</li>
+									<li>Enter the recipient's IOTA address</li>
+									<li>Specify the amount to send</li>
+									<li>Add an optional message (up to 256 characters)</li>
+									<li>Review the transaction details</li>
+									<li>Confirm and sign the transaction</li>
+								</ol>
+
+								<h4>Address Verification</h4>
+								<p>Always verify the recipient address carefully. IOTA addresses are typically 63 characters long and start with "iota1".</p>
+
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">Example IOTA Address</span>
+										<button class="docs-code__copy" data-code="iota1qpg2xkj66wwgn8p2ggnp7p582gj8g5r5xhmnsdw7rqkqwjpr9t6xhzfvqdx">Copy</button>
+									</div>
+									<pre class="docs-code__content"><code>iota1qpg2xkj66wwgn8p2ggnp7p582gj8g5r5xhmnsdw7rqkqwjpr9t6xhzfvqdx</code></pre>
+								</div>
+
+								<h4>Transaction Fees</h4>
+								<p>One of IOTA's main advantages is zero transaction fees. You can send any amount without worrying about network fees.</p>
+
+								<div class="docs-note docs-note--success">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+											<polyline points="22 4 12 14.01 9 11.01"></polyline>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Zero Fees:</strong> IOTA transactions are completely feeless, making it perfect for micropayments and frequent transactions.
+									</div>
+								</div>
+
+								<h4>Transaction Status</h4>
+								<p>After sending, you can track your transaction status:</p>
+								<ul class="docs-list">
+									<li><strong>Pending:</strong> Transaction is being processed by the network</li>
+									<li><strong>Confirmed:</strong> Transaction has been accepted by the network</li>
+									<li><strong>Failed:</strong> Transaction could not be completed</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="docs-section" id="receiving-tokens">
+							<h2 class="docs-section__title">Receiving Tokens</h2>
+							<p class="docs-section__intro">Learn how to receive IOTA tokens in your wallet.</p>
+
+							<div class="docs-section__content">
+								<h3>Your Receive Address</h3>
+								<p>To receive IOTA tokens, you need to share your address with the sender.</p>
+
+								<h4>How to Find Your Address</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open your wallet and select the account</li>
+									<li>Click the "Receive" button</li>
+									<li>Your address will be displayed with a QR code</li>
+									<li>Share the address or QR code with the sender</li>
+								</ol>
+
+								<h4>Address Reuse</h4>
+								<p>Unlike older cryptocurrency systems, IOTA addresses can be safely reused multiple times. You can use the same address for all incoming transactions.</p>
+
+								<h4>Multiple Addresses</h4>
+								<p>For privacy and organizational purposes, you can generate multiple receiving addresses within each account. This is useful for:</p>
+								<ul class="docs-list">
+									<li>Separating different income sources</li>
+									<li>Tracking specific payments</li>
+									<li>Enhanced privacy</li>
+								</ul>
+
+								<h3>QR Code Sharing</h3>
+								<p>The QR code feature makes it easy to receive payments in person. The sender can simply scan your QR code with their mobile wallet to automatically fill in your address.</p>
+
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Tip:</strong> You can also include a specific amount in the QR code to streamline payment requests.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="staking">
+							<h2 class="docs-section__title">Staking</h2>
+							<p class="docs-section__intro">Earn rewards by staking your IOTA tokens and helping secure the network.</p>
+
+							<div class="docs-section__content">
+								<h3>What is Staking?</h3>
+								<p>Staking allows you to lock your IOTA tokens to support network validation and earn rewards. Your staked tokens help secure the IOTA network while generating passive income.</p>
+
+								<h4>Staking Benefits</h4>
+								<ul class="docs-list">
+									<li>Earn rewards on your holdings</li>
+									<li>Support network security and decentralization</li>
+									<li>Participate in network governance</li>
+									<li>Flexible staking periods</li>
+								</ul>
+
+								<h3>How to Stake</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>Navigate to the "Staking" section in your wallet</li>
+									<li>Select the amount you want to stake</li>
+									<li>Choose your staking period (30, 60, 90, or 180 days)</li>
+									<li>Review the estimated rewards</li>
+									<li>Confirm your staking transaction</li>
+								</ol>
+
+								<h4>Staking Periods and Rewards</h4>
+								<div class="docs-table-wrapper">
+									<table class="docs-table">
+										<thead>
+											<tr>
+												<th>Period</th>
+												<th>Annual Yield</th>
+												<th>Lock Duration</th>
+												<th>Early Unlock</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>30 days</td>
+												<td>5% APY</td>
+												<td>30 days</td>
+												<td>Available with penalty</td>
+											</tr>
+											<tr>
+												<td>60 days</td>
+												<td>7% APY</td>
+												<td>60 days</td>
+												<td>Available with penalty</td>
+											</tr>
+											<tr>
+												<td>90 days</td>
+												<td>10% APY</td>
+												<td>90 days</td>
+												<td>Available with penalty</td>
+											</tr>
+											<tr>
+												<td>180 days</td>
+												<td>15% APY</td>
+												<td>180 days</td>
+												<td>Not available</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="docs-note docs-note--warning">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Important:</strong> Staked tokens are locked for the chosen period. Early unstaking may result in reduced or no rewards.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="seed-management">
+							<h2 class="docs-section__title">Seed Management</h2>
+							<p class="docs-section__intro">Learn how to properly manage and secure your wallet seed phrase.</p>
+
+							<div class="docs-section__content">
+								<h3>Understanding Your Seed Phrase</h3>
+								<p>Your seed phrase (also called recovery phrase or mnemonic) is a 24-word sequence that represents your wallet's private keys. It is the master key to your wallet and provides complete access to all your funds.</p>
+
+								<h4>Seed Security Rules</h4>
+								<div class="docs-note docs-note--danger">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<circle cx="12" cy="12" r="10"></circle>
+											<line x1="15" y1="9" x2="9" y2="15"></line>
+											<line x1="9" y1="9" x2="15" y2="15"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Never:</strong>
+										<ul>
+											<li>Share your seed phrase with anyone</li>
+											<li>Store it digitally (photos, cloud, email)</li>
+											<li>Enter it on any website</li>
+											<li>Share it with support teams</li>
+										</ul>
+									</div>
+								</div>
+
+								<h4>Best Practices for Seed Storage</h4>
+								<ul class="docs-list">
+									<li>Write it down on paper using a pen</li>
+									<li>Store in a fireproof and waterproof safe</li>
+									<li>Consider using a metal backup device</li>
+									<li>Keep multiple copies in separate secure locations</li>
+									<li>Never store on any device connected to the internet</li>
+								</ul>
+
+								<h3>Verifying Your Seed</h3>
+								<p>Regularly verify that you have correctly recorded your seed phrase:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Go to Settings > Security > Verify Recovery Phrase</li>
+									<li>Enter the requested words from your backup</li>
+									<li>Confirm that your backup is correct</li>
+								</ol>
+							</div>
+						</section>
+
+						<section class="docs-section" id="backup-recovery">
+							<h2 class="docs-section__title">Backup & Recovery</h2>
+							<p class="docs-section__intro">Learn how to backup and recover your wallet.</p>
+
+							<div class="docs-section__content">
+								<h3>Creating a Backup</h3>
+								<p>Regular backups ensure you can always recover your wallet. IOTA Wallet offers several backup options:</p>
+
+								<h4>Stronghold Backup File</h4>
+								<p>Stronghold is IOTA's encrypted backup system. To create a backup:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Navigate to Settings > Backup</li>
+									<li>Click "Create Stronghold Backup"</li>
+									<li>Choose a secure location to save the file</li>
+									<li>Set a strong backup password</li>
+									<li>Store the backup file securely</li>
+								</ol>
+
+								<h4>Recovery Phrase Backup</h4>
+								<p>Your 24-word recovery phrase is the most important backup. With this phrase, you can restore your wallet on any device, even if all other backups are lost.</p>
+
+								<h3>Restoring Your Wallet</h3>
+
+								<h4>From Recovery Phrase</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open IOTA Wallet and select "Restore Wallet"</li>
+									<li>Choose "Restore from Recovery Phrase"</li>
+									<li>Enter your 24-word recovery phrase in order</li>
+									<li>Create a new password for this device</li>
+									<li>Wait for wallet synchronization to complete</li>
+								</ol>
+
+								<h4>From Stronghold Backup</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open IOTA Wallet and select "Restore Wallet"</li>
+									<li>Choose "Restore from Backup File"</li>
+									<li>Select your Stronghold backup file</li>
+									<li>Enter your backup password</li>
+									<li>Create a new wallet password</li>
+								</ol>
+
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Tip:</strong> After restoring your wallet, verify that all accounts and balances have been recovered correctly before deleting any backups.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="security-best-practices">
+							<h2 class="docs-section__title">Security Best Practices</h2>
+							<p class="docs-section__intro">Essential security practices to keep your IOTA wallet safe.</p>
+
+							<div class="docs-section__content">
+								<h3>Device Security</h3>
+								<ul class="docs-list">
+									<li>Keep your operating system and wallet software up to date</li>
+									<li>Use antivirus and anti-malware software</li>
+									<li>Enable device encryption (BitLocker, FileVault, etc.)</li>
+									<li>Lock your device when not in use</li>
+									<li>Avoid using public computers or WiFi for wallet access</li>
+								</ul>
+
+								<h3>Password Security</h3>
+								<ul class="docs-list">
+									<li>Use a unique, strong password for your wallet</li>
+									<li>Never reuse passwords from other services</li>
+									<li>Consider using a password manager</li>
+									<li>Change your password if you suspect it's compromised</li>
+								</ul>
+
+								<h3>Phishing Protection</h3>
+								<p>Be vigilant against phishing attempts:</p>
+								<ul class="docs-list">
+									<li>Always verify you're on the official IOTA website</li>
+									<li>Never click suspicious links in emails or messages</li>
+									<li>IOTA support will never ask for your seed phrase</li>
+									<li>Verify the authenticity of wallet software before installing</li>
+									<li>Use official download channels only</li>
+								</ul>
+
+								<h3>Transaction Verification</h3>
+								<ul class="docs-list">
+									<li>Always double-check recipient addresses before sending</li>
+									<li>Verify transaction amounts carefully</li>
+									<li>Start with small test transactions for new addresses</li>
+									<li>Monitor your transaction history regularly</li>
+								</ul>
+
+								<div class="docs-note docs-note--success">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+											<polyline points="22 4 12 14.01 9 11.01"></polyline>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Best Practice:</strong> For large holdings, consider using a hardware wallet for maximum security. IOTA Wallet supports Ledger integration.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="custom-nodes">
+							<h2 class="docs-section__title">Custom Nodes</h2>
+							<p class="docs-section__intro">Configure custom nodes for advanced network connectivity.</p>
+
+							<div class="docs-section__content">
+								<h3>What are Nodes?</h3>
+								<p>Nodes are servers that maintain the IOTA network and process transactions. By default, IOTA Wallet connects to official IOTA nodes, but you can configure custom nodes for:</p>
+								<ul class="docs-list">
+									<li>Enhanced privacy</li>
+									<li>Better performance</li>
+									<li>Local development</li>
+									<li>Network redundancy</li>
+								</ul>
+
+								<h3>Adding a Custom Node</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>Go to Settings > Node Configuration</li>
+									<li>Click "Add Custom Node"</li>
+									<li>Enter the node URL</li>
+									<li>Optionally set authentication credentials</li>
+									<li>Test the connection</li>
+									<li>Save and activate the node</li>
+								</ol>
+
+								<h4>Node URL Format</h4>
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">Example Node URLs</span>
+									</div>
+									<pre class="docs-code__content"><code>https://api.testnet.shimmer.network
+https://chrysalis-nodes.iota.org
+https://node.example.com:14265</code></pre>
+								</div>
+
+								<h3>Node Health Monitoring</h3>
+								<p>IOTA Wallet automatically monitors node health and displays:</p>
+								<ul class="docs-list">
+									<li>Connection status</li>
+									<li>Sync status</li>
+									<li>Response time</li>
+									<li>Available features</li>
+								</ul>
+
+								<div class="docs-note docs-note--warning">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Warning:</strong> Only use trusted nodes. Malicious nodes could provide false information about your transactions.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="hardware-wallet">
+							<h2 class="docs-section__title">Hardware Wallet Integration</h2>
+							<p class="docs-section__intro">Use a hardware wallet for maximum security.</p>
+
+							<div class="docs-section__content">
+								<h3>Supported Hardware Wallets</h3>
+								<p>IOTA Wallet currently supports:</p>
+								<ul class="docs-list">
+									<li>Ledger Nano S</li>
+									<li>Ledger Nano S Plus</li>
+									<li>Ledger Nano X</li>
+								</ul>
+
+								<h3>Setting Up Ledger</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>Install the IOTA app on your Ledger device using Ledger Live</li>
+									<li>Connect your Ledger to your computer</li>
+									<li>Open the IOTA app on your Ledger</li>
+									<li>In IOTA Wallet, select "Connect Hardware Wallet"</li>
+									<li>Follow the on-screen instructions</li>
+									<li>Verify the connection on your Ledger display</li>
+								</ol>
+
+								<h4>Using Your Ledger</h4>
+								<p>When using a hardware wallet:</p>
+								<ul class="docs-list">
+									<li>Your private keys never leave the device</li>
+									<li>All transactions must be approved on the device</li>
+									<li>Always verify addresses on the device screen</li>
+									<li>Keep your Ledger firmware updated</li>
+								</ul>
+
+								<div class="docs-note docs-note--success">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+											<polyline points="22 4 12 14.01 9 11.01"></polyline>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Maximum Security:</strong> Hardware wallets provide the highest level of security for cryptocurrency storage. We recommend them for significant holdings.
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="api-integration">
+							<h2 class="docs-section__title">API Integration</h2>
+							<p class="docs-section__intro">Integrate IOTA Wallet functionality into your applications.</p>
+
+							<div class="docs-section__content">
+								<h3>IOTA SDK</h3>
+								<p>For developers looking to integrate IOTA functionality, we provide comprehensive SDKs:</p>
+								<ul class="docs-list">
+									<li>JavaScript/TypeScript SDK</li>
+									<li>Python SDK</li>
+									<li>Rust SDK</li>
+									<li>Java SDK</li>
+								</ul>
+
+								<h4>Installation</h4>
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">npm</span>
+										<button class="docs-code__copy" data-code="npm install @iota/sdk">Copy</button>
+									</div>
+									<pre class="docs-code__content"><code>npm install @iota/sdk</code></pre>
+								</div>
+
+								<h4>Basic Usage Example</h4>
+								<div class="docs-code">
+									<div class="docs-code__header">
+										<span class="docs-code__language">javascript</span>
+										<button class="docs-code__copy" data-code="const { Client } = require('@iota/sdk');
+
+const client = new Client({
+  nodes: ['https://api.testnet.shimmer.network'],
+});
+
+async function getInfo() {
+  const info = await client.getInfo();
+  console.log('Node Info:', info);
+}
+
+getInfo();">Copy</button>
+									</div>
+									<pre class="docs-code__content"><code>const { Client } = require('@iota/sdk');
+
+const client = new Client({
+  nodes: ['https://api.testnet.shimmer.network'],
+});
+
+async function getInfo() {
+  const info = await client.getInfo();
+  console.log('Node Info:', info);
+}
+
+getInfo();</code></pre>
+								</div>
+
+								<h3>API Documentation</h3>
+								<p>For comprehensive API documentation, visit:</p>
+								<ul class="docs-list">
+									<li><a href="#" class="docs-link">IOTA SDK Documentation</a></li>
+									<li><a href="#" class="docs-link">Node API Reference</a></li>
+									<li><a href="#" class="docs-link">Code Examples Repository</a></li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="docs-section" id="common-issues">
+							<h2 class="docs-section__title">Common Issues</h2>
+							<p class="docs-section__intro">Solutions to frequently encountered problems.</p>
+
+							<div class="docs-section__content">
+								<h3>Wallet Won't Open</h3>
+								<p><strong>Solution:</strong></p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Check that you're running the latest version</li>
+									<li>Verify your system meets minimum requirements</li>
+									<li>Try restarting your computer</li>
+									<li>Reinstall the wallet if the problem persists</li>
+								</ol>
+
+								<h3>Transactions Pending for Long Time</h3>
+								<p><strong>Solution:</strong></p>
+								<ul class="docs-list">
+									<li>Check your network connection</li>
+									<li>Verify the node is synced and healthy</li>
+									<li>Try switching to a different node</li>
+									<li>Wait for network congestion to clear</li>
+								</ul>
+
+								<h3>Balance Not Showing</h3>
+								<p><strong>Solution:</strong></p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Wait for wallet synchronization to complete</li>
+									<li>Check if you're connected to the correct network</li>
+									<li>Try refreshing the wallet</li>
+									<li>Verify the transaction on a block explorer</li>
+								</ol>
+
+								<h3>Cannot Connect to Node</h3>
+								<p><strong>Solution:</strong></p>
+								<ul class="docs-list">
+									<li>Check your internet connection</li>
+									<li>Verify firewall settings aren't blocking the wallet</li>
+									<li>Try using a different node</li>
+									<li>Disable VPN temporarily to test connection</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="docs-section" id="error-codes">
+							<h2 class="docs-section__title">Error Codes</h2>
+							<p class="docs-section__intro">Understanding wallet error messages.</p>
+
+							<div class="docs-section__content">
+								<h3>Common Error Codes</h3>
+
+								<div class="docs-table-wrapper">
+									<table class="docs-table">
+										<thead>
+											<tr>
+												<th>Error Code</th>
+												<th>Description</th>
+												<th>Solution</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>ERR_001</code></td>
+												<td>Invalid password</td>
+												<td>Re-enter your password or use recovery phrase</td>
+											</tr>
+											<tr>
+												<td><code>ERR_002</code></td>
+												<td>Node connection failed</td>
+												<td>Check internet connection or switch nodes</td>
+											</tr>
+											<tr>
+												<td><code>ERR_003</code></td>
+												<td>Insufficient balance</td>
+												<td>Add more funds to your wallet</td>
+											</tr>
+											<tr>
+												<td><code>ERR_004</code></td>
+												<td>Invalid address format</td>
+												<td>Verify the recipient address is correct</td>
+											</tr>
+											<tr>
+												<td><code>ERR_005</code></td>
+												<td>Transaction timeout</td>
+												<td>Retry the transaction or check node status</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</section>
+
+						<section class="docs-section" id="support">
+							<h2 class="docs-section__title">Support</h2>
+							<p class="docs-section__intro">Get help when you need it.</p>
+
+							<div class="docs-section__content">
+								<h3>Community Support</h3>
+								<div class="docs-cards">
+									<div class="docs-card">
+										<div class="docs-card__icon">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+											</svg>
+										</div>
+										<h4 class="docs-card__title">Discord</h4>
+										<p class="docs-card__description">Join our active Discord community for real-time help and discussions.</p>
+									</div>
+									<div class="docs-card">
+										<div class="docs-card__icon">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+											</svg>
+										</div>
+										<h4 class="docs-card__title">GitHub</h4>
+										<p class="docs-card__description">Report bugs, request features, and contribute to the project on GitHub.</p>
+									</div>
+									<div class="docs-card">
+										<div class="docs-card__icon">
+											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+												<polyline points="22,6 12,13 2,6"></polyline>
+											</svg>
+										</div>
+										<h4 class="docs-card__title">Email Support</h4>
+										<p class="docs-card__description">Contact our support team at support@iota-wallet.org for assistance.</p>
+									</div>
+								</div>
+
+								<h3>Additional Resources</h3>
+								<ul class="docs-list">
+									<li><a href="faq.html" class="docs-link">FAQ</a></li>
+									<li><a href="community.html" class="docs-link">Community </a></li>
+									<li><a href="https://www.youtube.com/c/iotafoundation" class="docs-link">Video Tutorials</a></li>
+								</ul>
+
+								<div class="docs-note docs-note--danger">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<circle cx="12" cy="12" r="10"></circle>
+											<line x1="15" y1="9" x2="9" y2="15"></line>
+											<line x1="9" y1="9" x2="15" y2="15"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Security Warning:</strong> IOTA support will NEVER ask for your seed phrase, password, or private keys. Anyone asking for this information is attempting to scam you.
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+	<script>
+
+	</script>
+</body>
+
+</html>
