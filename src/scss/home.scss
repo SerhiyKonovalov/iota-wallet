@@ -377,7 +377,7 @@ body {
 
 /* Community Page Styles */
 .hero--community {
-	background-image: url("@img/hero/community.jpeg");
+	background-image: url("@img/hero/community.jpg");
 }
 
 .hero--faq {
@@ -1017,17 +1017,17 @@ body {
 
 .explorer-item__tag--green {
 	background: rgba(72, 187, 120, 0.2);
-	color: #48bb78;
+	color: #20a758;
 }
 
 .explorer-item__tag--yellow {
-	background: rgba(255, 193, 7, 0.14);
-	color: #ee9b00;
+	background: rgba(255, 209, 2, 0.5);
+	color: #a78e01;
 }
 
 .explorer-item__tag--orange {
 	background: rgba(255, 147, 7, 0.25);
-	color: #ee7f00;
+	color: #cf6f01;
 }
 
 /* Network Nodes Section */
@@ -1696,12 +1696,12 @@ body {
 }
 
 .community-stat-card__number {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	font-weight: 700;
 	color: #1a202c;
 	margin-bottom: 0.5rem;
 	@media (max-width: $mobile) {
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 }
 
@@ -1835,7 +1835,7 @@ body {
 	}
 
 	.swiper-wrapper {
-		padding: 2rem 0.5rem;
+		padding: 1.5rem 0.5rem;
 		@media (max-width: $mobile) {
 			padding: 1rem 0.5rem;
 		}
@@ -2058,13 +2058,19 @@ body {
 	aspect-ratio: 1;
 	object-fit: cover;
 	border-radius: 50%;
+	overflow: hidden;
 	background: linear-gradient(135deg, #0101ff 0%, #4f92ff 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto 1rem;
 	@media (max-width: $mobile) {
-		width: 65px;
+		width: 70px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -2149,6 +2155,7 @@ body {
 	justify-content: center;
 	gap: 1rem;
 	flex-wrap: wrap;
+	scroll-margin-top: 100px;
 }
 
 .faq-categories__tab {
@@ -2423,13 +2430,12 @@ body {
 
 /* FAQ No Results */
 .faq-no-results {
-	margin: 2rem 0;
 	scroll-margin-top: 100px;
 }
 
 .faq-no-results__content {
 	text-align: center;
-	padding: 4rem 2rem;
+	padding: 3rem 2rem;
 	border-radius: 16px;
 	background: rgba(255, 255, 255, 0.05);
 	backdrop-filter: blur(10px);
@@ -2447,9 +2453,9 @@ body {
 }
 
 .faq-no-results__icon {
-	width: 64px;
-	height: 64px;
-	margin: 0 auto 1.5rem;
+	width: 70px;
+	aspect-ratio: 1;
+	margin: 0 auto 1.25rem;
 	color: #0101ff;
 	opacity: 0.7;
 	animation: pulse 2s infinite;
@@ -2481,10 +2487,12 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 1.6;
+	@media (max-width: $mobileSmall) {
+		margin-bottom: 1.5rem;
+	}
 }
 
 .faq-no-results__button {
-	margin-top: 1rem;
 	min-width: 140px;
 	position: relative;
 	overflow: hidden;
@@ -3219,7 +3227,7 @@ body {
 	}
 
 	.swiper-wrapper {
-		padding: 2rem 0.5rem;
+		padding: 1.5rem 0.5rem;
 		@media (max-width: $mobile) {
 			padding: 1rem 0.5rem;
 		}
@@ -5164,5 +5172,12 @@ ol.privacy-list {
 
 	.staking__visual {
 		height: 250px;
+	}
+
+	.privacy-content__title,
+	.terms-content__title,
+	.regulatory-card__title,
+	.disclaimer__title {
+		font-size: 26px;
 	}
 }

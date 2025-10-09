@@ -95,7 +95,7 @@
 				</div>
 			</section>
 
-			<section class="mainnet-features section-padding">
+			<section class="mainnet-features section-padding" id="mainnet-features">
 				<div class="container">
 					<div class="section-header">
 						<h2 class="section-title">Mainnet Features</h2>
@@ -247,8 +247,8 @@
 					<div class="network-explorer__content glass-effect">
 						<div class="explorer-tabs">
 							<button class="explorer-tabs__tab explorer-tabs__tab--active" data-explorer="explorers">Explorers</button>
-							<button class="explorer-tabs__tab" data-explorer="node-tools">Node Tools</button>
-							<button class="explorer-tabs__tab" data-explorer="dev-utilities">Developer Utilities</button>
+							<button class="explorer-tabs__tab" data-explorer="tools">Tools</button>
+							<button class="explorer-tabs__tab" data-explorer="utilities">Utilities</button>
 						</div>
 						<div class="explorer-content">
 							<div class="explorer-panel explorer-panel--active" id="explorers">
@@ -260,7 +260,7 @@
 										<div class="explorer-item__text">
 											Mainnet dashboard, explorers, addresses, milestones.
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--orange">DevTools</span>
+										<span class="explorer-item__tag explorer-item__tag--green">Explorer</span>
 									</a>
 									<a href="https://explorer.evm.iota.org" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
@@ -269,38 +269,29 @@
 										<div class="explorer-item__text">
 											Blockscout for the IOTA EVM chain (contracts, txs, stats).
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--yellow">Staging</span>
-									</a>
-									<a href="https://explorer.shimmer.network" target="_blank" class="explorer-item">
-										<div class="explorer-item__name">
-											Shimmer Explorer
-										</div>
-										<div class="explorer-item__text">
-											Explorer for Shimmer (staging network).
-										</div>
-										<span class="explorer-item__tag explorer-item__tag--yellow">Mainnet</span>
+										<span class="explorer-item__tag explorer-item__tag--green">Explorer</span>
 									</a>
 									<a href="https://iotascan.com" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
-											Iotascan
+											IOTASCAN
 										</div>
 										<div class="explorer-item__text">
 											Community explorer with address & event views.
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--green">Mainnet</span>
+										<span class="explorer-item__tag explorer-item__tag--green">Explorer</span>
 									</a>
 									<a href="https://archive.explorer.iota.org" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
-											IOTA Explorer
+											IOTA Explorer (Archive)
 										</div>
 										<div class="explorer-item__text">
 											Legacy/stardust history viewer.
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--green">Mainnet</span>
+										<span class="explorer-item__tag explorer-item__tag--green">Explorer</span>
 									</a>
 								</div>
 							</div>
-							<div class="explorer-panel" id="node-tools">
+							<div class="explorer-panel" id="tools">
 								<div class="explorer-list">
 									<a href="https://status.iota.org" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
@@ -309,7 +300,7 @@
 										<div class="explorer-item__text">
 											Official uptime/incidents for IOTA services (incl. EVM).
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--green">DevTools</span>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Tool</span>
 									</a>
 									<a href="https://github.com/iotaledger/inx-chronicle" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
@@ -318,11 +309,20 @@
 										<div class="explorer-item__text">
 											Store/query IOTA history via INX (GitHub).
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--yellow">Staging</span>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Tool</span>
+									</a>
+									<a href="https://explorer.shimmer.network" target="_blank" class="explorer-item">
+										<div class="explorer-item__name">
+											Shimmer Explorer
+										</div>
+										<div class="explorer-item__text">
+											Explorer for Shimmer (staging network).
+										</div>
+										<span class="explorer-item__tag explorer-item__tag--yellow">Tool</span>
 									</a>
 								</div>
 							</div>
-							<div class="explorer-panel" id="dev-utilities">
+							<div class="explorer-panel" id="utilities">
 								<div class="explorer-list">
 									<a href="https://github.com/iotaledger/iota-sdk" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
@@ -331,7 +331,7 @@
 										<div class="explorer-item__text">
 											Official SDK supporting Rust, Python, and JavaScript bindings.
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--orange">DevTools</span>
+										<span class="explorer-item__tag explorer-item__tag--orange">Utility</span>
 									</a>
 									<a href="https://www.iota.org/products/evm" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
@@ -340,16 +340,16 @@
 										<div class="explorer-item__text">
 											Product page for Solidity on IOTA.
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--green">Staging</span>
+										<span class="explorer-item__tag explorer-item__tag--orange">Utility</span>
 									</a>
 									<a href="https://github.com/iotaledger/wasp" target="_blank" class="explorer-item">
 										<div class="explorer-item__name">
-											IOTA Wasp
+											IOTA WASP
 										</div>
 										<div class="explorer-item__text">
 											Framework for running IOTA Smart Contracts (ISC) on Layer-2
 										</div>
-										<span class="explorer-item__tag explorer-item__tag--green">Staging</span>
+										<span class="explorer-item__tag explorer-item__tag--orange">Utility</span>
 									</a>
 								</div>
 							</div>
