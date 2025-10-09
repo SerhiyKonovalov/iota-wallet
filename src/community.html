@@ -263,13 +263,13 @@
 				</div>
 			</section>
 
-			<!-- <section class="community-events section-padding">
+			<section class="community-events section-padding">
 				<div class="container">
 					<div class="section-header">
 						<h2 class="section-title">Upcoming Events</h2>
 						<p class="section-description">Join our community events and stay connected with the latest developments</p>
 					</div>
-					<div class="events-slider" id="events-slider">
+					<!-- <div class="events-slider" id="events-slider">
 						<div class="event-card glass-effect">
 							<div class="event-card__date">
 								<div class="event-card__day">15</div>
@@ -360,8 +360,8 @@
 								<button class="event-card__button">Get Tickets</button>
 							</div>
 						</div>
-					</div>
-					<div class="events-controls">
+					</div> -->
+					<!-- <div class="events-controls">
 						<button class="events-btn events-btn--prev" id="prev-event">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<polyline points="15,18 9,12 15,6"></polyline>
@@ -372,9 +372,146 @@
 								<polyline points="9,18 15,12 9,6"></polyline>
 							</svg>
 						</button>
+					</div> -->
+
+					<div class="swiper events__slider" id="events-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide event-card">
+								<div class="event-card__date">
+									<div class="event-card__day">15</div>
+									<div class="event-card__month">Mar</div>
+								</div>
+								<div class="event-card__content">
+									<div class="event-card__type">Webinar</div>
+									<h3 class="event-card__title">IOTA 2.0 Deep Dive</h3>
+									<p class="event-card__description">Explore the technical aspects of IOTA 2.0 and its revolutionary features with our core developers.</p>
+									<div class="event-card__meta">
+										<div class="event-card__time">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<circle cx="12" cy="12" r="10"></circle>
+												<polyline points="12,6 12,12 16,14"></polyline>
+											</svg>
+											2:00 PM UTC
+										</div>
+										<div class="event-card__attendees">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+												<circle cx="9" cy="7" r="4"></circle>
+												<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+												<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+											</svg>
+											500+ Registered
+										</div>
+									</div>
+									<button class="event-card__button">Register Now</button>
+								</div>
+							</div>
+							<div class="swiper-slide event-card">
+								<div class="event-card__date">
+									<div class="event-card__day">22</div>
+									<div class="event-card__month">Mar</div>
+								</div>
+								<div class="event-card__content">
+									<div class="event-card__type">Hackathon</div>
+									<h3 class="event-card__title">IoT Innovation Challenge</h3>
+									<p class="event-card__description">48-hour hackathon to build innovative IoT solutions using IOTA technology. Prizes worth $50,000.</p>
+									<div class="event-card__meta">
+										<div class="event-card__time">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<circle cx="12" cy="12" r="10"></circle>
+												<polyline points="12,6 12,12 16,14"></polyline>
+											</svg>
+											48 Hours
+										</div>
+										<div class="event-card__attendees">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+												<circle cx="9" cy="7" r="4"></circle>
+												<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+												<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+											</svg>
+											200+ Teams
+										</div>
+									</div>
+									<button class="event-card__button">Join Hackathon</button>
+								</div>
+							</div>
+							<div class="swiper-slide event-card">
+								<div class="event-card__date">
+									<div class="event-card__day">05</div>
+									<div class="event-card__month">Apr</div>
+								</div>
+								<div class="event-card__content">
+									<div class="event-card__type">Conference</div>
+									<h3 class="event-card__title">IOTA Global Summit</h3>
+									<p class="event-card__description">Annual conference bringing together the global IOTA community, partners, and industry leaders.</p>
+									<div class="event-card__meta">
+										<div class="event-card__time">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<circle cx="12" cy="12" r="10"></circle>
+												<polyline points="12,6 12,12 16,14"></polyline>
+											</svg>
+											3 Days
+										</div>
+										<div class="event-card__attendees">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+												<circle cx="9" cy="7" r="4"></circle>
+												<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+												<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+											</svg>
+											2000+ Expected
+										</div>
+									</div>
+									<button class="event-card__button">Get Tickets</button>
+								</div>
+							</div>
+							<div class="swiper-slide event-card">
+								<div class="event-card__date">
+									<div class="event-card__day">05</div>
+									<div class="event-card__month">Apr</div>
+								</div>
+								<div class="event-card__content">
+									<div class="event-card__type">Conference</div>
+									<h3 class="event-card__title">IOTA Global Summit</h3>
+									<p class="event-card__description">Annual conference bringing together the global IOTA community, partners, and industry leaders.</p>
+									<div class="event-card__meta">
+										<div class="event-card__time">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<circle cx="12" cy="12" r="10"></circle>
+												<polyline points="12,6 12,12 16,14"></polyline>
+											</svg>
+											3 Days
+										</div>
+										<div class="event-card__attendees">
+											<svg class="event-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+												<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+												<circle cx="9" cy="7" r="4"></circle>
+												<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+												<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+											</svg>
+											2000+ Expected
+										</div>
+									</div>
+									<button class="event-card__button">Get Tickets</button>
+								</div>
+							</div>
+						</div>
+						<div class="testimonials__controls">
+							<button class="testimonials__btn testimonials__btn--prev">
+								<svg viewBox="0 0 24.00 24.00" class="platform-option__arrow" width="20px" height="20px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.3">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="currentColor"></path>
+								</svg>
+							</button>
+							<button class="testimonials__btn testimonials__btn--next">
+								<svg viewBox="0 0 24.00 24.00" class="platform-option__arrow" width="20px" height="20px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.3">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M9 6.75C8.58579 6.75 8.25 6.41421 8.25 6C8.25 5.58579 8.58579 5.25 9 5.25H18C18.4142 5.25 18.75 5.58579 18.75 6V15C18.75 15.4142 18.4142 15.75 18 15.75C17.5858 15.75 17.25 15.4142 17.25 15V7.81066L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L16.1893 6.75H9Z" fill="currentColor"></path>
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<section class="community-guidelines section-padding">
 				<div class="container">
