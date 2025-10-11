@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://SiteUrl.com/sitemap.xml
+Sitemap: https://iotawallet.com/sitemap.xml
