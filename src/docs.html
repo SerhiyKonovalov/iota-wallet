@@ -55,6 +55,9 @@
 										<a href="#installation" class="docs-sidebar__link" data-section="installation">Installation</a>
 									</li>
 									<li class="docs-sidebar__item">
+										<a href="#initial-setup" class="docs-sidebar__link" data-section="initial-setup">Initial Setup</a>
+									</li>
+									<li class="docs-sidebar__item">
 										<a href="#quick-start" class="docs-sidebar__link" data-section="quick-start">Quick Start</a>
 									</li>
 								</ul>
@@ -63,16 +66,13 @@
 								<h3 class="docs-sidebar__section-title">Core Features</h3>
 								<ul class="docs-sidebar__list">
 									<li class="docs-sidebar__item">
-										<a href="#creating-wallet" class="docs-sidebar__link" data-section="creating-wallet">Creating a Wallet</a>
+										<a href="#managing-accounts" class="docs-sidebar__link" data-section="managing-accounts">Managing Accounts</a>
 									</li>
 									<li class="docs-sidebar__item">
-										<a href="#sending-tokens" class="docs-sidebar__link" data-section="sending-tokens">Sending Tokens</a>
+										<a href="#sending-receiving" class="docs-sidebar__link" data-section="sending-receiving">Sending & Receiving</a>
 									</li>
 									<li class="docs-sidebar__item">
-										<a href="#receiving-tokens" class="docs-sidebar__link" data-section="receiving-tokens">Receiving Tokens</a>
-									</li>
-									<li class="docs-sidebar__item">
-										<a href="#staking" class="docs-sidebar__link" data-section="staking">Staking</a>
+										<a href="#staking-rewards" class="docs-sidebar__link" data-section="staking-rewards">Staking & Rewards</a>
 									</li>
 								</ul>
 							</div>
@@ -86,35 +86,10 @@
 										<a href="#backup-recovery" class="docs-sidebar__link" data-section="backup-recovery">Backup & Recovery</a>
 									</li>
 									<li class="docs-sidebar__item">
-										<a href="#security-best-practices" class="docs-sidebar__link" data-section="security-best-practices">Best Practices</a>
-									</li>
-								</ul>
-							</div>
-							<div class="docs-sidebar__section">
-								<h3 class="docs-sidebar__section-title">Advanced</h3>
-								<ul class="docs-sidebar__list">
-									<li class="docs-sidebar__item">
-										<a href="#custom-nodes" class="docs-sidebar__link" data-section="custom-nodes">Custom Nodes</a>
+										<a href="#best-practices" class="docs-sidebar__link" data-section="best-practices">Best Practices</a>
 									</li>
 									<li class="docs-sidebar__item">
-										<a href="#hardware-wallet" class="docs-sidebar__link" data-section="hardware-wallet">Hardware Wallet</a>
-									</li>
-									<li class="docs-sidebar__item">
-										<a href="#api-integration" class="docs-sidebar__link" data-section="api-integration">API Integration</a>
-									</li>
-								</ul>
-							</div>
-							<div class="docs-sidebar__section">
-								<h3 class="docs-sidebar__section-title">Troubleshooting</h3>
-								<ul class="docs-sidebar__list">
-									<li class="docs-sidebar__item">
-										<a href="#common-issues" class="docs-sidebar__link" data-section="common-issues">Common Issues</a>
-									</li>
-									<li class="docs-sidebar__item">
-										<a href="#error-codes" class="docs-sidebar__link" data-section="error-codes">Error Codes</a>
-									</li>
-									<li class="docs-sidebar__item">
-										<a href="#support" class="docs-sidebar__link" data-section="support">Support</a>
+										<a href="#network-settings" class="docs-sidebar__link" data-section="network-settings">Network Settings</a>
 									</li>
 								</ul>
 							</div>
@@ -124,36 +99,30 @@
 					<div class="docs-content">
 						<section class="docs-section docs-section--active" id="introduction">
 							<h2 class="docs-section__title">Introduction to IOTA Wallet</h2>
-							<p class="docs-section__intro">Welcome to the official IOTA Wallet documentation. This guide will help you get started with managing your IOTA tokens securely and efficiently.</p>
+							<p class="docs-section__intro">Welcome to the official documentation for <strong>IOTA Wallet (Desktop)</strong> — a secure, non-custodial wallet for the <strong>IOTA ecosystem</strong>. This wallet gives you full control over your digital assets while remaining lightweight, private, and built entirely around IOTA’s next-generation distributed ledger known as the Tangle.</p>
+							<p class="docs-section__intro">Unlike traditional blockchains, IOTA doesn’t rely on miners, validators, or transaction fees. Instead, every transaction validates two previous ones, creating a decentralized network structure that grows stronger as usage increases. This architecture enables fast, parallel confirmations with zero fees — ideal for both everyday transfers and large-scale, feeless applications.</p>
+							<p class="docs-section__intro">The wallet is designed for users who value sovereignty and privacy. Your seed and private keys are generated and stored locally, never transmitted or uploaded to any server. There is no account creation, no KYC, and no telemetry. The application simply connects to the IOTA network, allowing you to send, receive, and manage assets directly from your desktop without intermediaries.</p>
 
 							<div class="docs-section__content">
-								<h3>What is IOTA Wallet?</h3>
-								<p>IOTA Wallet is a secure, user-friendly application designed to help you manage your IOTA tokens. Built with quantum-resistant security and zero-fee transactions, it provides the most advanced features for the IOTA ecosystem.</p>
+								<h3>Core Overview</h3>
+								<p>IOTA Wallet is more than a simple token holder — it is a fully protocol-aware interface that understands IOTA’s evolving standards, including the <strong>Stardust tokenization framework, alias and NFT outputs</strong>, and the <strong>storage deposit model</strong> that protects the ledger from spam and excessive small outputs. Through this framework, you can issue, receive, and manage <strong>native assets and NFTs</strong> directly on Layer 1 without the need for smart contracts or gas.</p>
+								<p>With upcoming updates like <strong>IOTA Rebased</strong>, the ecosystem is expanding further — introducing full decentralization, staking, and compatibility with both EVM and Move virtual machines. The wallet is architected to remain compatible with these upgrades, ensuring a seamless transition as the network evolves.</p>
 
-								<h4>Key Features</h4>
+								<h3>Philosophy and Design</h3>
+								<p>The guiding principle behind IOTA Wallet is simplicity backed by strong cryptography. The wallet combines a minimal interface with powerful under-the-hood features: local encryption, cross-platform support (Windows, macOS, Linux), and optional connections to your own IOTA or Shimmer nodes for advanced users. For those who prefer cold storage, hardware wallet integration is available, ensuring that sensitive keys never leave your device.</p>
+								<p>Security is entirely in your hands. Your recovery phrase (seed) is your only backup. Losing it means permanent loss of access, so it should be stored offline — ideally written on paper or kept in a hardware backup. The wallet will never prompt you to share your seed or credentials; if you encounter such requests, treat them as malicious.</p>
+
+								<h3>Key Capabilities</h3>
 								<ul class="docs-list">
-									<li>Quantum-resistant cryptographic security</li>
-									<li>Zero-fee transactions on the IOTA network</li>
-									<li>Built-in staking functionality</li>
-									<li>Multi-platform support (Desktop, Mobile, Web)</li>
-									<li>Hardware wallet integration</li>
-									<li>Real-time network monitoring</li>
+									<li>Multi-account management within a single interface.</li>
+									<li>Native asset and NFT support following the Stardust standard.</li>
+									<li>Real-time network sync and status visibility for mainnet or Shimmer.</li>
+									<li>Hardware wallet compatibility for secure key storage.</li>
+									<li>Custom node configuration for users who prefer self-hosted connectivity.</li>
 								</ul>
+								<p>These features are designed for both newcomers who just want to send tokens and advanced users managing multiple assets or operating their own nodes.</p>
 
-								<div class="docs-note docs-note--info">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
-											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Note:</strong> IOTA Wallet supports both IOTA and Shimmer networks, allowing you to manage multiple assets from a single interface.
-									</div>
-								</div>
-
-								<h4>System Requirements</h4>
+								<h3>System Requirements</h3>
 								<div class="docs-table-wrapper">
 									<table class="docs-table">
 										<thead>
@@ -182,32 +151,148 @@
 										</tbody>
 									</table>
 								</div>
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Note:</strong> IOTA Wallet supports both IOTA Mainnet and Shimmer, allowing you to manage multiple networks from a single interface.
+									</div>
+								</div>
+
+								<h3>Before You Start</h3>
+								<p>Before proceeding with installation, make sure you download the wallet only from official IOTA sources and verify the file’s signature or checksum. Always operate on a trusted device and avoid using wallets on public or shared systems. Once installed, generate your wallet and immediately back up your seed offline — this is the only way to recover your funds if your device is lost or damaged.</p>
+								<p>Keep your software updated. The IOTA protocol evolves rapidly, and staying current ensures you maintain compatibility with upcoming upgrades such as <strong>Rebased</strong> or <strong>Shimmer EVM</strong>. Updates also include essential security patches and performance improvements.</p>
 							</div>
 						</section>
 
 						<section class="docs-section" id="installation">
 							<h2 class="docs-section__title">Installation</h2>
-							<p class="docs-section__intro">Follow these steps to install IOTA Wallet on your device.</p>
+							<p class="docs-section__intro">This section explains how to install IOTA Wallet (Desktop) on your operating system.
+								The wallet is distributed as a native desktop application for <strong>Windows</strong>, <strong>macOS</strong>, and <strong>Linux</strong>.
+								Before installation, make sure your system meets the minimum requirements
+								and that you download the software <strong>only from official IOTA sources</strong> such as the project’s website or verified GitHub releases.
+								Avoid third-party mirrors or unofficial downloads.</p>
 
 							<div class="docs-section__content">
-								<h3>Desktop Installation</h3>
-
-								<h4>Windows</h4>
+								<h3>Installing on Windows</h3>
 								<ol class="docs-list docs-list--numbered">
-									<li>Download the Windows installer from the official website</li>
-									<li>Run the downloaded <code>.exe</code> file</li>
-									<li>Follow the installation wizard</li>
-									<li>Launch IOTA Wallet from the Start menu</li>
+									<li>
+										<strong>Download the ZIP archive.</strong> <br>
+										Visit the official IOTA Wallet download page and download the latest .zip package for Windows.
+									</li>
+									<li>
+										<strong>Extract the contents.</strong> <br>
+										Locate the downloaded file, right-click it, and select <strong>“Extract All”</strong> or use your preferred archive tool.
+										Choose a destination folder where the application will be stored.
+									</li>
+									<li>
+										<strong>Open the wallet.</strong> <br>
+										Inside the extracted folder, locate the main executable file (for example, IOTA-Wallet.exe) and double-click it to launch the wallet.
+									</li>
+									<li>
+										<strong>Create a shortcut (optional).</strong> <br>
+										To make access easier, you can right-click the executable and select <strong>“Send to → Desktop (create shortcut)”</strong>.
+									</li>
 								</ol>
+								<p>No installation wizard or additional setup is required — the Windows build runs directly from the extracted folder.</p>
 
-								<h4>macOS</h4>
+								<h3>Installing on macOS</h3>
 								<ol class="docs-list docs-list--numbered">
-									<li>Download the macOS installer from the official website</li>
-									<li>Open the downloaded <code>.dmg</code> file</li>
-									<li>Drag IOTA Wallet to your Applications folder</li>
-									<li>Launch IOTA Wallet from Applications</li>
+									<li>
+										<strong>Download the <code>.dmg</code> package</strong> from the official IOTA Wallet website.
+									</li>
+									<li>
+										<strong>Open the downloaded file</strong> to mount it as a virtual disk.
+									</li>
+									<li>
+										<strong>Drag the IOTA Wallet icon</strong> into your <strong>Applications</strong> folder.
+									</li>
+									<li>
+										<strong>Launch the wallet</strong> from the Applications folder or via Spotlight search.
+									</li>
 								</ol>
+								<p>On macOS, the <code>.dmg</code> package contains a fully signed and ready-to-use application — no additional installation steps or dependencies are needed.</p>
 
+								<h3>Installing on Linux</h3>
+								<ol class="docs-list docs-list--numbered">
+									<li>
+										<strong>Download the AppImage file</strong> from the official IOTA Wallet release page.
+									</li>
+									<li>
+										<strong>Enable execution permissions.</strong> <br>
+										Right-click the file, open <strong>Properties → Permissions</strong>, and enable “<strong>Allow executing as a program</strong>.”
+									</li>
+									<li>
+										<strong>Run the wallet.</strong> <br>
+										Double-click the file to launch IOTA Wallet immediately.
+									</li>
+								</ol>
+								<p>The AppImage version runs on most modern Linux distributions without installation or root access. You can store it anywhere — even on external drives — and run it on any compatible system.</p>
+
+								<h3>Verifying Your Download</h3>
+								<p>Every official release of IOTA Wallet includes a SHA-256 checksum and a PGP signature.
+									These allow you to confirm that the downloaded file is authentic and hasn’t been modified.</p>
+								<ul class="docs-list ">
+									<li>Compare the provided checksum with the one generated on your system.</li>
+									<li>Optionally, verify the file’s signature using the IOTA public signing key for full authenticity.</li>
+								</ul>
+								<p>Verification is optional but strongly recommended for users managing significant funds or running the wallet in a production environment.</p>
+
+								<h3>Troubleshooting</h3>
+								<p>If the wallet doesn’t open or fails to start:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Confirm that your operating system version is supported.</li>
+									<li>Ensure you’ve extracted the Windows ZIP file completely before launching.</li>
+									<li>On Linux, verify that AppImage execution is supported by your environment.</li>
+									<li>If the application still doesn’t run, review the startup logs or contact support via the official IOTA Wallet GitHub page.</li>
+								</ol>
+							</div>
+						</section>
+
+						<section class="docs-section" id="initial-setup">
+							<h2 class="docs-section__title">Initial Setup</h2>
+							<p class="docs-section__intro">After installing IOTA Wallet (Desktop), the next step is to set up your local wallet environment.
+								This process takes only a few minutes and ensures that your funds, keys, and data remain entirely under your control.</p>
+							<p class="docs-section__intro">All operations happen locally — nothing is transmitted, stored, or synchronized to any external servers.</p>
+							<p class="docs-section__intro">
+								When you launch the wallet for the first time, you’ll see two options: <br>
+								<strong>Create a New Wallet</strong> or <strong>Import Existing Wallet</strong>.
+							</p>
+							<div class="docs-section__content">
+								<h3>1. Creating a New Wallet</h3>
+								<p>If this is your first time using IOTA Wallet:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>
+										<strong>Select “Create a New Wallet.”</strong><br>
+										The application will generate a new master seed — a sequence of words that acts as your cryptographic key.
+										This seed is the only way to access your funds. There is no recovery option or central backup service.
+									</li>
+									<li>
+										<strong>Write down your seed phrase.</strong><br>
+										You’ll see a list of words (usually 24). Write them down carefully on paper and keep them offline — never screenshot or store them digitally.
+										Anyone with this phrase can control your assets.
+									</li>
+									<li>
+										<strong>Confirm the backup</strong><br>
+										The wallet will ask you to re-enter a few words to confirm that you’ve saved the seed correctly.
+										This step prevents accidental data loss later.
+									</li>
+									<li>
+										<strong>Set a local password.</strong><br>
+										After confirming your seed, you’ll be prompted to create a password that encrypts wallet data on your computer.
+										This password protects the wallet file from unauthorized access on your local device.
+									</li>
+									<li>
+										<strong>Finalize setup.</strong><br>
+										Once confirmed, the wallet will initialize and connect to the IOTA network.
+										You’ll then see your main dashboard with an empty balance, ready to receive tokens or create additional accounts.
+									</li>
+								</ol>
 								<div class="docs-note docs-note--warning">
 									<div class="docs-note__icon">
 										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,53 +300,73 @@
 										</svg>
 									</div>
 									<div class="docs-note__content">
-										<strong>macOS Users:</strong> You may need to approve the app in System Preferences > Security & Privacy if you see a security warning.
+										<strong>Important:</strong> <br>
+										Your seed is never uploaded or transmitted. Keep it safe and offline. Losing it means permanent loss of access to your funds.
 									</div>
 								</div>
 
-								<h4>Linux</h4>
+								<h3>2. Importing an Existing Wallet</h3>
+								<p>If you already have a seed from another IOTA Wallet instance:</p>
 								<ol class="docs-list docs-list--numbered">
-									<li>Download the Linux package for your distribution</li>
-									<li>For Ubuntu/Debian, install the <code>.deb</code> package:</li>
+									<li>
+										<strong>Select “Import Existing Wallet.”</strong><br>
+										The application will prompt you to enter your seed phrase.
+									</li>
+									<li>
+										<strong>Enter your recovery words.</strong><br>
+										Type your 24-word seed in the correct order. Double-check spelling and spacing — any mistake will result in an invalid import.
+									</li>
+									<li>
+										<strong>Set a new local password.</strong><br>
+										The imported wallet data will be stored encrypted on your current device.
+										This password is unique to your installation and can differ from previous setups.
+									</li>
+									<li>
+										<strong>Load your wallet.</strong><br>
+										Once confirmed, IOTA Wallet will synchronize with the network and automatically display your accounts and balances.
+									</li>
 								</ol>
+								<p>You can now manage your tokens, native assets, and NFTs just as before — all using your existing seed.</p>
 
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">bash</span>
-										<button class="docs-code__copy" data-code="sudo dpkg -i iota-wallet_2.1.4_amd64.deb">Copy</button>
-									</div>
-									<pre class="docs-code__content"><code>sudo dpkg -i iota-wallet_2.1.4_amd64.deb</code></pre>
-								</div>
+								<h3>3. Choosing a Network</h3>
+								<p>By default, IOTA Wallet connects to the <strong>Mainnet</strong> — the live production network where real assets exist.</p>
+								<p>Advanced users can switch to Shimmer or Devnet later from the <strong>Settings → Network</strong> section.</p>
+								<p>These environments are useful for testing or for interacting with upcoming protocol versions such as <strong>IOTA Rebased</strong>.</p>
 
-								<h3>Mobile Installation</h3>
+								<h3>4. Interface Overview</h3>
+								<p>Once the setup is complete, you’ll be taken to the main dashboard. The interface is designed to remain simple while exposing all essential wallet functions. You’ll see:</p>
+								<ul class="docs-list ">
+									<li><strong>Account list</strong> on the left, where you can manage multiple accounts under one seed.</li>
+									<li><strong>Balance and assets view</strong> in the center, showing your IOTA tokens, native assets, and NFTs.</li>
+									<li><strong>Send / Receive</strong> buttons for quick transfers.</li>
+									<li><strong>Activity tab</strong> to review your recent transactions.</li>
+									<li><strong>Settings</strong> where you can customize appearance, network connections, and security preferences.</li>
+								</ul>
+								<p>The wallet operates locally and communicates directly with IOTA nodes. All balances and transactions are fetched securely from the Tangle network.</p>
 
-								<h4>iOS</h4>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open the App Store on your iPhone or iPad</li>
-									<li>Search for "IOTA Wallet"</li>
-									<li>Tap "Get" to download and install</li>
-									<li>Open the app to begin setup</li>
-								</ol>
-
-								<h4>Android</h4>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open Google Play Store on your Android device</li>
-									<li>Search for "IOTA Wallet"</li>
-									<li>Tap "Install" to download the app</li>
-									<li>Open the app to begin setup</li>
-								</ol>
+								<h3>5. First Synchronization</h3>
+								<p>On first launch, the wallet will automatically synchronize with the network.
+									This process fetches current ledger data and confirms that your addresses are up to date.
+									Depending on your connection and hardware, it usually completes within a few seconds.</p>
+								<p>Once synced, your wallet is ready to receive tokens. You can now generate your first receiving address and share it safely with anyone sending IOTA or native assets.</p>
 							</div>
 						</section>
 
 						<section class="docs-section" id="quick-start">
 							<h2 class="docs-section__title">Quick Start Guide</h2>
-							<p class="docs-section__intro">Get up and running with IOTA Wallet in just a few minutes.</p>
+							<p class="docs-section__intro">Now that your wallet is installed and set up, you can start using it to send and receive IOTA. This section will walk you through the essential actions you’ll perform most often — receiving tokens, sending transactions, checking balances, and understanding how synchronization with the network works.</p>
+							<p class="docs-section__intro">The goal is to get you from fresh setup to your first confirmed transaction on the <strong>IOTA Tangle</strong> — the feeless, decentralized ledger that powers the entire IOTA ecosystem.</p>
 
 							<div class="docs-section__content">
-								<h3>First Launch</h3>
-								<p>When you first open IOTA Wallet, you'll be presented with two options:</p>
+								<h3>1. Open the Wallet</h3>
+								<p>Launch IOTA Wallet (Desktop) from your applications menu or desktop shortcut.
+									The first time it starts, the wallet connects automatically to a default IOTA Mainnet node and begins synchronizing. During this process, it downloads the latest ledger state, retrieves your account data, and ensures your balances and addresses are fully up to date.</p>
+								<p>
+									You can monitor connection progress through the small status indicator in the bottom corner of the interface. A green icon means your wallet is connected and synchronized; a grey or red one means the connection is pending or temporarily offline.
+									No action is needed — synchronization happens automatically, and once complete, the wallet displays your dashboard with your account list and a current balance (likely zero if your wallet is brand new).
+								</p>
 
-								<div class="docs-cards">
+								<!-- <div class="docs-cards">
 									<div class="docs-card">
 										<div class="docs-card__icon">
 											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,162 +389,20 @@
 										<h4 class="docs-card__title">Restore Existing Wallet</h4>
 										<p class="docs-card__description">Import your wallet using your recovery phrase or backup file.</p>
 									</div>
-								</div>
+								</div> -->
 
-								<h3>Creating Your First Wallet</h3>
+								<h3>Receiving Your First Tokens</h3>
+								<p>Before you can send IOTA, you’ll need to receive some tokens into your wallet.
+									This process is straightforward and requires only your receiving address.</p>
 								<ol class="docs-list docs-list--numbered">
-									<li>Click "Create New Wallet"</li>
-									<li>Choose a strong password to encrypt your wallet</li>
-									<li>Write down your 24-word recovery phrase and store it safely</li>
-									<li>Verify your recovery phrase by entering the requested words</li>
-									<li>Your wallet is now ready to use</li>
+									<li>On the main dashboard, click Receive.</li>
+									<li>The wallet will generate a unique receiving address for your account.</li>
+									<li>Copy this address and share it with the sender — or use the generated QR code for convenience.</li>
 								</ol>
-
-								<div class="docs-note docs-note--danger">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<circle cx="12" cy="12" r="10"></circle>
-											<line x1="15" y1="9" x2="9" y2="15"></line>
-											<line x1="9" y1="9" x2="15" y2="15"></line>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Critical:</strong> Never share your recovery phrase with anyone. Write it down on paper and store it in a secure location. This phrase is the only way to recover your wallet if you lose access.
-									</div>
-								</div>
-							</div>
-						</section>
-
-						<section class="docs-section" id="creating-wallet">
-							<h2 class="docs-section__title">Creating a Wallet</h2>
-							<p class="docs-section__intro">Learn how to create and configure your IOTA wallet.</p>
-
-							<div class="docs-section__content">
-								<h3>Wallet Setup Process</h3>
-								<p>Creating a new wallet involves several important steps to ensure the security of your funds.</p>
-
-								<h4>Step 1: Password Creation</h4>
-								<p>Your password encrypts your wallet data locally on your device. Choose a strong password that:</p>
-								<ul class="docs-list">
-									<li>Is at least 12 characters long</li>
-									<li>Contains uppercase and lowercase letters</li>
-									<li>Includes numbers and special characters</li>
-									<li>Is unique and not used elsewhere</li>
-								</ul>
-
-								<h4>Step 2: Recovery Phrase Generation</h4>
-								<p>Your recovery phrase consists of 24 randomly generated words. This phrase is the master key to your wallet and can restore access to your funds on any device.</p>
-
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">Example Recovery Phrase</span>
-									</div>
-									<pre class="docs-code__content"><code>abandon ability able about above absent absorb
- abstract absurd abuse access accident account
- accuse achieve acid acoustic acquire across
- act action actor actress actual adapt add</code></pre>
-								</div>
-
-								<h4>Step 3: Wallet Name and Profile</h4>
-								<p>Give your wallet a memorable name to help identify it if you manage multiple wallets. You can also customize:</p>
-								<ul class="docs-list">
-									<li>Wallet color theme</li>
-									<li>Currency display preferences</li>
-									<li>Network settings (Mainnet/Testnet)</li>
-								</ul>
-
-								<h3>Multi-Account Support</h3>
-								<p>IOTA Wallet supports multiple accounts within a single wallet. Each account:</p>
-								<ul class="docs-list">
-									<li>Has its own unique address</li>
-									<li>Can be named for easy identification</li>
-									<li>Shares the same recovery phrase</li>
-									<li>Can have different balances</li>
-								</ul>
-							</div>
-						</section>
-
-						<section class="docs-section" id="sending-tokens">
-							<h2 class="docs-section__title">Sending Tokens</h2>
-							<p class="docs-section__intro">Learn how to send IOTA tokens to other addresses.</p>
-
-							<div class="docs-section__content">
-								<h3>How to Send Tokens</h3>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open your wallet and ensure you're connected to the network</li>
-									<li>Click the "Send" button in your account dashboard</li>
-									<li>Enter the recipient's IOTA address</li>
-									<li>Specify the amount to send</li>
-									<li>Add an optional message (up to 256 characters)</li>
-									<li>Review the transaction details</li>
-									<li>Confirm and sign the transaction</li>
-								</ol>
-
-								<h4>Address Verification</h4>
-								<p>Always verify the recipient address carefully. IOTA addresses are typically 63 characters long and start with "iota1".</p>
-
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">Example IOTA Address</span>
-										<button class="docs-code__copy" data-code="iota1qpg2xkj66wwgn8p2ggnp7p582gj8g5r5xhmnsdw7rqkqwjpr9t6xhzfvqdx">Copy</button>
-									</div>
-									<pre class="docs-code__content"><code>iota1qpg2xkj66wwgn8p2ggnp7p582gj8g5r5xhmnsdw7rqkqwjpr9t6xhzfvqdx</code></pre>
-								</div>
-
-								<h4>Transaction Fees</h4>
-								<p>One of IOTA's main advantages is zero transaction fees. You can send any amount without worrying about network fees.</p>
-
-								<div class="docs-note docs-note--success">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-											<polyline points="22 4 12 14.01 9 11.01"></polyline>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Zero Fees:</strong> IOTA transactions are completely feeless, making it perfect for micropayments and frequent transactions.
-									</div>
-								</div>
-
-								<h4>Transaction Status</h4>
-								<p>After sending, you can track your transaction status:</p>
-								<ul class="docs-list">
-									<li><strong>Pending:</strong> Transaction is being processed by the network</li>
-									<li><strong>Confirmed:</strong> Transaction has been accepted by the network</li>
-									<li><strong>Failed:</strong> Transaction could not be completed</li>
-								</ul>
-							</div>
-						</section>
-
-						<section class="docs-section" id="receiving-tokens">
-							<h2 class="docs-section__title">Receiving Tokens</h2>
-							<p class="docs-section__intro">Learn how to receive IOTA tokens in your wallet.</p>
-
-							<div class="docs-section__content">
-								<h3>Your Receive Address</h3>
-								<p>To receive IOTA tokens, you need to share your address with the sender.</p>
-
-								<h4>How to Find Your Address</h4>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open your wallet and select the account</li>
-									<li>Click the "Receive" button</li>
-									<li>Your address will be displayed with a QR code</li>
-									<li>Share the address or QR code with the sender</li>
-								</ol>
-
-								<h4>Address Reuse</h4>
-								<p>Unlike older cryptocurrency systems, IOTA addresses can be safely reused multiple times. You can use the same address for all incoming transactions.</p>
-
-								<h4>Multiple Addresses</h4>
-								<p>For privacy and organizational purposes, you can generate multiple receiving addresses within each account. This is useful for:</p>
-								<ul class="docs-list">
-									<li>Separating different income sources</li>
-									<li>Tracking specific payments</li>
-									<li>Enhanced privacy</li>
-								</ul>
-
-								<h3>QR Code Sharing</h3>
-								<p>The QR code feature makes it easy to receive payments in person. The sender can simply scan your QR code with their mobile wallet to automatically fill in your address.</p>
+								<p>Each address is derived from your private seed and is completely unique. Once a transaction is sent to that address, it becomes part of your account history and will appear in your wallet once confirmed.</p>
+								<p>When a transfer is initiated, it will first show as Pending in the Activity tab. This means the transaction has been broadcast to the Tangle but is waiting for confirmation.
+									The IOTA network operates asynchronously — every new transaction helps confirm two previous ones. Because of this, confirmations typically happen within seconds to a few minutes depending on network activity.</p>
+								<p>Once confirmed, your transaction status will update automatically, and your balance will reflect the new tokens. You’re now holding IOTA in your wallet.</p>
 
 								<div class="docs-note docs-note--info">
 									<div class="docs-note__icon">
@@ -450,177 +413,490 @@
 										</svg>
 									</div>
 									<div class="docs-note__content">
-										<strong>Tip:</strong> You can also include a specific amount in the QR code to streamline payment requests.
+										<strong>Security Tip:</strong>
+										Avoid reusing addresses. Generate a new receiving address for each transaction — it keeps your activity private and aligns with IOTA’s address management rules.
 									</div>
 								</div>
+
+								<h3>3. Sending Tokens</h3>
+								<p>To send IOTA or any other supported asset, use the Send tab on your dashboard.
+									The process is similar across all platforms, but the core steps remain the same.</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Click <strong>Send</strong> and enter the <strong>recipient’s address</strong>.</li>
+									<li>Specify the amount and choose the <strong>asset type</strong> you want to send (IOTA, a native token, or NFT).</li>
+									<li>Optionally, add a <strong>message or tag</strong>. This small metadata field is recorded in the transaction and can be useful for labeling payments or adding context.</li>
+									<li>Review all details carefully before confirming. Once you click <strong>Send Transaction</strong>, your wallet will sign the transaction locally using your private keys and broadcast it to the Tangle network.</li>
+								</ol>
+								<p>Because IOTA is a feeless protocol, there are <strong>no miners or gas costs</strong>. The exact amount you send is what the recipient receives — the network does not deduct fees.</p>
+								<p>The transaction will appear immediately in your <strong>Activity</strong> tab as “Pending,” and its status will update to “Confirmed” once validated by the network.
+									You can open the transaction to view full details, including timestamp, message, and address references.</p>
+
+								<h3>4. Checking Balances and History</h3>
+								<p>Your wallet’s <strong>dashboard</strong> gives you a complete overview of your holdings.
+									At the top, you’ll see your total balance in IOTA and, if applicable, the value of any native assets or NFTs you hold.</p>
+								<p>Each account you create within the wallet has its own transaction history. To explore details, click on an account to open its overview page — there you’ll see a list of incoming and outgoing transactions, confirmation statuses, and timestamps.</p>
+								<p>The <strong>Activity</strong> tab keeps a chronological log of everything that’s happened in your wallet. Each entry includes the transaction ID, type, and status, along with direct links to view it on a public Tangle explorer if you want to verify it independently.</p>
+								<p>Since IOTA transactions are immutable and fully recorded on the network, this history acts as a permanent ledger of your activity. The wallet simply indexes and displays it in real time.</p>
+
+								<h3>5. Managing Addresses</h3>
+								<p>IOTA Wallet automatically handles address creation for you.
+									Each time you receive tokens, the application generates a new address from your seed using deterministic derivation.
+									This means you can create thousands of addresses under the same wallet without worrying about losing track — all of them can be restored from your seed phrase if you ever reinstall the wallet.</p>
+								<p>Using fresh addresses enhances privacy because it prevents others from easily linking multiple transactions together. It also prevents potential replay or double-use of addresses, a common issue in DAG-based ledgers.</p>
+								<p>If you ever want to view your used or unused addresses, you can open the <strong>Address Manager</strong> inside the wallet. It lists every address your seed has generated, along with whether each one has been used for incoming or outgoing transactions.</p>
+
+								<h3>6. Understanding Network Sync and Status</h3>
+								<p>The IOTA network is a live, distributed environment, so the wallet constantly synchronizes with it to display accurate information. <br>
+									At the bottom of the interface, you’ll see a <strong>network indicator</strong> that reflects your current connection:</p>
+								<ul class="docs-list">
+									<li><strong>Green</strong> – Fully connected and synchronized with the latest ledger milestone.</li>
+									<li><strong>Yellow</strong> – Synchronizing or catching up with recent transactions.</li>
+									<li><strong>Red</strong> – Temporarily disconnected or node unavailable.</li>
+								</ul>
+								<p>Synchronization ensures that your wallet always shows correct balances and transaction statuses.
+									If your wallet becomes unsynchronized, it will automatically reconnect and rescan. You can also switch to another public node in <strong>Settings → Network</strong> if your current one is unreliable.</p>
+								<p>Advanced users can connect to their own node for greater privacy and independence. Doing so allows the wallet to query the network directly without relying on external infrastructure.</p>
+
+								<h3>7. You’re Ready</h3>
+								<p>At this point, your wallet is fully operational.
+									You’ve successfully connected to the IOTA Mainnet, received your first tokens, sent your first transaction, and learned how to read your account balances and history.</p>
+								<p>IOTA’s Tangle ensures that every transaction you make helps strengthen the network itself — there are no miners, no gas fees, and no intermediaries.
+									Everything happens peer-to-peer, secured by cryptography and validated by the community.</p>
+								<p>From here, you can start exploring the wallet’s more advanced capabilities:</p>
+								<ul class="docs-list">
+									<li>Create additional accounts under the same seed for organization or project separation.</li>
+									<li>Experiment with native tokens and NFTs through the Stardust tokenization framework.</li>
+									<li>Connect to the Shimmer network or custom nodes for testing new features.</li>
+								</ul>
+								<p>The possibilities expand as the IOTA ecosystem evolves — and your wallet is designed to stay fully compatible as it does.</p>
 							</div>
 						</section>
 
-						<section class="docs-section" id="staking">
-							<h2 class="docs-section__title">Staking</h2>
-							<p class="docs-section__intro">Earn rewards by staking your IOTA tokens and helping secure the network.</p>
+						<section class="docs-section" id="managing-accounts">
+							<h2 class="docs-section__title">Managing Accounts</h2>
+							<p class="docs-section__intro">The IOTA Wallet is designed to support multi-account management, giving you full control over multiple sets of addresses, assets, and transaction histories — all within a single wallet environment. <br>
+								Each account functions as an independent entity derived from your master seed, allowing you to separate funds, manage different purposes, or organize tokens and NFTs across projects.</p>
+							<p class="docs-section__intro">Whether you’re an everyday user holding IOTA tokens or a developer experimenting with the Stardust framework, account management is at the core of your wallet experience.</p>
 
 							<div class="docs-section__content">
-								<h3>What is Staking?</h3>
-								<p>Staking allows you to lock your IOTA tokens to support network validation and earn rewards. Your staked tokens help secure the IOTA network while generating passive income.</p>
-
-								<h4>Staking Benefits</h4>
+								<h3>1. Account Structure</h3>
+								<p>Each account in IOTA Wallet is a deterministic branch of your master seed.
+									That means all addresses, balances, and transaction histories within an account are cryptographically tied to your seed phrase — but remain isolated from other accounts for privacy and organization.</p>
+								<p>You can think of your wallet like a tree:</p>
 								<ul class="docs-list">
-									<li>Earn rewards on your holdings</li>
-									<li>Support network security and decentralization</li>
-									<li>Participate in network governance</li>
-									<li>Flexible staking periods</li>
+									<li>
+										The seed is the root — the source of all keys and addresses.
+									</li>
+									<li>Each account is a separate branch derived from that seed.</li>
+									<li>Each branch contains multiple addresses, where your tokens and assets live.</li>
 								</ul>
+								<p>This structure allows you to manage multiple identities or use-cases under one secure seed — for example:</p>
+								<ul class="docs-list">
+									<li>A personal account for your main holdings.</li>
+									<li>A separate account for development or testing.</li>
+									<li>Another for business or staking activity.</li>
+								</ul>
+								<p>All accounts share the same encryption and security level, but their balances and activity remain distinct.</p>
 
-								<h3>How to Stake</h3>
+
+								<h3>2. Creating and Managing Accounts</h3>
+								<p>You can create as many accounts as you need within the wallet.</p>
 								<ol class="docs-list docs-list--numbered">
-									<li>Navigate to the "Staking" section in your wallet</li>
-									<li>Select the amount you want to stake</li>
-									<li>Choose your staking period (30, 60, 90, or 180 days)</li>
-									<li>Review the estimated rewards</li>
-									<li>Confirm your staking transaction</li>
+									<li>Open the main dashboard.</li>
+									<li>Click Add Account.</li>
+									<li>Assign a name or label (e.g., “Main,” “Trading,” “NFT Vault”).</li>
+									<li>The wallet generates a new set of addresses derived from your master seed.</li>
 								</ol>
+								<p>Once created, your new account appears in the sidebar along with its balance summary.
+									You can switch between accounts instantly — the interface updates to show each one’s tokens, transaction history, and network status independently.</p>
+								<p>Accounts are created locally and require no network registration or external validation.
+									They are recognized automatically by the IOTA ledger through their unique derived addresses.</p>
 
-								<h4>Staking Periods and Rewards</h4>
-								<div class="docs-table-wrapper">
-									<table class="docs-table">
-										<thead>
-											<tr>
-												<th>Period</th>
-												<th>Annual Yield</th>
-												<th>Lock Duration</th>
-												<th>Early Unlock</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>30 days</td>
-												<td>5% APY</td>
-												<td>30 days</td>
-												<td>Available with penalty</td>
-											</tr>
-											<tr>
-												<td>60 days</td>
-												<td>7% APY</td>
-												<td>60 days</td>
-												<td>Available with penalty</td>
-											</tr>
-											<tr>
-												<td>90 days</td>
-												<td>10% APY</td>
-												<td>90 days</td>
-												<td>Available with penalty</td>
-											</tr>
-											<tr>
-												<td>180 days</td>
-												<td>15% APY</td>
-												<td>180 days</td>
-												<td>Not available</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<div class="docs-note docs-note--warning">
+								<div class="docs-note docs-note--info">
 									<div class="docs-note__icon">
-										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
 										</svg>
 									</div>
 									<div class="docs-note__content">
-										<strong>Important:</strong> Staked tokens are locked for the chosen period. Early unstaking may result in reduced or no rewards.
+										<strong>Tip:</strong>
+										Account names are stored locally for your convenience. If you restore your wallet from the seed on a new device, your account data will return, but custom names may need to be re-added.
 									</div>
 								</div>
+
+								<h3>3. Balances and Token Types</h3>
+								<p>Each account can hold multiple types of assets simultaneously thanks to IOTA’s Stardust protocol — an upgrade that transformed the Tangle into a fully tokenized multi-asset ledger.</p>
+								<p>Within your account view, you’ll find:</p>
+								<ul class="docs-list">
+									<li><strong>IOTA balance</strong>: your base currency used for standard transfers and as a storage deposit.</li>
+									<li><strong>Native tokens</strong>: user-created or project tokens, each with its own supply and metadata.</li>
+									<li><strong>NFTs</strong>: unique, immutable assets directly issued on Layer 1 — without smart contracts.</li>
+								</ul>
+								<p>You can expand any token entry to see detailed information, including:</p>
+								<ul class="docs-list">
+									<li>Token ID</li>
+									<li>Issuer address</li>
+									<li>Metadata or attached documents</li>
+									<li>Total supply and circulating amount</li>
+								</ul>
+								<p>This multi-asset model allows full interoperability within the same wallet — you can send, receive, or store IOTA tokens, native assets, and NFTs in the same account without cross-chain bridges or wrapping mechanisms.</p>
+
+								<h3>4. Address Management</h3>
+								<p>Each account contains multiple addresses that are generated automatically as you transact.
+									New addresses are created deterministically from your seed, so even if you reinstall the wallet or restore it elsewhere, every previous address can be recovered exactly as before.</p>
+								<p>The wallet manages address generation automatically:</p>
+								<ul class="docs-list">
+									<li>When you click Receive, a new unused address is created.</li>
+									<li>Once funds arrive, that address becomes “used,” and a new one will be prepared for the next transaction.</li>
+								</ul>
+								<p>This method ensures both privacy and compliance with IOTA’s design, which discourages address reuse.
+									You can view your entire address list, including used and unused addresses, in the Address Manager panel.</p>
+								<p>If you operate multiple accounts, each maintains its own address list, ensuring that your personal, business, or testing activities remain distinct.</p>
+
+								<h3>5. Viewing Activity and Transaction History</h3>
+								<p>Each account maintains an independent transaction history that includes:</p>
+								<ul class="docs-list">
+									<li>Incoming and outgoing transfers.</li>
+									<li>Token minting or burning events.</li>
+									<li>NFT creation, transfer, or destruction.</li>
+									<li>Staking or reward distributions (if applicable).</li>
+								</ul>
+								<p>You can view this history in the Activity tab for each account.
+									Transactions are listed chronologically, with clear labels for amount, asset type, address, and confirmation status. Clicking any entry opens a detailed view with full metadata, transaction ID, and a link to the public Tangle explorer for verification.</p>
+								<p>Because all data is stored on-chain, your history is permanent, verifiable, and recoverable on any device that restores the same seed.</p>
+							</div>
+						</section>
+
+						<section class="docs-section" id="sending-receiving">
+							<h2 class="docs-section__title">Sending & Receiving</h2>
+							<p class="docs-section__intro">The IOTA Wallet allows you to send and receive tokens, native assets, and NFTs directly on the IOTA Tangle.
+								Every transaction is signed locally on your device, transmitted peer-to-peer, and confirmed by the network without intermediaries or transaction fees.
+								This section explains how transfers work, how to monitor them, and what to expect at each stage of the process.</p>
+
+							<div class="docs-section__content">
+								<h3>1. Overview of Transfers in IOTA</h3>
+								<p>Transactions in IOTA operate differently from traditional blockchains.
+									Instead of miners or validators, the Tangle is a Directed Acyclic Graph (DAG) where each new transaction confirms two previous ones.
+									This structure enables parallel confirmations, near-instant finality, and zero network fees.</p>
+								<p>When you send a transaction from IOTA Wallet:</p>
+								<ul class="docs-list">
+									<li>It creates a digital message bundle containing the transfer details.</li>
+									<li>The transaction is cryptographically signed with your private key stored locally.</li>
+									<li>The signed message is then broadcast to the Tangle through the connected node.</li>
+									<li>Once confirmed by subsequent transactions, your balance updates automatically.</li>
+								</ul>
+								<p>This approach ensures complete decentralization — your wallet directly interacts with the network without any central relay.</p>
+
+								<h3>1. Overview of Transfers in IOTA</h3>
+								<p>Receiving funds in IOTA Wallet is straightforward and secure:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open the account you want to receive funds into.</li>
+									<li>Click Receive on the dashboard.</li>
+									<li>A new, unused receiving address will be generated automatically.</li>
+									<li>Copy this address or scan the displayed QR code.</li>
+									<li>Share the address with the sender.</li>
+								</ol>
+								<p>Each address is derived from your wallet seed but is unique to that transaction. Once used, the wallet will automatically generate the next address for future transfers.</p>
+								<p>When a sender broadcasts a transaction to your address:</p>
+								<ul class="docs-list">
+									<li>It first appears in your Activity tab with a “Pending” status.</li>
+									<li>Once the transaction is confirmed by the network, the balance updates automatically.</li>
+								</ul>
+								<p>Incoming transfers can include:</p>
+								<ul class="docs-list">
+									<li>IOTA tokens (the base currency).</li>
+									<li>Native tokens, created by projects via the Stardust framework.</li>
+									<li>NFTs, which are unique on-chain assets with metadata and immutability guarantees.</li>
+								</ul>
+								<p>You can expand any transaction entry to view details such as the sender’s address, attached metadata, and the transaction ID (which can be checked on a public Tangle explorer).</p>
+
+
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Tip:</strong>
+										For maximum privacy and security, generate a new receiving address for every transaction.
+										The wallet handles this automatically but you can also do it manually if you prefer explicit address rotation.
+									</div>
+								</div>
+
+								<h3>3. Sending Tokens or Assets</h3>
+								<p>Sending tokens works just as smoothly — the wallet builds and broadcasts your transaction in a few seconds.</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Click the Send button on your account dashboard.</li>
+									<li>Enter the recipient’s address in the address field.</li>
+									<li>Specify the amount and asset type (IOTA, native token, or NFT).</li>
+									<li>Optionally, include a message or tag — this can be used for labeling payments, referencing invoices, or embedding small data notes.</li>
+									<li>Review your transaction details carefully and click Send Transaction.</li>
+								</ol>
+								<p>The wallet signs your transaction locally, encrypting it with your private key.
+									It then sends the signed data to the Tangle via your chosen node connection.</p>
+								<p>Within a few moments:</p>
+								<ul class="docs-list">
+									<li>The transaction will appear under Activity as “Pending.”</li>
+									<li>Once confirmed, the status will change to “Confirmed.”</li>
+									<li>The recipient’s balance will reflect the incoming funds automatically.</li>
+								</ul>
+								<p>Because the IOTA network has no fees, the full amount you send arrives exactly as entered.
+									However, some assets (especially native tokens or NFTs) require small IOTA deposits for storage costs — this ensures ledger sustainability and prevents spam outputs.
+									The wallet calculates these automatically, so you don’t have to manage them manually.</p>
+
+								<h3>4. Understanding Transaction States</h3>
+								<p>Every transaction goes through several clearly defined stages:</p>
+								<ul class="docs-list">
+									<li><strong>Pending</strong>: The transaction has been created and broadcast to the network but is still awaiting confirmation.</li>
+									<li><strong>Confirmed</strong>: The transaction has been accepted and validated by the network; balances have updated.</li>
+									<li><strong>Conflicted / Rejected</strong>: The transaction failed due to invalid inputs, double-spending, or node desynchronization.</li>
+								</ul>
+								<p>The wallet continuously monitors these states and updates them automatically.
+									You can click any transaction to open a detailed view — showing network confirmation depth, timestamp, inputs and outputs, and the link to verify it on the public <strong>Tangle Explorer</strong>.</p>
+								<p>If your wallet temporarily loses connection to the network, transactions remain in a “pending” state until reconnection, at which point synchronization resumes automatically.</p>
+
+								<h3>5. Viewing Transaction History</h3>
+								<p>The Activity tab keeps a detailed log of every incoming and outgoing transaction.
+									Each entry displays the transaction type, asset, amount, timestamp, and current confirmation status.
+									Clicking on a transaction opens a full detail page with:</p>
+								<ul class="docs-list">
+									<li>Sender and recipient addresses</li>
+									<li>Transaction ID</li>
+									<li>Message or tag content (if used)</li>
+									<li>Network confirmation level</li>
+								</ul>
+								<p>For advanced users, a direct link to the Tangle Explorer allows you to verify the transaction independently and view its underlying outputs.
+									This transparency is central to IOTA’s open-ledger philosophy — every confirmed transaction can be independently audited on-chain.</p>
+
+								<h3>6. Common Questions</h3>
+								<p>
+									<strong>How long do transactions take to confirm?</strong><br>
+									Usually within seconds, though high network load may extend this slightly. The wallet updates automatically when confirmation occurs.
+								</p>
+								<p>
+									<strong>Can I cancel a transaction after sending it?</strong><br>
+									No. Once broadcast to the Tangle, a transaction is immutable. Always review details before confirming.
+								</p>
+								<p>
+									<strong>Why do I see a “storage deposit” amount?</strong><br>
+									IOTA requires a minimal amount of base tokens to remain attached to outputs containing assets or NFTs. This prevents spam and ensures the ledger remains efficient.
+									These deposits are returned when outputs are consumed or assets moved.
+								</p>
+								<p>
+									<strong>Do I need to stay online for confirmation?</strong><br>
+									No. The wallet can close safely after broadcasting. The transaction continues to confirm on the network even if your app is closed.
+								</p>
+							</div>
+						</section>
+
+						<section class="docs-section" id="staking-rewards">
+							<h2 class="docs-section__title">Staking & Rewards</h2>
+							<p class="docs-section__intro">The IOTA Wallet allows you to participate in network staking and earn rewards directly from your desktop — securely, non-custodially, and without relying on third-party services.
+								Staking in the IOTA ecosystem functions differently from traditional Proof-of-Stake systems: it’s built on IOTA’s feeless, DAG-based architecture, and operates through periodic reward campaigns governed by protocol rules or community programs.</p>
+							<p class="docs-section__intro">With the evolution toward IOTA Rebased, staking is becoming a permanent part of the network — offering both governance participation and token yield opportunities.</p>
+
+							<div class="docs-section__content">
+								<h3>1. Understanding Staking in the IOTA Ecosystem</h3>
+								<p>Unlike many blockchain systems that require locking tokens into validator pools, IOTA’s staking mechanism is lightweight and trustless.
+									It allows wallet holders to “signal participation” by assigning their balance to a staking event, without moving or risking ownership of their tokens.</p>
+								<p>In IOTA and its sister network Shimmer, staking serves two main purposes:</p>
+								<h4>Staking Benefits</h4>
+								<ul class="docs-list">
+									<li><strong>Reward Distribution</strong>: rewarding participants with new native tokens during defined campaigns.</li>
+									<li><strong>Governance & Participation</strong>: enabling holders to support upcoming network proposals or ecosystem projects.</li>
+								</ul>
+								<p>When a staking event begins, eligible token holders can opt-in through their wallet interface.
+									Their wallet marks specific outputs as “participating,” and from that point on, those tokens accrue rewards until the event ends or the user opts out.</p>
+								<p>Your IOTA or Shimmer tokens never leave your wallet — they remain fully under your control at all times.</p>
+
+								<h3>2. Activating Staking in IOTA Wallet</h3>
+								<p>The wallet provides a simple interface to start staking:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open your account on the dashboard.</li>
+									<li>Click the Staking tab.</li>
+									<li>You’ll see all currently active staking events, including the asset name, duration, reward ratio, and network.</li>
+									<li>Choose the event you wish to join and click Start Staking.</li>
+									<li>Confirm your participation.</li>
+								</ol>
+								<p>Once activated, the wallet sends a small transaction to mark your IOTA or Shimmer tokens as “staked.”
+									This process is feeless and takes only a few seconds to appear in your activity log.</p>
+								<p>Your staking status will then display in real time, showing your accumulated rewards and current progress.</p>
+								<div class="docs-note docs-note--info">
+									<div class="docs-note__icon">
+										<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+											<circle cx="12" cy="12" data-name="--Circle" fill="none" id="_--Circle" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"></line>
+											<line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"></line>
+										</svg>
+									</div>
+									<div class="docs-note__content">
+										<strong>Note:</strong>
+										Staking events are time-bound. If you join halfway through an event, you’ll earn rewards only for the remaining period.
+									</div>
+								</div>
+
+								<h3>3. Earning Rewards</h3>
+								<p>Rewards in the IOTA ecosystem are distributed in the form of newly issued native tokens specific to each staking campaign.
+									These may represent ecosystem assets, project tokens, or future governance tokens.</p>
+								<p>Your rewards accumulate automatically as long as your tokens remain in the staking state. The wallet displays:</p>
+
+								<h3>4. Unstaking and Withdrawing</h3>
+								<p>You can stop staking at any time:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Open the Staking tab in your account.</li>
+									<li>Click Stop Staking for the selected event.</li>
+									<li>Confirm the action — your tokens will be marked as “unstaked.”</li>
+								</ol>
+								<p>Once unstaked, your tokens are immediately free for transfers or other operations.
+									Rewards already earned remain credited to your account and can be used independently.</p>
+								<p>Unlike some networks, IOTA imposes no lockup period — you can move or unstake at any time without penalties or waiting periods.</p>
+
+								<h3>5. Viewing Staking History</h3>
+								<p>Each staking action is recorded in your Activity tab, including:</p>
+								<ul class="docs-list ">
+									<li>Start and stop transactions.</li>
+									<li>Accrued rewards and payout timestamps.</li>
+									<li>The type of token received and associated event ID.</li>
+								</ul>
+								<p>This log ensures complete transparency and traceability.
+									For on-chain verification, each staking transaction includes an output reference you can inspect directly in the Tangle Explorer, confirming your participation in the event.</p>
+
+								<h3>6. Staking on Shimmer and IOTA Rebased</h3>
+								<p>The IOTA Wallet supports staking on both Shimmer and the upcoming IOTA Rebased network versions.
+									While the fundamentals are identical, each network may feature different reward assets or event durations.</p>
+								<ul class="docs-list ">
+									<li><strong>Shimmer Network</strong>: primarily used for testing new economic features and distributing ecosystem rewards such as SMR or community project tokens.</li>
+									<li><strong>IOTA Rebased</strong>: introduces continuous staking and on-chain governance voting — integrating long-term participation directly into the base protocol.</li>
+								</ul>
+								<p>The wallet automatically detects the network and displays all active staking programs relevant to your connected environment.
+									Switching between networks can be done anytime via Settings → Network without reinstalling or migrating data.</p>
 							</div>
 						</section>
 
 						<section class="docs-section" id="seed-management">
 							<h2 class="docs-section__title">Seed Management</h2>
-							<p class="docs-section__intro">Learn how to properly manage and secure your wallet seed phrase.</p>
+							<p class="docs-section__intro">Seed management in IOTA Wallet is not just about writing down a few words — it defines the wallet’s entire security architecture.
+								Your seed is the root of trust in the IOTA ecosystem: a single piece of entropy that deterministically generates every private key, account, and transaction signature.
+								Understanding how the wallet handles it helps you grasp why IOTA can remain non-custodial and fully decentralized without compromising security.</p>
 
 							<div class="docs-section__content">
-								<h3>Understanding Your Seed Phrase</h3>
-								<p>Your seed phrase (also called recovery phrase or mnemonic) is a 24-word sequence that represents your wallet's private keys. It is the master key to your wallet and provides complete access to all your funds.</p>
-
-								<h4>Seed Security Rules</h4>
-								<div class="docs-note docs-note--danger">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<circle cx="12" cy="12" r="10"></circle>
-											<line x1="15" y1="9" x2="9" y2="15"></line>
-											<line x1="9" y1="9" x2="15" y2="15"></line>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Never:</strong>
-										<ul>
-											<li>Share your seed phrase with anyone</li>
-											<li>Store it digitally (photos, cloud, email)</li>
-											<li>Enter it on any website</li>
-											<li>Share it with support teams</li>
-										</ul>
-									</div>
-								</div>
-
-								<h4>Best Practices for Seed Storage</h4>
+								<h3>1. Security Philosophy</h3>
+								<p>IOTA Wallet follows a <strong>zero-knowledge and zero-trust design</strong>.
+									The wallet never sends, stores, or exposes your seed to any external service.
+									All cryptographic operations — from seed generation to transaction signing — happen locally in your system’s memory.</p>
+								<p>This design ensures:</p>
 								<ul class="docs-list">
-									<li>Write it down on paper using a pen</li>
-									<li>Store in a fireproof and waterproof safe</li>
-									<li>Consider using a metal backup device</li>
-									<li>Keep multiple copies in separate secure locations</li>
-									<li>Never store on any device connected to the internet</li>
+									<li>No central recovery system exists.</li>
+									<li>No external validator ever touches your private data.</li>
+									<li>Every action that involves the seed is deterministic and verifiable by the user.</li>
+								</ul>
+								<p>Your device, your seed, your control — that’s the fundamental security model.</p>
+
+								<h3>2. Local Key Architecture</h3>
+								<p>When you create a wallet, the seed is generated and then encrypted within a <strong>local vault</strong>.
+									This vault exists only on your machine and is protected by a password you set during setup.</p>
+								<p>The encryption uses strong symmetric ciphers (AES-256 equivalent), and the decrypted version of the seed never leaves volatile memory.
+									When you send a transaction, the wallet:</p>
+								<ol class="docs-list docs-list--numbered">
+									<li>Derives the private key for the relevant address directly from the seed.</li>
+									<li>Signs the transaction entirely in memory.</li>
+									<li>Immediately wipes the derived key after signing.</li>
+								</ol>
+								<p>No persistent copy of private keys is ever written to disk.
+									This architecture minimizes attack surface — even if someone gains partial access to system storage, they cannot extract usable private data.</p>
+
+								<h3>3. Entropy and Determinism</h3>
+								<p>The IOTA Wallet uses a secure randomness source on your device to generate a 24-word <strong>BIP39-compliant mnemonic</strong>.
+									This mnemonic is a human-readable encoding of 256 bits of entropy — a value large enough to make brute-force attacks mathematically impossible.</p>
+								<p>From that single seed, the wallet deterministically derives all keys using hierarchical key paths defined by the IOTA protocol.</p>
+								<p>This means:</p>
+								<ul class="docs-list">
+									<li>Every account and address is reproducible.</li>
+									<li>The same seed will always generate the same set of addresses, on any device.</li>
+									<li>No external synchronization is needed — your seed alone contains the full state of ownership.</li>
+								</ul>
+								<p>Deterministic derivation also means <strong>one backup secures everything</strong>: accounts, balances, and even NFTs.</p>
+
+								<h3>4. Threat Model and Countermeasures</h3>
+								<p>The wallet assumes a realistic modern threat landscape — from clipboard sniffers to memory scraping malware.
+									Its defense mechanisms focus on reducing exposure time and ensuring local-only cryptography.</p>
+
+								<h4>Attack vectors considered:</h4>
+								<ul class="docs-list">
+									<li>Malicious extensions or clipboard monitoring tools.</li>
+									<li>Disk inspection after memory dumps.</li>
+									<li>Fake update installers or phishing attempts.</li>
+									<li>Keyloggers requesting mnemonic input.</li>
 								</ul>
 
-								<h3>Verifying Your Seed</h3>
-								<p>Regularly verify that you have correctly recorded your seed phrase:</p>
-								<ol class="docs-list docs-list--numbered">
-									<li>Go to Settings > Security > Verify Recovery Phrase</li>
-									<li>Enter the requested words from your backup</li>
-									<li>Confirm that your backup is correct</li>
-								</ol>
+								<h4>Mitigation:</h4>
+								<ul class="docs-list">
+									<li>Seeds never appear in plain text once saved.</li>
+									<li>Wallet processes isolate signing tasks from the user interface.</li>
+									<li>Memory is cleared after cryptographic use.</li>
+									<li>Clipboard interaction for sensitive data is disabled where possible.</li>
+								</ul>
+								<p>If an attacker does not already control your operating system before wallet installation, stealing the seed is computationally infeasible.</p>
+
+								<h3>5. Operational Security Practices</h3>
+								<p>While the wallet’s cryptography is robust, user behavior remains the final line of defense.
+									To maintain integrity of your seed:</p>
+								<ul class="docs-list ">
+									<li>Use a clean, offline environment when creating new wallets.</li>
+									<li>Never type your seed on a website or third-party app.</li>
+									<li>Avoid cloud sync or password managers for storing mnemonics.</li>
+									<li>Keep your backup offline and redundant (paper, metal, or engraved).</li>
+								</ul>
+								<p>The wallet’s encryption protects local storage, but <strong>it cannot protect against users revealing their seed</strong> — social engineering remains the most common compromise vector in crypto.</p>
+
+								<h3>6. Responsibility Model</h3>
+								<p>IOTA Wallet is built on the principle of self-custody.
+									The developers do not hold backups, recovery keys, or “reset access.”
+									This architecture guarantees sovereignty — but also means <strong>you are solely responsible</strong> for safeguarding your seed.</p>
+								<p>Losing your seed is equivalent to destroying your private keys; no support team or network mechanism can restore it.
+									This trade-off is intentional: it ensures your assets remain entirely under your control, immune to central points of failure.</p>
 							</div>
 						</section>
 
 						<section class="docs-section" id="backup-recovery">
 							<h2 class="docs-section__title">Backup & Recovery</h2>
-							<p class="docs-section__intro">Learn how to backup and recover your wallet.</p>
+							<p class="docs-section__intro">In the IOTA Wallet architecture, backup and recovery are not optional features — they are fundamental parts of the security model.
+								Since the wallet is fully non-custodial, you hold the only cryptographic key material that can regenerate your entire wallet state.
+								Proper backups ensure that your assets remain recoverable even in the event of hardware loss, system corruption, or device migration.</p>
 
 							<div class="docs-section__content">
-								<h3>Creating a Backup</h3>
-								<p>Regular backups ensure you can always recover your wallet. IOTA Wallet offers several backup options:</p>
+								<h3>1. Backup Philosophy</h3>
+								<p>The wallet is built around the principle of deterministic reconstruction.
+									Every account, address, and asset can be recreated from your seed — but the backup system goes beyond that by adding encrypted state persistence, ensuring that restoring a wallet feels seamless and verifiable.</p>
+								<p>There are two distinct backup layers:</p>
 
-								<h4>Stronghold Backup File</h4>
-								<p>Stronghold is IOTA's encrypted backup system. To create a backup:</p>
+								<ul class="docs-list ">
+									<li><strong>Seed-level backup</strong>: The 24-word mnemonic that mathematically defines your wallet’s root.</li>
+									<li><strong>Encrypted local backup</strong>: A serialized, encrypted snapshot of your wallet’s configuration — including account labels, preferences, and cached metadata (but never private keys in plaintext).</li>
+								</ul>
+								<p>This dual model lets you restore either from scratch using your seed, or instantly resume your full environment using a verified encrypted backup file.</p>
+
+								<h3>2. Local Encrypted Backups</h3>
+								<p>IOTA Wallet can generate an encrypted backup file at any time from <strong>Settings → Security → Backup Wallet</strong>. <br>
+									When initiated:</p>
 								<ol class="docs-list docs-list--numbered">
-									<li>Navigate to Settings > Backup</li>
-									<li>Click "Create Stronghold Backup"</li>
-									<li>Choose a secure location to save the file</li>
-									<li>Set a strong backup password</li>
-									<li>Store the backup file securely</li>
+									<li>
+										The wallet packages your encrypted seed vault, account indexes, and UI configuration into a single archive.
+									</li>
+									<li>
+										It derives a backup key from your password using a strong key derivation function (PBKDF2 or Argon2 equivalent).
+									</li>
+									<li>
+										The package is encrypted symmetrically using AES-256 and saved as a .iota-backup file.
+									</li>
 								</ol>
-
-								<h4>Recovery Phrase Backup</h4>
-								<p>Your 24-word recovery phrase is the most important backup. With this phrase, you can restore your wallet on any device, even if all other backups are lost.</p>
-
-								<h3>Restoring Your Wallet</h3>
-
-								<h4>From Recovery Phrase</h4>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open IOTA Wallet and select "Restore Wallet"</li>
-									<li>Choose "Restore from Recovery Phrase"</li>
-									<li>Enter your 24-word recovery phrase in order</li>
-									<li>Create a new password for this device</li>
-									<li>Wait for wallet synchronization to complete</li>
-								</ol>
-
-								<h4>From Stronghold Backup</h4>
-								<ol class="docs-list docs-list--numbered">
-									<li>Open IOTA Wallet and select "Restore Wallet"</li>
-									<li>Choose "Restore from Backup File"</li>
-									<li>Select your Stronghold backup file</li>
-									<li>Enter your backup password</li>
-									<li>Create a new wallet password</li>
-								</ol>
+								<p>This file contains no plaintext secrets — only encrypted data.
+									It can safely be stored offline, on removable media, or inside a hardware-encrypted USB.</p>
 
 								<div class="docs-note docs-note--info">
 									<div class="docs-note__icon">
@@ -631,52 +907,93 @@
 										</svg>
 									</div>
 									<div class="docs-note__content">
-										<strong>Tip:</strong> After restoring your wallet, verify that all accounts and balances have been recovered correctly before deleting any backups.
+										<strong>Recommendation:</strong>
+										keep at least two physical copies of your encrypted backup stored in different secure locations.
+										One backup failure should never endanger your funds.
 									</div>
 								</div>
+
+								<h3>3. Cold Storage and Offline Backup</h3>
+								<p>For long-term protection, the wallet supports <strong>cold storage workflows</strong> — backups that never touch the internet. <br>
+									You can export your encrypted <code>.iota-backup</code> file or write down your seed entirely offline.</p>
+								<p>Cold backups should:</p>
+								<ul class="docs-list ">
+									<li>Be stored on devices that are never connected to a network.</li>
+									<li>Use removable, encrypted media or printed QR representations.</li>
+									<li>Be verified periodically by importing them into a test environment to ensure integrity.</li>
+								</ul>
+								<p>Advanced users can even generate a wallet and export its seed entirely in air-gapped mode, never connecting that device again after the seed is created.
+									This approach provides maximum isolation and is ideal for treasury or institutional custody setups.</p>
+
+								<h3>4. Recovery Process</h3>
+								<p>If you lose your local data or migrate to a new machine, IOTA Wallet supports two recovery paths:</p>
+								<h4>A. Recovery from Encrypted Backup</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li> Install IOTA Wallet on your new system.</li>
+									<li>Open Import Backup from the start screen.</li>
+									<li>Select your .iota-backup file and enter your password.</li>
+									<li>The wallet decrypts and verifies the package.</li>
+									<li>All accounts, balances, and UI preferences are restored instantly.</li>
+								</ol>
+								<p>Because all sensitive data inside the backup remains encrypted, the restoration process is trustless and local — no remote validation or internet dependency is required.</p>
+
+								<h4>B. Recovery from Seed</h4>
+								<ol class="docs-list docs-list--numbered">
+									<li>Choose <strong>Restore from Seed</strong> instead.</li>
+									<li>Enter your 24-word phrase in the correct order.</li>
+									<li>The wallet regenerates all keychains and addresses.</li>
+									<li>Once synchronized with the Tangle, your balances and transaction history appear automatically.</li>
+								</ol>
+								<p>This method is fully independent of any previous backup — all state is mathematically reconstructed from your seed alone.</p>
+
+								<h3>5. Verification and Integrity</h3>
+								<p>Every backup file includes a cryptographic checksum (SHA-256) and an internal signature derived from your wallet ID.</p>
+								<p>This allows the wallet to detect:</p>
+								<ul class="docs-list">
+									<li>Corrupted or modified backup files.</li>
+									<li>Mismatched passwords or tampering attempts.</li>
+									<li>Partial restores or incomplete archives.</li>
+								</ul>
+								<p>During restoration, the wallet verifies the checksum before decryption — if any bit of the backup has changed, the process halts and alerts you immediately.
+									This ensures that a compromised or altered backup can never overwrite a valid local vault.</p>
+
+								<h3>7. Multi-Environment Recovery</h3>
+								<p>Because the IOTA Wallet runs identically across Linux, macOS, and Windows, backups are fully cross-compatible.
+									A backup made on one OS can be restored on another without loss of functionality or data.</p>
+								<p>If you use multiple devices, you can maintain <strong>read-only replicas</strong>:</p>
+								<ul class="docs-list">
+									<li>Export an encrypted backup from your main machine.</li>
+									<li>Import it on a secondary device in “view-only” mode (no signing capability).
+										This lets you monitor balances and activity without exposing your main signing environment.</li>
+								</ul>
+
+								<h3>8. Disaster Scenarios</h3>
+								<p>Even if your primary device and backup storage are destroyed, your 24-word seed still recovers everything.
+									As long as you’ve stored that phrase safely, your funds remain untouched on the network.</p>
+								<p>However, if both the seed and encrypted backups are lost, <strong>recovery becomes impossible</strong>.
+									The wallet developers, IOTA Foundation, or any node operator cannot restore your data — there is no centralized authority or recovery mechanism.</p>
 							</div>
 						</section>
 
-						<section class="docs-section" id="security-best-practices">
-							<h2 class="docs-section__title">Security Best Practices</h2>
-							<p class="docs-section__intro">Essential security practices to keep your IOTA wallet safe.</p>
+						<section class="docs-section" id="best-practices">
+							<h2 class="docs-section__title">Best Practices</h2>
+							<p class="docs-section__intro">IOTA Wallet is built to provide maximum security at the architectural level — but the ultimate protection still depends on user behavior.
+								Even the most advanced cryptography cannot defend against poor operational habits.
+								This section outlines proven best practices for maintaining a secure environment, safeguarding your assets, and ensuring your wallet remains uncompromised across all operating systems.</p>
 
 							<div class="docs-section__content">
-								<h3>Device Security</h3>
+								<h3>1. Keep the Wallet and System Updated</h3>
+								<p>Security in crypto isn’t static. Both the IOTA network and the desktop wallet evolve with new features, bug fixes, and protocol improvements.
+									<br>
+									Always keep:
+								</p>
 								<ul class="docs-list">
-									<li>Keep your operating system and wallet software up to date</li>
-									<li>Use antivirus and anti-malware software</li>
-									<li>Enable device encryption (BitLocker, FileVault, etc.)</li>
-									<li>Lock your device when not in use</li>
-									<li>Avoid using public computers or WiFi for wallet access</li>
+									<li>Your IOTA Wallet updated to the latest version.</li>
+									<li>Your <strong>operating system</strong> and <strong>dependencies</strong> patched regularly.</li>
+									<li>Any <strong>firmware</strong> for hardware wallets (e.g., Ledger) up to date.</li>
 								</ul>
-
-								<h3>Password Security</h3>
-								<ul class="docs-list">
-									<li>Use a unique, strong password for your wallet</li>
-									<li>Never reuse passwords from other services</li>
-									<li>Consider using a password manager</li>
-									<li>Change your password if you suspect it's compromised</li>
-								</ul>
-
-								<h3>Phishing Protection</h3>
-								<p>Be vigilant against phishing attempts:</p>
-								<ul class="docs-list">
-									<li>Always verify you're on the official IOTA website</li>
-									<li>Never click suspicious links in emails or messages</li>
-									<li>IOTA support will never ask for your seed phrase</li>
-									<li>Verify the authenticity of wallet software before installing</li>
-									<li>Use official download channels only</li>
-								</ul>
-
-								<h3>Transaction Verification</h3>
-								<ul class="docs-list">
-									<li>Always double-check recipient addresses before sending</li>
-									<li>Verify transaction amounts carefully</li>
-									<li>Start with small test transactions for new addresses</li>
-									<li>Monitor your transaction history regularly</li>
-								</ul>
-
+								<p>Updates often include critical fixes to low-level cryptographic libraries or dependency chains.
+									Delaying updates is one of the most common causes of compromised wallets in long-term storage setups.</p>
 								<div class="docs-note docs-note--success">
 									<div class="docs-note__icon">
 										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -685,325 +1002,200 @@
 										</svg>
 									</div>
 									<div class="docs-note__content">
-										<strong>Best Practice:</strong> For large holdings, consider using a hardware wallet for maximum security. IOTA Wallet supports Ledger integration.
+										Always download updates from the official IOTA website or verified GitHub releases — never from third-party mirrors or social media links.
 									</div>
 								</div>
+
+
+								<h3>2. Verify Authentic Sources</h3>
+								<p>Phishing remains the number one threat in crypto. Attackers frequently clone websites, social media pages, or Discord servers to distribute fake wallet builds.</p>
+								<p>To stay safe:</p>
+								<ul class="docs-list">
+									<li>Bookmark the official IOTA Wallet website and use it exclusively.</li>
+									<li>Verify the download’s SHA-256 checksum or signature before installation.</li>
+									<li>Never click “Update” prompts that appear inside your OS notifications or web browsers.</li>
+									<li>Be skeptical of messages claiming wallet issues or “urgent version updates.”</li>
+								</ul>
+								<p>The IOTA Wallet itself never pushes updates or requests private data — all legitimate downloads are published manually and verifiably.</p>
+
+								<h3>3. Maintain a Clean Environment</h3>
+								<p>The wallet assumes that your local system is trustworthy.
+									If your computer is compromised, even perfect encryption won’t help.</p>
+								<p>Follow these principles:</p>
+								<ul class="docs-list">
+									<li>Keep your desktop free from unnecessary background apps, browser extensions, or untrusted software.</li>
+									<li>Avoid installing crypto-related browser plugins that claim to “track balances” or “auto-sign” transactions.</li>
+									<li>Use dedicated profiles or even separate OS users for crypto operations.</li>
+									<li>Consider a <strong>dedicated offline machine</strong> for high-value wallets.</li>
+								</ul>
+								<p>If you’re managing substantial assets, isolation is security — the fewer moving parts, the smaller the attack surface.</p>
+
+								<h3>4. Protect Against Phishing and Social Engineering</h3>
+								<p>No legitimate service, developer, or community moderator will ever ask for your seed phrase, password, or backup file.</p>
+								<p>Common phishing tactics include:</p>
+								<ul class="docs-list">
+									<li>Fake support chats asking for “temporary verification.”</li>
+									<li>Emails claiming “suspicious wallet activity” and linking to lookalike sites.</li>
+									<li>Messages urging you to “resync your wallet” or “restore access” via a provided form.</li>
+								</ul>
+								<p>The correct response is always the same: ignore, report, and never share credentials.
+									If you suspect you’ve entered your seed on a fraudulent site, immediately move your assets to a new wallet with a freshly generated seed.</p>
+
+								<h3>5. Local Security Practices</h3>
+								<p>Security isn’t only online — local threats can be just as damaging.</p>
+								<ul class="docs-list">
+									<li><strong>Disable automatic clipboard sync</strong> between devices. Clipboard sniffers are common on both Windows and macOS.</li>
+									<li><strong>Avoid remote desktop software</strong> or screen-sharing while your wallet is open.</li>
+									<li><strong>Encrypt your local drive</strong> using OS-level disk encryption (BitLocker, FileVault, LUKS).</li>
+									<li><strong>Use a strong, unique password</strong> for your wallet — never reuse one from another service.</li>
+								</ul>
+								<p>If your system ever behaves abnormally (sudden slowdowns, unknown background tasks), disconnect from the internet before opening your wallet.</p>
+
+								<h3>6. Node Connection Hygiene</h3>
+								<p>Every IOTA Wallet connects to a node to read and broadcast transactions.
+									While default nodes are secure, advanced users may choose to connect their own.</p>
+								<p>Best practices:</p>
+								<ul class="docs-list">
+									<li>Use nodes you trust or operate yourself.</li>
+									<li>Prefer HTTPS or WebSocket Secure (WSS) endpoints.</li>
+									<li>If using custom nodes, verify SSL certificates and avoid plaintext connections.</li>
+									<li>Regularly check node uptime and synchronization status.</li>
+								</ul>
+								<p>For additional privacy, you can run your node locally — this ensures your wallet never queries external infrastructure.</p>
+
+								<h3>7. Evaluate Your Threat Model</h3>
+								<p>Security is relative to your use case.
+									A user holding a few hundred MIOTA on a personal laptop has a different risk profile than an organization managing treasury funds.</p>
+								<p>Ask yourself:</p>
+								<ul class="docs-list">
+									<li>Who could realistically target me?</li>
+									<li>What would be the impact of compromise?</li>
+									<li>What level of inconvenience am I willing to accept for more protection?</li>
+								</ul>
+								<p>For high-value environments:</p>
+								<ul class="docs-list">
+									<li>Use air-gapped systems or hardware wallets.</li>
+									<li>Employ multi-person custody (split seed storage or multisig coordination).</li>
+									<li>Audit your backup integrity at least once per quarter.</li>
+								</ul>
+
+								<h3>8. Golden Rules</h3>
+								<ul class="docs-list">
+									<li>Never share your seed or password.</li>
+									<li>Always verify download integrity.</li>
+									<li>Keep systems updated and minimal.</li>
+									<li>Store backups offline and encrypted.</li>
+									<li>Trust only official communication channels.</li>
+									<li>Assume full responsibility — your wallet, your keys, your control.</li>
+								</ul>
+								<p>Following these fundamentals removes 99% of real-world risk vectors faced by desktop crypto users.</p>
 							</div>
 						</section>
 
-						<section class="docs-section" id="custom-nodes">
-							<h2 class="docs-section__title">Custom Nodes</h2>
-							<p class="docs-section__intro">Configure custom nodes for advanced network connectivity.</p>
+						<section class="docs-section" id="network-settings">
+							<h2 class="docs-section__title">Network Settings</h2>
+							<p class="docs-section__intro">The IOTA Wallet is designed to give users full control over how they interact with the IOTA ecosystem.
+								Behind every transaction, balance update, or staking event lies the network — a dynamic layer made up of interconnected nodes.
+								By understanding and configuring your <strong>Network Settings</strong>, you can improve reliability, privacy, and transaction speed while maintaining complete autonomy.</p>
+							<p class="docs-section__intro">Each environment — <strong>Mainnet, Devnet</strong>, and <strong>Shimmer</strong> — serves a different purpose, but all follow the same architecture.
+								Switching between them doesn’t change your wallet or seed; it simply determines which ledger and node infrastructure your wallet communicates with.</p>
 
 							<div class="docs-section__content">
-								<h3>What are Nodes?</h3>
-								<p>Nodes are servers that maintain the IOTA network and process transactions. By default, IOTA Wallet connects to official IOTA nodes, but you can configure custom nodes for:</p>
+								<h3>1. Overview of IOTA Networks</h3>
+								<p>The IOTA ecosystem consists of multiple operational networks, each designed for specific use cases.
+									While they share protocol compatibility, they differ in token value, stability, and intended use.</p>
 								<ul class="docs-list">
-									<li>Enhanced privacy</li>
-									<li>Better performance</li>
-									<li>Local development</li>
-									<li>Network redundancy</li>
+									<li><strong>Mainnet</strong> — The production environment where all real IOTA tokens exist. Transactions are permanent, validated through milestone confirmations, and publicly visible. This is the live ledger that secures your real assets.</li>
+									<li><strong>Devnet</strong> — A sandbox for developers and testers. Tokens have no monetary value, allowing for experimentation, debugging, and API integration without risk. It’s ideal for learning and validation before deploying real transactions.</li>
+									<li><strong>Shimmer</strong> — A network built for innovation and testing of new protocol features. It supports real-value SMR tokens, NFT creation, and tokenization features introduced ahead of Mainnet integration.</li>
 								</ul>
 
-								<h3>Adding a Custom Node</h3>
-								<ol class="docs-list docs-list--numbered">
-									<li>Go to Settings > Node Configuration</li>
-									<li>Click "Add Custom Node"</li>
-									<li>Enter the node URL</li>
-									<li>Optionally set authentication credentials</li>
-									<li>Test the connection</li>
-									<li>Save and activate the node</li>
-								</ol>
-
-								<h4>Node URL Format</h4>
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">Example Node URLs</span>
-									</div>
-									<pre class="docs-code__content"><code>https://api.testnet.shimmer.network
-https://chrysalis-nodes.iota.org
-https://node.example.com:14265</code></pre>
-								</div>
-
-								<h3>Node Health Monitoring</h3>
-								<p>IOTA Wallet automatically monitors node health and displays:</p>
-								<ul class="docs-list">
-									<li>Connection status</li>
-									<li>Sync status</li>
-									<li>Response time</li>
-									<li>Available features</li>
+								<h3>2. Automatic Connection and Node Management</h3>
+								<p>When the wallet starts, it automatically connects to a reliable, secure node for your selected network.
+									These nodes are maintained by the IOTA Foundation and trusted community operators.
+									The wallet continuously monitors their status to ensure smooth connectivity.</p>
+								<ul class="docs-list ">
+									<li>Node selection is automatic, but you can override it manually.</li>
+									<li>Secure HTTPS/WSS channels are always preferred for encrypted communication.</li>
+									<li>If a node goes offline, the wallet seamlessly switches to another verified endpoint.</li>
+									<li>Node latency and milestone synchronization are checked in the background.</li>
 								</ul>
+								<p>This process ensures that even users with no technical background stay connected to a fully synchronized and trustworthy part of the network.</p>
 
-								<div class="docs-note docs-note--warning">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Warning:</strong> Only use trusted nodes. Malicious nodes could provide false information about your transactions.
-									</div>
-								</div>
-							</div>
-						</section>
-
-						<section class="docs-section" id="hardware-wallet">
-							<h2 class="docs-section__title">Hardware Wallet Integration</h2>
-							<p class="docs-section__intro">Use a hardware wallet for maximum security.</p>
-
-							<div class="docs-section__content">
-								<h3>Supported Hardware Wallets</h3>
-								<p>IOTA Wallet currently supports:</p>
-								<ul class="docs-list">
-									<li>Ledger Nano S</li>
-									<li>Ledger Nano S Plus</li>
-									<li>Ledger Nano X</li>
+								<h3>3. Switching Between Networks</h3>
+								<p>Switching networks in IOTA Wallet is straightforward but powerful.
+									You can move between Mainnet, Devnet, or Shimmer through <strong>Settings → Network</strong>, and the wallet reconfigures itself instantly.</p>
+								<p>When you switch:</p>
+								<ul class="docs-list ">
+									<li>The wallet clears cached ledger data from the previous network.</li>
+									<li>It reconnects to the appropriate default node for the new environment.</li>
+									<li>Account data and balances are refreshed based on that network’s ledger.</li>
 								</ul>
+								<p>Your seed and account structure remain identical, but balances may show as zero when switching — this is normal, since each network maintains its own chain of records.</p>
+								<p>Developers often use this feature to <strong>test automation logic or integrations</strong> on Devnet before deploying production-ready code to Mainnet.</p>
 
-								<h3>Setting Up Ledger</h3>
-								<ol class="docs-list docs-list--numbered">
-									<li>Install the IOTA app on your Ledger device using Ledger Live</li>
-									<li>Connect your Ledger to your computer</li>
-									<li>Open the IOTA app on your Ledger</li>
-									<li>In IOTA Wallet, select "Connect Hardware Wallet"</li>
-									<li>Follow the on-screen instructions</li>
-									<li>Verify the connection on your Ledger display</li>
-								</ol>
-
-								<h4>Using Your Ledger</h4>
-								<p>When using a hardware wallet:</p>
+								<h3>4. Network Health Indicators</h3>
+								<p>The wallet interface provides a quick, visual way to assess your node connection.
+									A small status indicator reflects the real-time sync condition of your current node.</p>
 								<ul class="docs-list">
-									<li>Your private keys never leave the device</li>
-									<li>All transactions must be approved on the device</li>
-									<li>Always verify addresses on the device screen</li>
-									<li>Keep your Ledger firmware updated</li>
+									<li><strong>Synchronized</strong> — The node is up to date with the latest milestone; transactions are safe to broadcast.</li>
+									<li><strong>Syncing</strong> — The node is catching up; transactions are temporarily paused.</li>
+									<li><strong>Disconnected</strong> — No active connection; the wallet is offline.</li>
 								</ul>
+								<p>If synchronization drops, the wallet automatically suspends pending operations until the node regains full sync, preventing accidental submission to outdated ledger states.</p>
 
-								<div class="docs-note docs-note--success">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-											<polyline points="22 4 12 14.01 9 11.01"></polyline>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Maximum Security:</strong> Hardware wallets provide the highest level of security for cryptocurrency storage. We recommend them for significant holdings.
-									</div>
-								</div>
-							</div>
-						</section>
-
-						<section class="docs-section" id="api-integration">
-							<h2 class="docs-section__title">API Integration</h2>
-							<p class="docs-section__intro">Integrate IOTA Wallet functionality into your applications.</p>
-
-							<div class="docs-section__content">
-								<h3>IOTA SDK</h3>
-								<p>For developers looking to integrate IOTA functionality, we provide comprehensive SDKs:</p>
+								<h3>5. Custom Node Connections</h3>
+								<p>For users who want greater control, IOTA Wallet allows connection to custom or private nodes.
+									Running your own node enhances both transparency and security — you independently verify network data instead of trusting a third-party operator.</p>
+								<p>To add a custom node:</p>
 								<ul class="docs-list">
-									<li>JavaScript/TypeScript SDK</li>
-									<li>Python SDK</li>
-									<li>Rust SDK</li>
-									<li>Java SDK</li>
+									<li>Open Settings → Network → Custom Node.</li>
+									<li>Enter your node’s endpoint (e.g., https://node.example.com:443).</li>
+									<li>If necessary, include authentication details or access tokens.</li>
+									<li>Save and confirm the connection.</li>
 								</ul>
-
-								<h4>Installation</h4>
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">npm</span>
-										<button class="docs-code__copy" data-code="npm install @iota/sdk">Copy</button>
-									</div>
-									<pre class="docs-code__content"><code>npm install @iota/sdk</code></pre>
-								</div>
-
-								<h4>Basic Usage Example</h4>
-								<div class="docs-code">
-									<div class="docs-code__header">
-										<span class="docs-code__language">javascript</span>
-										<button class="docs-code__copy" data-code="const { Client } = require('@iota/sdk');
-
-const client = new Client({
-  nodes: ['https://api.testnet.shimmer.network'],
-});
-
-async function getInfo() {
-  const info = await client.getInfo();
-  console.log('Node Info:', info);
-}
-
-getInfo();">Copy</button>
-									</div>
-									<pre class="docs-code__content"><code>const { Client } = require('@iota/sdk');
-
-const client = new Client({
-  nodes: ['https://api.testnet.shimmer.network'],
-});
-
-async function getInfo() {
-  const info = await client.getInfo();
-  console.log('Node Info:', info);
-}
-
-getInfo();</code></pre>
-								</div>
-
-								<h3>API Documentation</h3>
-								<p>For comprehensive API documentation, visit:</p>
+								<p>The wallet validates:</p>
 								<ul class="docs-list">
-									<li><a href="#" class="docs-link">IOTA SDK Documentation</a></li>
-									<li><a href="#" class="docs-link">Node API Reference</a></li>
-									<li><a href="#" class="docs-link">Code Examples Repository</a></li>
+									<li>Node availability and version compatibility.</li>
+									<li>Proper network identification (Mainnet, Devnet, or Shimmer).</li>
+									<li>Secure transport protocol (HTTPS/WSS).</li>
 								</ul>
-							</div>
-						</section>
+								<p>If validation passes, your wallet connects directly to that node and remembers it for future sessions.</p>
 
-						<section class="docs-section" id="common-issues">
-							<h2 class="docs-section__title">Common Issues</h2>
-							<p class="docs-section__intro">Solutions to frequently encountered problems.</p>
-
-							<div class="docs-section__content">
-								<h3>Wallet Won't Open</h3>
-								<p><strong>Solution:</strong></p>
-								<ol class="docs-list docs-list--numbered">
-									<li>Check that you're running the latest version</li>
-									<li>Verify your system meets minimum requirements</li>
-									<li>Try restarting your computer</li>
-									<li>Reinstall the wallet if the problem persists</li>
-								</ol>
-
-								<h3>Transactions Pending for Long Time</h3>
-								<p><strong>Solution:</strong></p>
+								<h3>6. Advanced Configurations</h3>
+								<p>Advanced users and organizations may choose to operate <strong>multi-node or failover setups</strong>.
+									These configurations improve uptime and resilience in case a node becomes unreachable.</p>
 								<ul class="docs-list">
-									<li>Check your network connection</li>
-									<li>Verify the node is synced and healthy</li>
-									<li>Try switching to a different node</li>
-									<li>Wait for network congestion to clear</li>
+									<li>You can configure multiple nodes in rotation.</li>
+									<li>The wallet will automatically fail over when a node is down.</li>
+									<li>Milestone indexes are cross-checked between nodes for consistency.</li>
+									<li>Proxy and port customization are supported for enterprise deployments.</li>
 								</ul>
+								<p>This kind of setup is ideal for developers, infrastructure providers, or custodial services that require 24/7 availability.</p>
 
-								<h3>Balance Not Showing</h3>
-								<p><strong>Solution:</strong></p>
-								<ol class="docs-list docs-list--numbered">
-									<li>Wait for wallet synchronization to complete</li>
-									<li>Check if you're connected to the correct network</li>
-									<li>Try refreshing the wallet</li>
-									<li>Verify the transaction on a block explorer</li>
-								</ol>
-
-								<h3>Cannot Connect to Node</h3>
-								<p><strong>Solution:</strong></p>
+								<h3>7. Security Recommendations</h3>
+								<p>Node connections define how your wallet interacts with the network — and therefore, they also define what metadata you expose. <br>
+									To maintain strong security hygiene, follow these principles:</p>
 								<ul class="docs-list">
-									<li>Check your internet connection</li>
-									<li>Verify firewall settings aren't blocking the wallet</li>
-									<li>Try using a different node</li>
-									<li>Disable VPN temporarily to test connection</li>
+									<li>Always use SSL-secured (HTTPS/WSS) endpoints.</li>
+									<li>Avoid connecting to public community nodes unless you trust the operator.</li>
+									<li>Keep your custom nodes updated with the latest stable release.</li>
+									<li>Never expose node authentication tokens to third parties.</li>
+									<li>Regularly check node health metrics and synchronization state.</li>
 								</ul>
-							</div>
-						</section>
+								<p>Even though private keys never leave your wallet, your <strong>network connection</strong> is the bridge between local security and the outside world — keep it clean and verified.</p>
 
-						<section class="docs-section" id="error-codes">
-							<h2 class="docs-section__title">Error Codes</h2>
-							<p class="docs-section__intro">Understanding wallet error messages.</p>
-
-							<div class="docs-section__content">
-								<h3>Common Error Codes</h3>
-
-								<div class="docs-table-wrapper">
-									<table class="docs-table">
-										<thead>
-											<tr>
-												<th>Error Code</th>
-												<th>Description</th>
-												<th>Solution</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><code>ERR_001</code></td>
-												<td>Invalid password</td>
-												<td>Re-enter your password or use recovery phrase</td>
-											</tr>
-											<tr>
-												<td><code>ERR_002</code></td>
-												<td>Node connection failed</td>
-												<td>Check internet connection or switch nodes</td>
-											</tr>
-											<tr>
-												<td><code>ERR_003</code></td>
-												<td>Insufficient balance</td>
-												<td>Add more funds to your wallet</td>
-											</tr>
-											<tr>
-												<td><code>ERR_004</code></td>
-												<td>Invalid address format</td>
-												<td>Verify the recipient address is correct</td>
-											</tr>
-											<tr>
-												<td><code>ERR_005</code></td>
-												<td>Transaction timeout</td>
-												<td>Retry the transaction or check node status</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</section>
-
-						<section class="docs-section" id="support">
-							<h2 class="docs-section__title">Support</h2>
-							<p class="docs-section__intro">Get help when you need it.</p>
-
-							<div class="docs-section__content">
-								<h3>Community Support</h3>
-								<div class="docs-cards">
-									<a href="https://discord.iota.org/" target="_blank" class="docs-card">
-										<div class="docs-card__icon">
-											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-												<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-											</svg>
-										</div>
-										<h4 class="docs-card__title">Discord</h4>
-										<p class="docs-card__description">Join our active Discord community for real-time help and discussions.</p>
-									</a>
-									<a href="https://github.com/iotaledger" target="_blank" class="docs-card">
-										<div class="docs-card__icon">
-											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-												<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-											</svg>
-										</div>
-										<h4 class="docs-card__title">GitHub</h4>
-										<p class="docs-card__description">Report bugs, request features, and contribute to the project on GitHub.</p>
-									</a>
-									<a href="mailto:info@iota.org" target="_blank" class="docs-card">
-										<div class="docs-card__icon">
-											<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-												<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-												<polyline points="22,6 12,13 2,6"></polyline>
-											</svg>
-										</div>
-										<h4 class="docs-card__title">Email Support</h4>
-										<p class="docs-card__description">Contact our support team at info@iota.org for assistance.</p>
-									</a>
-								</div>
-
-								<h3>Additional Resources</h3>
+								<h3>8. Key Takeaways</h3>
+								<p>The IOTA Wallet’s network system is designed for both simplicity and power.
+									It allows everyday users to connect effortlessly while giving advanced users full autonomy.</p>
 								<ul class="docs-list">
-									<li><a href="faq.html" class="docs-link">FAQ</a></li>
-									<li><a href="community.html" class="docs-link">Community </a></li>
-									<li><a href="https://www.youtube.com/c/iotafoundation" class="docs-link">Video Tutorials</a></li>
+									<li>The wallet supports Mainnet, Devnet, and Shimmer out of the box.</li>
+									<li>Default nodes are secure and maintained by trusted operators.</li>
+									<li>You can add custom or private nodes for full independence.</li>
+									<li>Network switching doesn’t affect your seed or accounts.</li>
+									<li>Secure connections and synchronization checks ensure safe transactions.</li>
 								</ul>
-
-								<div class="docs-note docs-note--danger">
-									<div class="docs-note__icon">
-										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<circle cx="12" cy="12" r="10"></circle>
-											<line x1="15" y1="9" x2="9" y2="15"></line>
-											<line x1="9" y1="9" x2="15" y2="15"></line>
-										</svg>
-									</div>
-									<div class="docs-note__content">
-										<strong>Security Warning:</strong> IOTA support will NEVER ask for your seed phrase, password, or private keys. Anyone asking for this information is attempting to scam you.
-									</div>
-								</div>
+								<p>Understanding and managing your Network Settings is the first step toward mastering how IOTA actually communicates with the decentralized Tangle.</p>
 							</div>
 						</section>
 					</div>
