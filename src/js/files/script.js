@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		// працює тільки якщо меню не відкрите
 		if (!nav.classList.contains('nav--menu-open')) {
-			if (scrollY >= heroHeight - 40) { // невеликий запас у 40px
+			if (scrollY >= heroHeight - 50) { // невеликий запас у 40px
 				nav.classList.add('nav--scrolled');
 			} else {
 				nav.classList.remove('nav--scrolled');
