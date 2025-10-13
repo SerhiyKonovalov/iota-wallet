@@ -106,7 +106,7 @@
 							<div class="docs-section__content">
 								<h3>Core Overview</h3>
 								<p>IOTA Wallet is more than a simple token holder — it is a fully protocol-aware interface that understands IOTA’s evolving standards, including the <strong>Stardust tokenization framework, alias and NFT outputs</strong>, and the <strong>storage deposit model</strong> that protects the ledger from spam and excessive small outputs. Through this framework, you can issue, receive, and manage <strong>native assets and NFTs</strong> directly on Layer 1 without the need for smart contracts or gas.</p>
-								<p>With upcoming updates like <strong>IOTA Rebased</strong>, the ecosystem is expanding further — introducing full decentralization, staking, and compatibility with both EVM and Move virtual machines. The wallet is architected to remain compatible with these upgrades, ensuring a seamless transition as the network evolves.</p>
+								<p>With updates like <strong>IOTA Rebased</strong>, the ecosystem is expanding further — introducing full decentralization, staking, and compatibility with both EVM and Move virtual machines. The wallet is architected to remain compatible with these upgrades, ensuring a seamless transition as the network evolves.</p>
 
 								<h3>Philosophy and Design</h3>
 								<p>The guiding principle behind IOTA Wallet is simplicity backed by strong cryptography. The wallet combines a minimal interface with powerful under-the-hood features: local encryption, cross-platform support (Windows, macOS, Linux), and optional connections to your own IOTA or Shimmer nodes for advanced users. For those who prefer cold storage, hardware wallet integration is available, ensuring that sensitive keys never leave your device.</p>
@@ -216,7 +216,8 @@
 										<strong>Launch the wallet</strong> from the Applications folder or via Spotlight search.
 									</li>
 								</ol>
-								<p>On macOS, the <code>.dmg</code> package contains a fully signed and ready-to-use application — no additional installation steps or dependencies are needed.</p>
+
+								<p>On macOS, the <code>.dmg</code> package contains a ready-to-use application. However, depending on your security settings, macOS may prompt you to confirm the app’s launch in System Settings → Privacy & Security. Once confirmed, no further installation steps or dependencies are required.</p>
 
 								<h3>Installing on Linux</h3>
 								<ol class="docs-list docs-list--numbered">
@@ -329,9 +330,26 @@
 								<p>You can now manage your tokens, native assets, and NFTs just as before — all using your existing seed.</p>
 
 								<h3>3. Choosing a Network</h3>
-								<p>By default, IOTA Wallet connects to the <strong>Mainnet</strong> — the live production network where real assets exist.</p>
-								<p>Advanced users can switch to Shimmer or Devnet later from the <strong>Settings → Network</strong> section.</p>
-								<p>These environments are useful for testing or for interacting with upcoming protocol versions such as <strong>IOTA Rebased</strong>.</p>
+								<p>By default, IOTA Wallet connects to the Mainnet — the primary, production-grade network where all real IOTA tokens exist.
+									This is the environment where your transactions are recorded permanently on the distributed ledger and verified through milestone confirmations.
+									Mainnet ensures complete reliability, real-time validation, and compatibility with all live ecosystem tools and exchanges.</p>
+								<p>However, advanced users or developers may prefer to work with alternative networks, such as Devnet or Shimmer, depending on their goals.
+									These networks are fully compatible with the wallet but serve different purposes within the IOTA ecosystem:</p>
+								<ul class="docs-list ">
+									<li><strong>Mainnet</strong> —
+										the live, production network holding real assets; all transactions are final and verifiable.
+									</li>
+									<li><strong>Devnet</strong> —
+										a testing environment with no real value, perfect for development, automation, and feature validation.
+									</li>
+									<li><strong>Shimmer</strong> —
+										an innovation network running ahead of Mainnet, used for experimenting with tokenization, NFTs, and new protocol layers.
+									</li>
+								</ul>
+								<p>You can switch between these environments anytime by navigating to Settings → Network, selecting the desired network, and confirming.
+									The wallet will automatically reconfigure itself, update node connections, and reload the appropriate ledger data.</p>
+								<p>These separate environments are invaluable for testing transactions, validating smart contracts, or developing automation scripts — all without risking actual funds.
+									They also allow the community to preview features like IOTA Rebased, new consensus mechanisms, or updated tokenomics before they are deployed to the Mainnet.</p>
 
 								<h3>4. Interface Overview</h3>
 								<p>Once the setup is complete, you’ll be taken to the main dashboard. The interface is designed to remain simple while exposing all essential wallet functions. You’ll see:</p>
@@ -345,10 +363,10 @@
 								<p>The wallet operates locally and communicates directly with IOTA nodes. All balances and transactions are fetched securely from the Tangle network.</p>
 
 								<h3>5. First Synchronization</h3>
-								<p>On first launch, the wallet will automatically synchronize with the network.
-									This process fetches current ledger data and confirms that your addresses are up to date.
-									Depending on your connection and hardware, it usually completes within a few seconds.</p>
-								<p>Once synced, your wallet is ready to receive tokens. You can now generate your first receiving address and share it safely with anyone sending IOTA or native assets.</p>
+								<p>When you launch IOTA Wallet for the first time, it automatically begins the synchronization process — the crucial step that connects your local wallet to the live state of the IOTA network.
+									During this stage, the wallet communicates with the selected node (Mainnet, Devnet, or Shimmer) to retrieve the most recent ledger milestones, verify network consistency, and confirm that all addresses derived from your seed are up to date.</p>
+								<p>The process involves scanning the Tangle for any unspent outputs (UTXOs) linked to your wallet addresses. This ensures that your displayed balances and transaction history exactly match the official network ledger.</p>
+								<p>Once your wallet is fully synced, it becomes network-ready — meaning it can both receive and send transactions immediately. At this point, the app automatically generates your first receiving address, which can safely be shared with anyone sending IOTA or other native assets.</p>
 							</div>
 						</section>
 
@@ -414,7 +432,7 @@
 									</div>
 									<div class="docs-note__content">
 										<strong>Security Tip:</strong>
-										Avoid reusing addresses. Generate a new receiving address for each transaction — it keeps your activity private and aligns with IOTA’s address management rules.
+										Always verify the address visually before sharing it. Copy it directly from the wallet interface — never from screenshots, text files, or clipboard history tools.
 									</div>
 								</div>
 
@@ -474,7 +492,7 @@
 
 						<section class="docs-section" id="managing-accounts">
 							<h2 class="docs-section__title">Managing Accounts</h2>
-							<p class="docs-section__intro">The IOTA Wallet is designed to support multi-account management, giving you full control over multiple sets of addresses, assets, and transaction histories — all within a single wallet environment. <br>
+							<p class="docs-section__intro">IOTA Wallet is designed to support multi-account management, giving you full control over multiple sets of addresses, assets, and transaction histories — all within a single wallet environment. <br>
 								Each account functions as an independent entity derived from your master seed, allowing you to separate funds, manage different purposes, or organize tokens and NFTs across projects.</p>
 							<p class="docs-section__intro">Whether you’re an everyday user holding IOTA tokens or a developer experimenting with the Stardust framework, account management is at the core of your wallet experience.</p>
 
@@ -571,7 +589,7 @@
 
 						<section class="docs-section" id="sending-receiving">
 							<h2 class="docs-section__title">Sending & Receiving</h2>
-							<p class="docs-section__intro">The IOTA Wallet allows you to send and receive tokens, native assets, and NFTs directly on the IOTA Tangle.
+							<p class="docs-section__intro">IOTA Wallet allows you to send and receive tokens, native assets, and NFTs directly on the IOTA Tangle.
 								Every transaction is signed locally on your device, transmitted peer-to-peer, and confirmed by the network without intermediaries or transaction fees.
 								This section explains how transfers work, how to monitor them, and what to expect at each stage of the process.</p>
 
@@ -672,25 +690,6 @@
 								</ul>
 								<p>For advanced users, a direct link to the Tangle Explorer allows you to verify the transaction independently and view its underlying outputs.
 									This transparency is central to IOTA’s open-ledger philosophy — every confirmed transaction can be independently audited on-chain.</p>
-
-								<h3>6. Common Questions</h3>
-								<p>
-									<strong>How long do transactions take to confirm?</strong><br>
-									Usually within seconds, though high network load may extend this slightly. The wallet updates automatically when confirmation occurs.
-								</p>
-								<p>
-									<strong>Can I cancel a transaction after sending it?</strong><br>
-									No. Once broadcast to the Tangle, a transaction is immutable. Always review details before confirming.
-								</p>
-								<p>
-									<strong>Why do I see a “storage deposit” amount?</strong><br>
-									IOTA requires a minimal amount of base tokens to remain attached to outputs containing assets or NFTs. This prevents spam and ensures the ledger remains efficient.
-									These deposits are returned when outputs are consumed or assets moved.
-								</p>
-								<p>
-									<strong>Do I need to stay online for confirmation?</strong><br>
-									No. The wallet can close safely after broadcasting. The transaction continues to confirm on the network even if your app is closed.
-								</p>
 							</div>
 						</section>
 
@@ -766,15 +765,7 @@
 								<p>This log ensures complete transparency and traceability.
 									For on-chain verification, each staking transaction includes an output reference you can inspect directly in the Tangle Explorer, confirming your participation in the event.</p>
 
-								<h3>6. Staking on Shimmer and IOTA Rebased</h3>
-								<p>The IOTA Wallet supports staking on both Shimmer and the upcoming IOTA Rebased network versions.
-									While the fundamentals are identical, each network may feature different reward assets or event durations.</p>
-								<ul class="docs-list ">
-									<li><strong>Shimmer Network</strong>: primarily used for testing new economic features and distributing ecosystem rewards such as SMR or community project tokens.</li>
-									<li><strong>IOTA Rebased</strong>: introduces continuous staking and on-chain governance voting — integrating long-term participation directly into the base protocol.</li>
-								</ul>
-								<p>The wallet automatically detects the network and displays all active staking programs relevant to your connected environment.
-									Switching between networks can be done anytime via Settings → Network without reinstalling or migrating data.</p>
+
 							</div>
 						</section>
 

@@ -3712,6 +3712,9 @@ body {
 .learning-paths {
 	background: white;
 	scroll-margin-top: 50px;
+	.container {
+		max-width: 1000px;
+	}
 }
 
 .learning-paths__tabs {
@@ -3742,7 +3745,7 @@ body {
 }
 
 .learning-paths__panel {
-	display: none;
+	// display: none;
 }
 
 .learning-paths__panel--active {
@@ -3751,7 +3754,8 @@ body {
 
 .learning-paths__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 }
 
@@ -3768,7 +3772,7 @@ body {
 }
 
 .learning-card__icon {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.25rem;
 	@media (max-width: $mobile) {
 		margin-bottom: 1rem;
 	}
@@ -3814,6 +3818,7 @@ body {
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	text-align: center;
 }
 
 .learning-card__button:hover {
@@ -3854,7 +3859,7 @@ body {
 }
 
 .doc-card__icon {
-	font-size: 2rem;
+	display: flex;
 }
 
 .doc-card__title {
@@ -3872,6 +3877,7 @@ body {
 
 .doc-card__topics {
 	display: flex;
+	align-content: start;
 	flex-wrap: wrap;
 	gap: 0.5rem;
 	margin-bottom: 1.5rem;
@@ -3896,6 +3902,7 @@ body {
 	padding: 0.75rem;
 	border-radius: 8px;
 	font-weight: 600;
+	text-align: center;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -3911,14 +3918,30 @@ body {
 
 .tutorials__grid {
 	display: grid;
-	// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 	gap: 2rem;
 }
 
 .tutorial-card {
 	overflow: hidden;
 	transition: all 0.3s ease;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	&:nth-child(1) {
+		.tutorial-card__thumbnail::before {
+			background: url("@img/learn/tutorial-01.jpg") center/cover;
+		}
+	}
+	&:nth-child(2) {
+		.tutorial-card__thumbnail::before {
+			background: url("@img/learn/tutorial-02.jpg") center/cover;
+		}
+	}
+	&:nth-child(3) {
+		.tutorial-card__thumbnail::before {
+			background: url("@img/learn/tutorial-03.jpg") center/cover;
+		}
+	}
 }
 
 .tutorial-card:hover {
@@ -3945,12 +3968,7 @@ body {
 .tutorial-card__thumbnail::before {
 	content: "";
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop")
-		center/cover;
+	inset: 0;
 	opacity: 0.3;
 }
 
