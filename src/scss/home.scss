@@ -531,11 +531,17 @@ body {
 }
 
 .feature-panel__visual {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	overflow: hidden;
+	border-radius: 15px;
+	height: 100%;
 	img {
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: all 0.6s;
+		&:hover {
+			transform: scale(1.04);
+		}
 	}
 }
 
@@ -1037,25 +1043,23 @@ body {
 
 .network-nodes__content {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1.8fr 1.1fr;
 	gap: 2rem;
 	align-items: center;
 }
 
 .network-nodes__image {
-	padding: 3rem;
-	height: 400px;
-	background: linear-gradient(135deg, #0101ff 0%, #4f92ff 100%);
 	border-radius: 16px;
 	overflow: hidden;
-	@media (max-width: $mobile) {
-		padding: 2rem 1.5rem;
-		height: auto;
-	}
+	height: 100%;
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		transition: all 0.5s;
+		&:hover {
+			transform: scale(1.04);
+		}
 	}
 }
 
@@ -2924,8 +2928,11 @@ body {
 .staking__content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 2rem;
+	gap: 4rem;
 	align-items: center;
+	@media (max-width: $tablet) {
+		gap: 2rem;
+	}
 }
 
 .staking__title {
@@ -2958,11 +2965,14 @@ body {
 
 .staking__image {
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	overflow: hidden;
+	border-radius: 15px;
 	img {
 		width: 100%;
+		transition: all 0.6s;
+		&:hover {
+			transform: scale(1.04);
+		}
 	}
 }
 
@@ -3428,8 +3438,14 @@ body {
 }
 
 .what-is-iota__image {
+	overflow: hidden;
+	border-radius: 15px;
 	img {
 		width: 100%;
+		transition: all 0.6s;
+		&:hover {
+			transform: scale(1.04);
+		}
 	}
 }
 
